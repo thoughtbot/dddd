@@ -8,15 +8,48 @@
   <%= csrf_meta_tag %>
 </head>
 <body class="<%= body_class %>">
-  <div id="header">
-    <% if signed_in? -%>
-      <%= link_to "Sign out", sign_out_path, :method => :delete %>
-    <% else -%>
-      <%= link_to "Sign in", sign_in_path %>
-    <% end -%>
+  <div id="container">
+
+    <header>
+      <div id="benefactors" class="clearfix">
+        <div id="logo-left">
+          <img src="/images/greenhorn-logo.png" alt="greenhorn-logo" width="139" height="72" />
+        </div>
+        <div id="banner">
+          <img src="/images/greenhorn_thoughtbot_banner.png" alt="greenhorn_thoughtbot_banner" width="326" height="72" />
+        </div>
+        <div id="logo-right">
+          <img src="/images/thoughtbot-logo.png" alt="thoughtbot-logo" width="77" height="72" />
+        </div>
+      </div>
+      <hr class="top" />
+      <div id="dddd-logo">
+        <img src="/images/DDDD-logo.png" alt="DDDD-logo" width="778" height="284" />
+      </div>
+    </header>
+
+    <!-- Start of main content -->
+    <div id="main">
+      <% if signed_in? -%>
+        <%= link_to "Sign out", sign_out_path, :method => :delete %>
+      <% else -%>
+        <%= link_to "Sign in", sign_in_path %>
+      <% end -%>
+      <%= render :partial => 'shared/flashes' -%>
+        <%= yield %>
+    </div>
+    <div id="main-bottom">
+    </div>
+    <div id="schedule">
+    </div>
+    <div id="main-continue-top">
+    </div>
+    <div id="main-continue">
+    </div>
+    <footer>
+
+    </footer>
+    <%= render :partial => 'shared/javascript' %>
   </div>
-  <%= render :partial => 'shared/flashes' -%>
-  <%= yield %>
-  <%= render :partial => 'shared/javascript' %>
 </body>
 </html>

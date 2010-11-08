@@ -255,3 +255,58 @@ header p {
 
 .startups {
   padding-bottom: 80px; }
+
+/************************************************************************/
+/************************************************************************/
+html, body {
+  background: url(/stylesheets/images/wood_bg.jpg);
+  background-position: 50% 0;
+  height: 100%;
+  width: 100%; }
+
+#container {
+  margin: 0 auto;
+  width: 900px; }
+  #container header {
+    background: url(/stylesheets/images/paper-top.png) no-repeat, url(/stylesheets/images/paper-tile.png) repeat-y;
+    padding: 0 60px; }
+    #container header div#benefactors {
+      padding-top: 30px; }
+      #container header div#benefactors div#logo-left {
+        float: left; }
+      #container header div#benefactors div#banner {
+        float: left;
+        margin: 0 94px; }
+      #container header div#benefactors div#logo-right {
+        float: right; }
+    #container header div#dddd-logo {
+      padding: 35px 0; }
+  #container div#main {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 20px 50px; }
+  #container div#main-bottom {
+    background: url(/stylesheets/images/paper-rip-top.png);
+    height: 75px;
+    position: relative;
+    z-index: 10; }
+  #container div#schedule {
+    background: url(/stylesheets/images/wood-wear-overlay.png);
+    height: 600px;
+    position: relative;
+    z-index: 0; }
+  #container div#main-continue-top {
+    background: url(/stylesheets/images/paper-rip-bottom.png);
+    height: 75px;
+    position: relative;
+    z-index: 10; }
+  #container div#main-continue {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 20px 50px;
+    min-height: 500px; }
+
+hr.top {
+  background: #3a3429;
+  background: url(/stylesheets/images/horizontal-rule.png) no-repeat;
+  height: 12px;
+  margin: 0px;
+  width: 100%; }

@@ -215,3 +215,82 @@ header p {
 .startups {
   padding-bottom: 80px;
 }
+
+/************************************************************************/
+// Start of New Design
+/************************************************************************/
+html, body {
+  background: url(/stylesheets/images/wood_bg.jpg);
+  background-position: 50% 0;
+  height: 100%;
+  width: 100%;
+  }
+#container {
+  margin: 0 auto;
+  width: 900px;
+  header {
+    background: url(/stylesheets/images/paper-top.png) no-repeat, url(/stylesheets/images/paper-tile.png) repeat-y;
+    padding: 0 60px;
+    div#benefactors {
+      padding-top: 30px;
+      div#logo-left {
+        float: left;
+      }
+      div#banner {
+        float: left;
+        margin: 0 94px;
+      }
+      div#logo-right {
+        float: right;
+      }
+    }
+    div#dddd-logo {
+      padding: 35px 0;
+    }
+  }
+  div#main {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 20px 50px;
+  }
+  div#main-bottom {
+    background: url(/stylesheets/images/paper-rip-top.png);
+    height: 75px;
+    position: relative;
+    z-index: 10;
+  }
+  div#schedule {
+    background: url(/stylesheets/images/wood-wear-overlay.png);
+    height: 600px;
+    position: relative;
+    z-index: 0;
+  }
+  div#main-continue-top {
+    background: url(/stylesheets/images/paper-rip-bottom.png);
+    height: 75px;
+    position: relative;
+    z-index: 10;
+  }
+  div#main-continue {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 20px 50px;
+    min-height: 500px;
+  }
+}
+
+hr.top {
+    background: #3a3429;
+    background: url(/stylesheets/images/horizontal-rule.png) no-repeat;
+    height: 12px;
+    margin: 0px;
+    width: 100%;
+   }
+
+
+
+
+
+
+
+
+
+
