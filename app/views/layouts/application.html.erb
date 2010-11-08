@@ -3,7 +3,9 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <title>dddd</title>
-  <%= stylesheet_link_tag :flutie, 'screen', :media => 'all', :cache => true %>
+  <%= stylesheet_link_tag :flutie, 'screen', :media => 'all', :cache => true, :recursive => true %>
+  <link href='http://fonts.googleapis.com/css?family=IM+Fell+English:regular,italic&subset=latin' rel='stylesheet' type='text/css'>
+  <link href='/stylesheets/font-face/league-gothic/stylesheet.css' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "jquery", "jquery-ui", "prefilled_input", "rails", "application", :cache => true %>
   <%= csrf_meta_tag %>
 </head>
@@ -28,15 +30,37 @@
       </div>
     </header>
 
+    <div id="free-event">
+      <img src="/images/free-event.png" alt="free-event" width="900" height="80" />
+    </div>
+
     <!-- Start of main content -->
     <div id="main">
-      <% if signed_in? -%>
-        <%= link_to "Sign out", sign_out_path, :method => :delete %>
-      <% else -%>
-        <%= link_to "Sign in", sign_in_path %>
-      <% end -%>
-      <%= render :partial => 'shared/flashes' -%>
-        <%= yield %>
+      <div id="descriptions" class="clearfix">
+        <div id="developers">
+          <h2>Developers</h2>
+          <p>Sed varius fermentum mauris, sed varius elit sagittis a. Integer ligula leo, condimentum a sodales at, lacinia vel nisi. Quisque lacus sapien, aliquet ac euismod sit amet, viverra ac quam. Morbi luctus gravida bibendum. Ut vitae mauris ligula, in ullamcorper eros. </p>
+        </div>
+        <div id="divider">
+          <img src="/images/description-divider.png" alt="description-divider" width="48" height="174" />
+        </div>
+        <div id="designers">
+          <h2>Designers</h2>
+          <p>In quis nisi eros. Donec sed egestas mi. Vivamus lectus neque, lacinia dignissim venenatis a, convallis id lacus. Nulla eu tellus risus. Donec laoreet, risus sed tincidunt volutpat, velit velit scelerisque quam, eget ornare metus mauris non velit.</p>
+        </div>
+      </div>
+      <hr class="bottom"/>
+      <div id="event-location">
+        <div id="compass">
+          <img src="/images/compass.png" alt="compass" width="211" height="181" />
+        </div>
+        <div id="location">
+          <p>One Memorial Drive, Cambridge, MA</p>
+          <p class="venue">Microsoft NERD Center</p>
+          <p class="date">11am - 3pm, february 5th, 2011</p>
+        </div>
+      </div>
+      <hr class="top"/>
     </div>
     <div id="main-bottom">
     </div>

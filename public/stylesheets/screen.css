@@ -267,11 +267,13 @@ html, body {
 #container {
   margin: 0 auto;
   width: 900px; }
+  #container img {
+    margin: 0px; }
   #container header {
     background: url(/stylesheets/images/paper-top.png) no-repeat, url(/stylesheets/images/paper-tile.png) repeat-y;
     padding: 0 60px; }
     #container header div#benefactors {
-      padding-top: 30px; }
+      padding: 30px 0 20px; }
       #container header div#benefactors div#logo-left {
         float: left; }
       #container header div#benefactors div#banner {
@@ -280,10 +282,57 @@ html, body {
       #container header div#benefactors div#logo-right {
         float: right; }
     #container header div#dddd-logo {
-      padding: 35px 0; }
+      padding: 30px 0; }
+  #container div#free-event {
+    height: 80px; }
   #container div#main {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 20px 50px; }
+    #container div#main h1, #container div#main h2, #container div#main h3, #container div#main h4, #container div#main h5, #container div#main p {
+      color: #332F26;
+      font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+    #container div#main div#descriptions {
+      margin-bottom: 30px; }
+      #container div#main div#descriptions div#developers, #container div#main div#descriptions div#designers {
+        float: left;
+        text-align: center;
+        padding: 15px 25px;
+        width: 325px; }
+        #container div#main div#descriptions div#developers h2, #container div#main div#descriptions div#designers h2 {
+          font-size: 19px;
+          font-weight: normal;
+          letter-spacing: 4px;
+          text-transform: uppercase; }
+        #container div#main div#descriptions div#developers p, #container div#main div#descriptions div#designers p {
+          font-size: 14px;
+          line-height: 1.4em; }
+      #container div#main div#descriptions div#divider {
+        float: left; }
+    #container div#main div#event-location div#compass {
+      display: inline-block;
+      margin: 30px; }
+    #container div#main div#event-location div#location {
+      padding: 55px 100px 55px 70px;
+      display: inline-block;
+      vertical-align: top; }
+      #container div#main div#event-location div#location p {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 13px; }
+      #container div#main div#event-location div#location p.venue {
+        font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+        font-size: 32px;
+        color: #990000;
+        border-bottom: 1px solid #5F5645;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
+        padding-bottom: 13px; }
+      #container div#main div#event-location div#location p.date {
+        font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+        font-size: 37px;
+        letter-spacing: -0.05em;
+        line-height: 1em;
+        padding-top: 10px; }
   #container div#main-bottom {
     background: url(/stylesheets/images/paper-rip-top.png);
     height: 75px;
@@ -304,9 +353,12 @@ html, body {
     padding: 20px 50px;
     min-height: 500px; }
 
-hr.top {
+hr {
   background: #3a3429;
-  background: url(/stylesheets/images/horizontal-rule.png) no-repeat;
   height: 12px;
   margin: 0px;
   width: 100%; }
+  hr.top {
+    background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
+  hr.bottom {
+    background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
