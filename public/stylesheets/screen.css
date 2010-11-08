@@ -258,11 +258,16 @@ header p {
 
 /************************************************************************/
 /************************************************************************/
+/************************************************************************/
+/************************************************************************/
 html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
   background-position: 50% 0;
   height: 100%;
   width: 100%; }
+  html h1, html h2, html h3, html h4, html h5, html p, body h1, body h2, body h3, body h4, body h5, body p {
+    color: #332F26;
+    font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
 
 #container {
   margin: 0 auto;
@@ -271,6 +276,7 @@ html, body {
     margin: 0px; }
   #container header {
     background: url(/stylesheets/images/paper-top.png) no-repeat, url(/stylesheets/images/paper-tile.png) repeat-y;
+    display: block;
     padding: 0 60px; }
     #container header div#benefactors {
       padding: 30px 0 20px; }
@@ -287,17 +293,14 @@ html, body {
     height: 80px; }
   #container div#main {
     background: url(/stylesheets/images/paper-tile.png);
-    padding: 20px 50px; }
-    #container div#main h1, #container div#main h2, #container div#main h3, #container div#main h4, #container div#main h5, #container div#main p {
-      color: #332F26;
-      font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+    padding: 20px 60px 0px; }
     #container div#main div#descriptions {
       margin-bottom: 30px; }
       #container div#main div#descriptions div#developers, #container div#main div#descriptions div#designers {
         float: left;
         text-align: center;
         padding: 15px 25px;
-        width: 325px; }
+        width: 315px; }
         #container div#main div#descriptions div#developers h2, #container div#main div#descriptions div#designers h2 {
           font-size: 19px;
           font-weight: normal;
@@ -350,8 +353,52 @@ html, body {
     z-index: 10; }
   #container div#main-continue {
     background: url(/stylesheets/images/paper-tile.png);
-    padding: 20px 50px;
+    padding: 0px 50px 20px;
     min-height: 500px; }
+  #container div.register-button div.hand {
+    background: url(/stylesheets/images/download-hand.png) 0 0;
+    height: 51px;
+    width: 105px; }
+    #container div.register-button div.hand.left {
+      float: left;
+      margin: 40px 50px 0px 80px; }
+    #container div.register-button div.hand.right {
+      float: right;
+      margin: 40px 80px 0px 50px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH"; }
+  #container div.register-button:hover div.hand {
+    background: url(/stylesheets/images/download-hand.png) 0 99%;
+    height: 51px;
+    width: 105px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-in-out; }
+  #container div.register-button h2, #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
+    color: #3a3429;
+    float: left;
+    font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+    font-size: 68px;
+    font-weight: normal;
+    line-height: 1.0em;
+    margin-bottom: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-in-out; }
+    #container div.register-button h2:hover, #container div.register-button h2 a:link:hover, #container div.register-button h2 a:visited:hover, #container div.register-button h2 a:active:hover {
+      color: #463B2B;
+      text-shadow: rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.5) 0px -3px 6px;
+      top: 3px; }
 
 hr {
   background: #3a3429;
