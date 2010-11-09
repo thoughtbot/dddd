@@ -343,9 +343,39 @@ html, body {
     z-index: 10; }
   #container div#schedule {
     background: url(/stylesheets/images/wood-wear-overlay.png);
-    height: 600px;
+    padding: 30px 60px 0;
     position: relative;
     z-index: 0; }
+    #container div#schedule h1 {
+      color: rgba(0, 0, 0, 0.8);
+      font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+      font-size: 120px;
+      margin-bottom: 0px;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
+      text-transform: uppercase; }
+    #container div#schedule ol#schedule {
+      display: block;
+      margin: 0px 0px 0px 260px;
+      list-style: none; }
+      #container div#schedule ol#schedule li, #container div#schedule ol#schedule li p, #container div#schedule ol#schedule li a:link, #container div#schedule ol#schedule li a:visited, #container div#schedule ol#schedule li a:active {
+        color: white;
+        font-size: 17px; }
+        #container div#schedule ol#schedule li p.time, #container div#schedule ol#schedule li p p.time, #container div#schedule ol#schedule li a:link p.time, #container div#schedule ol#schedule li a:visited p.time, #container div#schedule ol#schedule li a:active p.time {
+          display: inline-block;
+          font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+          font-size: 24px;
+          line-height: 0.8em;
+          margin-right: 20px;
+          text-align: right;
+          width: 60px; }
+        #container div#schedule ol#schedule li p.title, #container div#schedule ol#schedule li p p.title, #container div#schedule ol#schedule li a:link p.title, #container div#schedule ol#schedule li a:visited p.title, #container div#schedule ol#schedule li a:active p.title {
+          width: 80%;
+          display: inline-block; }
+          #container div#schedule ol#schedule li p.title a:link, #container div#schedule ol#schedule li p.title a:visited, #container div#schedule ol#schedule li p.title a:active, #container div#schedule ol#schedule li p p.title a:link, #container div#schedule ol#schedule li p p.title a:visited, #container div#schedule ol#schedule li p p.title a:active, #container div#schedule ol#schedule li a:link p.title a:link, #container div#schedule ol#schedule li a:link p.title a:visited, #container div#schedule ol#schedule li a:link p.title a:active, #container div#schedule ol#schedule li a:visited p.title a:link, #container div#schedule ol#schedule li a:visited p.title a:visited, #container div#schedule ol#schedule li a:visited p.title a:active, #container div#schedule ol#schedule li a:active p.title a:link, #container div#schedule ol#schedule li a:active p.title a:visited, #container div#schedule ol#schedule li a:active p.title a:active {
+            text-decoration: none; }
+          #container div#schedule ol#schedule li p.title a:hover, #container div#schedule ol#schedule li p p.title a:hover, #container div#schedule ol#schedule li a:link p.title a:hover, #container div#schedule ol#schedule li a:visited p.title a:hover, #container div#schedule ol#schedule li a:active p.title a:hover {
+            color: #ff4e51; }
   #container div#main-continue-top {
     background: url(/stylesheets/images/paper-rip-bottom.png);
     height: 75px;
@@ -375,10 +405,10 @@ html, body {
     background: url(/stylesheets/images/download-hand.png) 0 99%;
     height: 51px;
     width: 105px;
-    -webkit-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-in-out; }
+    transition: all 0.15s ease-out; }
   #container div.register-button h2, #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
     color: #3a3429;
     float: left;
@@ -391,10 +421,10 @@ html, body {
     text-align: center;
     text-decoration: none;
     text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
-    -webkit-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-in-out; }
+    transition: all 0.15s ease-out; }
     #container div.register-button h2:hover, #container div.register-button h2 a:link:hover, #container div.register-button h2 a:visited:hover, #container div.register-button h2 a:active:hover {
       color: #463B2B;
       text-shadow: rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.5) 0px -3px 6px;
@@ -409,3 +439,7 @@ hr {
     background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
   hr.bottom {
     background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
+
+@-moz-document url-prefix() {
+  div#container div#main div#event-location div#location p.date {
+    letter-spacing: -0.024em; } }
