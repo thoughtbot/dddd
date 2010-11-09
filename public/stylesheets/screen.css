@@ -265,7 +265,11 @@ html, body {
   background-position: 50% 0;
   height: 100%;
   width: 100%; }
-  html h1, html h2, html h3, html h4, html h5, html p, body h1, body h2, body h3, body h4, body h5, body p {
+  html h1, body h1 {
+    color: #332F26;
+    font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+    font-size: 120px; }
+  html h2, html h3, html h4, html h5, html p, body h2, body h3, body h4, body h5, body p {
     color: #332F26;
     font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
 
@@ -348,7 +352,6 @@ html, body {
     z-index: 0; }
     #container div#schedule h1 {
       color: rgba(0, 0, 0, 0.8);
-      font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
       font-size: 120px;
       margin-bottom: 0px;
       text-align: center;
@@ -356,26 +359,31 @@ html, body {
       text-transform: uppercase; }
     #container div#schedule ol#schedule {
       display: block;
-      margin: 0px 0px 0px 260px;
-      list-style: none; }
-      #container div#schedule ol#schedule li, #container div#schedule ol#schedule li p, #container div#schedule ol#schedule li a:link, #container div#schedule ol#schedule li a:visited, #container div#schedule ol#schedule li a:active {
-        color: white;
-        font-size: 17px; }
-        #container div#schedule ol#schedule li p.time, #container div#schedule ol#schedule li p p.time, #container div#schedule ol#schedule li a:link p.time, #container div#schedule ol#schedule li a:visited p.time, #container div#schedule ol#schedule li a:active p.time {
-          display: inline-block;
-          font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      margin: 0px 0px 0px 220px;
+      list-style: none;
+      padding-bottom: 30px; }
+      #container div#schedule ol#schedule li {
+        margin: 25px 0; }
+        #container div#schedule ol#schedule li p {
+          color: white;
           font-size: 24px;
-          line-height: 0.8em;
-          margin-right: 20px;
-          text-align: right;
-          width: 60px; }
-        #container div#schedule ol#schedule li p.title, #container div#schedule ol#schedule li p p.title, #container div#schedule ol#schedule li a:link p.title, #container div#schedule ol#schedule li a:visited p.title, #container div#schedule ol#schedule li a:active p.title {
-          width: 80%;
-          display: inline-block; }
-          #container div#schedule ol#schedule li p.title a:link, #container div#schedule ol#schedule li p.title a:visited, #container div#schedule ol#schedule li p.title a:active, #container div#schedule ol#schedule li p p.title a:link, #container div#schedule ol#schedule li p p.title a:visited, #container div#schedule ol#schedule li p p.title a:active, #container div#schedule ol#schedule li a:link p.title a:link, #container div#schedule ol#schedule li a:link p.title a:visited, #container div#schedule ol#schedule li a:link p.title a:active, #container div#schedule ol#schedule li a:visited p.title a:link, #container div#schedule ol#schedule li a:visited p.title a:visited, #container div#schedule ol#schedule li a:visited p.title a:active, #container div#schedule ol#schedule li a:active p.title a:link, #container div#schedule ol#schedule li a:active p.title a:visited, #container div#schedule ol#schedule li a:active p.title a:active {
-            text-decoration: none; }
-          #container div#schedule ol#schedule li p.title a:hover, #container div#schedule ol#schedule li p p.title a:hover, #container div#schedule ol#schedule li a:link p.title a:hover, #container div#schedule ol#schedule li a:visited p.title a:hover, #container div#schedule ol#schedule li a:active p.title a:hover {
-            color: #ff4e51; }
+          vertical-align: top; }
+          #container div#schedule ol#schedule li p.event-time {
+            display: inline-block;
+            font-family: 'Lobster', arial, serif;
+            letter-spacing: 1px;
+            line-height: 33px;
+            margin: 0 30px 0 0;
+            text-align: right;
+            width: 80px; }
+          #container div#schedule ol#schedule li p.event-title {
+            display: inline-block;
+            width: 80%; }
+            #container div#schedule ol#schedule li p.event-title a:link, #container div#schedule ol#schedule li p.event-title a:visited, #container div#schedule ol#schedule li p.event-title a:active {
+              color: white;
+              text-decoration: none; }
+            #container div#schedule ol#schedule li p.event-title a:hover {
+              color: #ff4e51; }
   #container div#main-continue-top {
     background: url(/stylesheets/images/paper-rip-bottom.png);
     height: 75px;
@@ -383,15 +391,64 @@ html, body {
     z-index: 10; }
   #container div#main-continue {
     background: url(/stylesheets/images/paper-tile.png);
-    padding: 0px 50px 20px;
+    padding: 0px 60px 20px;
     min-height: 500px; }
+    #container div#main-continue div#after-party {
+      text-align: center;
+      margin: 30px 0; }
+      #container div#main-continue div#after-party p {
+        font-size: 18px; }
+    #container div#main-continue div#registration {
+      margin: 30px 0; }
+      #container div#main-continue div#registration form#event-registration ol {
+        /*display: inline-block; */
+        vertical-align: top; }
+        #container div#main-continue div#registration form#event-registration ol.left {
+          width: 340px; }
+        #container div#main-continue div#registration form#event-registration ol.right {
+          width: 430px; }
+      #container div#main-continue div#registration form#event-registration li input, #container div#main-continue div#registration form#event-registration li textarea {
+        background: #b4a282;
+        border: 1px solid #7e6749;
+        font-size: 17px;
+        padding: 10px;
+        font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+      #container div#main-continue div#registration form#event-registration li textarea {
+        width: 398px;
+        height: 100px;
+        margin: 0;
+        resize: none; }
+      #container div#main-continue div#registration form#event-registration li#checkbox {
+        display: inline-block; }
+        #container div#main-continue div#registration form#event-registration li#checkbox p.checkbox {
+          display: inline-block;
+          font-size: 32px;
+          margin-right: 15px;
+          text-transform: uppercase;
+          vertical-align: baseline; }
+          #container div#main-continue div#registration form#event-registration li#checkbox p.checkbox input[type="checkbox"] {
+            margin-right: 6px; }
+          #container div#main-continue div#registration form#event-registration li#checkbox p.checkbox.developer {
+            font-family: 'Nashville', Times, "Times New Roman", Georgia, serif; }
+          #container div#main-continue div#registration form#event-registration li#checkbox p.checkbox.designer {
+            font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+            vertical-align: bottom;
+            height: 49px;
+            font-size: 34px; }
+      #container div#main-continue div#registration form#event-registration li#submit-button {
+        display: inline-block;
+        text-align: right;
+        margin-top: 20px; }
+        #container div#main-continue div#registration form#event-registration li#submit-button input#submit {
+          width: 420px; }
+      #container div#main-continue div#registration form#event-registration li#tweet {
+        float: right; }
   #container div.register-button div.hand {
     background: url(/stylesheets/images/download-hand.png) 0 0;
     height: 51px;
     width: 105px; }
     #container div.register-button div.hand.left {
-      float: left;
-      margin: 40px 50px 0px 80px; }
+      float: left; }
     #container div.register-button div.hand.right {
       float: right;
       margin: 40px 80px 0px 50px;
@@ -401,6 +458,10 @@ html, body {
       transform: scaleX(-1);
       filter: FlipH;
       -ms-filter: "FlipH"; }
+  #container div.register-button.top div.hand.left {
+    margin: 40px 50px 0px 80px; }
+  #container div.register-button.top div.hand.right {
+    margin: 40px 80px 0px 50px; }
   #container div.register-button:hover div.hand {
     background: url(/stylesheets/images/download-hand.png) 0 99%;
     height: 51px;
@@ -429,6 +490,12 @@ html, body {
       color: #463B2B;
       text-shadow: rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.5) 0px -3px 6px;
       top: 3px; }
+  #container div.register-button.bottom h2 {
+    margin-top: 0px; }
+  #container div.register-button.bottom div.hand.left {
+    margin: 10px 50px 40px 80px; }
+  #container div.register-button.bottom div.hand.right {
+    margin: 10px 80px 40px 50px; }
 
 hr {
   background: #3a3429;
@@ -440,6 +507,8 @@ hr {
   hr.bottom {
     background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
 
+/************************************************************************/
+/************************************************************************/
 @-moz-document url-prefix() {
   div#container div#main div#event-location div#location p.date {
     letter-spacing: -0.024em; } }

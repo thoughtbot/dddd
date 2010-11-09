@@ -8,6 +8,7 @@
   <link href='/stylesheets/font-face/league-gothic/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/nashville/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/carnival/stylesheet.css' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "jquery", "jquery-ui", "prefilled_input", "rails", "application", :cache => true %>
   <%= csrf_meta_tag %>
 </head>
@@ -63,7 +64,7 @@
         </div>
       </div>
       <hr class="top"/>
-      <div class="register-button clearfix">
+      <div class="register-button top clearfix">
         <div class="hand left"></div>
         <h2><a href="#">register now</a></h2>
         <div class="hand right"></div>
@@ -74,29 +75,60 @@
     <div id="schedule">
       <h1>Schedule</h1>
       <ol id="schedule">
-        <li><p class="time">11:00am</p><p class="title"><a href="#">Join us for brunch</a></p></li>
-        <li><p class="time">12:00pm</p><p class="title"><a href="#">Why Work at a Startup?</a></p></li>
-        <li><p class="time">12:10pm</p><p class="title"><a href="#">A Day in the Life of a Designer</a></p></li>
-        <li><p class="time">12:20pm</p><p class="title"><a href="#">A Day in the Life of a Developer</a></p></li>
-        <li><p class="time">12:30pm</p><p class="title"><a href="#">Photoshop & Illustrator</a></p></li>
-        <li><p class="time">12:40pm</p><p class="title"><a href="#">Unix & Vim</a></p></li>
-        <li><p class="time">12:50pm</p><p class="title"><a href="#">Git</a></p></li>
-        <li><p class="time">1:00pm</p><p class="title"><a href="#">HTML5 & CSS3</a></p></li>
-        <li><p class="time">1:10pm</p><p class="title"><a href="#">jQuery</a></p></li>
-        <li><p class="time">1:20pm</p><p class="title"><a href="#">jQuery Mobile</a></p></li>
-        <li><p class="time">1:30pm</p><p class="title"><a href="#">Ruby on Rails</a></p></li>
-        <li><p class="time">1:40pm</p><p class="title"><a href="#">SQL</a></p></li>
-        <li><p class="time">1:50pm</p><p class="title"><a href="#">Release It</a></p></li>
-        <li><p class="time">2:00pm</p><p class="title"><a href="#">Startup Tables</a></p></li>
+        <li><p class="event-time">11:00am</p><p class="event-title"><a href="#">Join us for brunch</a></p></li>
+        <li><p class="event-time">12:00pm</p><p class="event-title"><a href="#">Why Work at a Startup?</a></p></li>
+        <li><p class="event-time">12:10pm</p><p class="event-title"><a href="#">A Day in the Life of a Designer</a></p></li>
+        <li><p class="event-time">12:20pm</p><p class="event-title"><a href="#">A Day in the Life of a Developer</a></p></li>
+        <li><p class="event-time">12:30pm</p><p class="event-title"><a href="#">Photoshop & Illustrator</a></p></li>
+        <li><p class="event-time">12:40pm</p><p class="event-title"><a href="#">Unix & Vim</a></p></li>
+        <li><p class="event-time">12:50pm</p><p class="event-title"><a href="#">Git</a></p></li>
+        <li><p class="event-time">1:00pm</p><p class="event-title"><a href="#">HTML5 & CSS3</a></p></li>
+        <li><p class="event-time">1:10pm</p><p class="event-title"><a href="#">jQuery</a></p></li>
+        <li><p class="event-time">1:20pm</p><p class="event-title"><a href="#">jQuery Mobile</a></p></li>
+        <li><p class="event-time">1:30pm</p><p class="event-title"><a href="#">Ruby on Rails</a></p></li>
+        <li><p class="event-time">1:40pm</p><p class="event-title"><a href="#">SQL</a></p></li>
+        <li><p class="event-time">1:50pm</p><p class="event-title"><a href="#">Release It</a></p></li>
+        <li><p class="event-time">2:00pm</p><p class="event-title"><a href="#">Startup Tables</a></p></li>
       </ol>
     </div>
     <div id="main-continue-top">
     </div>
     <div id="main-continue">
-      <div class="register-button clearfix">
+      <div class="register-button bottom clearfix">
         <div class="hand left"></div>
         <h2><a href="#">register now</a></h2>
         <div class="hand right"></div>
+      </div>
+      <hr class="top"/>
+      <div id="after-party">
+        <h1>After Party!</h1>
+        <p>Details Coming Soon</p>
+      </div>
+      <hr class="bottom"/>
+      <div id="registration">
+        <h2>Registration</h2>
+        <form id="event-registration" name="Event Registration" action="submit" method="post">
+          <ol class="left">
+            <li>
+              <p><label for="twitter-username">Username</label><input type="text" name="twitter-username" id="twitter-username" value="Croaky" disabled /></p>
+            </li>
+            <li>
+              <p><label for="first">Full Name</label><input type="text" name="full-name" id="full-name" /></p>
+            </li>
+            <li>
+              <p><label for="first">University</label><input type="text" name="university-name" id="university-name" /></p>
+            </li>
+            <li id="checkbox">
+              <p>Weapon of choice:</p>
+              <p class="checkbox developer"><input type="checkbox" name="checkbox" id="checkbox" value="checked">Developer</p>
+              <p class="checkbox designer"><input type="checkbox" name="checkbox" id="checkbox" value="checked">Designer</p>
+            </li>
+            <li>
+              <p><label for="textarea">Textarea:</label></p><textarea name="textarea" id="textarea" rows="5" cols="30">Text</textarea>
+            </li>
+            <li id="submit-button"><p><label for="textarea"> </label><input type="submit" name="submit" value="submit" id="submit"/></p></li>
+        	</ol>
+        </form>
       </div>
     </div>
     <footer>

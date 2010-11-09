@@ -224,6 +224,24 @@ header p {
   -o-transition: all $ratio ease-out;
   transition: all $ratio ease-out;
 }
+@mixin font-Nashville {
+  font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-Carnival {
+  font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-LeagueGothic {
+  font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+@mixin font-Fell {
+  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-Lobster {
+  font-family: 'Lobster', arial, serif;
+}
+@mixin font-FellSC {
+  font-family: 'IM Fell DW Pica SC', arial, serif;
+}
 
 /************************************************************************/
 // Start of New Design
@@ -233,9 +251,14 @@ html, body {
   background-position: 50% 0;
   height: 100%;
   width: 100%;
-  h1, h2, h3, h4, h5, p {
+  h1 {
     color: #332F26;
-    font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+    @include font-Nashville;
+    font-size: 120px;
+  }
+  h2, h3, h4, h5, p {
+    color: #332F26;
+    @include font-Fell;
   }
 }
 #container {
@@ -305,7 +328,7 @@ html, body {
           padding-bottom: 13px;
         }
         p.venue {
-          font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+          @include font-Nashville;
           font-size: 32px;
           color: #990000;
           border-bottom: 1px solid #5F5645;
@@ -313,7 +336,7 @@ html, body {
           padding-bottom: 13px;
         }
         p.date {
-          font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+          @include font-LeagueGothic;
           font-size: 37px;
           letter-spacing: -0.05em;
           line-height: 1em;
@@ -335,7 +358,6 @@ html, body {
     z-index: 0;
     h1 {
       color: rgba(0, 0, 0, 0.8);
-      font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
       font-size: 120px;
       margin-bottom: 0px;
       text-align: center;
@@ -344,27 +366,33 @@ html, body {
     }
     ol#schedule {
       display: block;
-      margin: 0px 0px 0px 260px;
+      margin: 0px 0px 0px 220px;
       list-style: none;
-      li, li p, li a:link, li a:visited, li a:active {
-        color: white;
-        font-size: 17px;
-        p.time {
-          display: inline-block;
-          font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      padding-bottom: 30px;
+      li {
+        margin: 25px 0;
+        p {
+          color: white;
           font-size: 24px;
-          line-height: 0.8em;
-          margin-right: 20px;
-          text-align: right;
-          width: 60px;
-        }
-        p.title {
-          width: 80%;
-          display: inline-block;
-          a:link, a:visited, a:active {
-            text-decoration: none;
+          vertical-align: top;
+          &.event-time {
+            display: inline-block;
+            @include font-Lobster;
+            letter-spacing: 1px;
+            line-height: 33px;
+            margin: 0 30px 0 0;
+            text-align: right;
+            width: 80px;
           }
-          a:hover { color: #ff4e51; }
+          &.event-title {
+            display: inline-block;
+            width: 80%;
+            a:link, a:visited, a:active {
+              color: white;
+              text-decoration: none;
+            }
+            a:hover { color: #ff4e51; }
+          }
         }
       }
     }
@@ -377,9 +405,79 @@ html, body {
   }
   div#main-continue {
     background: url(/stylesheets/images/paper-tile.png);
-    padding: 0px 50px 20px;
+    padding: 0px 60px 20px;
     min-height: 500px;
+    div#after-party {
+      text-align: center;
+      margin: 30px 0;
+      p { font-size: 18px; }
+    }
+    div#registration {
+      margin: 30px 0;
+      form#event-registration {
+      ol {
+        /*display: inline-block; */
+        vertical-align: top;
+        &.left {
+          width: 340px;
+        }
+        &.right {
+          width: 430px;
+        }
+      }
+        li {
+          input, textarea {
+            background: #b4a282;
+            border: 1px solid #7e6749;
+            font-size: 17px;
+            padding: 10px;
+            @include font-Fell;
+          }
+          textarea {
+            width: 398px;
+            height: 100px;
+            margin: 0;
+            resize: none;
+          }
+          &#checkbox {
+            display: inline-block;
+            p.checkbox {
+              display: inline-block;
+              font-size: 32px;
+              margin-right: 15px;
+              text-transform: uppercase;
+              vertical-align: baseline;
+              input[type="checkbox"] {
+                margin-right: 6px;
+              }
+              &.developer {
+                @include font-Nashville;
+              }
+              &.designer {
+                @include font-Carnival;
+                vertical-align: bottom;
+                height: 49px;
+                font-size: 34px;
+              }
+            }
+          }
+          &#submit-button {
+            display: inline-block;
+            text-align: right;
+            margin-top: 20px;
+            input#submit {
+              width: 420px;
+            }
+          }
+          &#tweet{
+            float: right;
+          }
+        }
+      }
+    }
   }
+
+
   div.register-button {
     div.hand {
       background: url(/stylesheets/images/download-hand.png) 0 0;
@@ -387,7 +485,6 @@ html, body {
       width: 105px;
       &.left {
         float: left;
-        margin: 40px 50px 0px 80px;
       }
       &.right {
         float: right;
@@ -400,6 +497,10 @@ html, body {
         -ms-filter: "FlipH";
       }
     }
+    &.top div.hand {
+      &.left { margin: 40px 50px 0px 80px; }
+      &.right { margin: 40px 80px 0px 50px; }
+    }
     &:hover {
       div.hand {
         background: url(/stylesheets/images/download-hand.png) 0 99%;
@@ -411,7 +512,7 @@ html, body {
     h2, h2 a:link, h2 a:visited, h2 a:active {
     color: #3a3429;
     float: left;
-    font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+    @include font-Carnival;
     font-size: 68px;
     font-weight: normal;
     line-height: 1.0em;
@@ -427,6 +528,13 @@ html, body {
       top: 3px;
      }
     }
+    &.bottom {
+      h2 { margin-top: 0px; }
+      div.hand {
+        &.left { margin: 10px 50px 40px 80px; }
+        &.right { margin: 10px 80px 40px 50px; }
+      }
+    }
   }
 }
 
@@ -438,14 +546,13 @@ hr {
     &.top { background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
     &.bottom { background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
    }
+
+/************************************************************************/
+// Browser Specific Fixes
+/************************************************************************/
+
 @-moz-document url-prefix() {
   div#container div#main div#event-location div#location p.date {
     letter-spacing: -0.024em;
   }
 }
-
-
-
-
-
-
