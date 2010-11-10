@@ -10,22 +10,24 @@
   <link href='/stylesheets/font-face/nashville/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/carnival/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
-  <%= javascript_include_tag "jquery", "jquery-ui", "prefilled_input", "rails", "application", :cache => true %>
   <%= csrf_meta_tag %>
 </head>
 <body class="<%= body_class %>">
   <div id="container">
-
     <header>
       <div id="benefactors" class="clearfix">
         <div id="logo-left">
-          <img src="/images/greenhorn-logo.png" alt="greenhorn-logo" width="139" height="72" />
+          <%= link_to "http://greenhornconnect.com" do %>
+            <img src="/images/greenhorn-logo.png" alt="greenhorn-logo" width="139" height="72" />
+          <% end %>
         </div>
         <div id="banner">
           <img src="/images/greenhorn_thoughtbot_banner.png" alt="greenhorn_thoughtbot_banner" width="326" height="72" />
         </div>
         <div id="logo-right">
-          <img src="/images/thoughtbot-logo.png" alt="thoughtbot-logo" width="77" height="72" />
+          <%= link_to "http://thoughtbot.com" do %>
+            <img src="/images/thoughtbot-logo.png" alt="thoughtbot-logo" width="77" height="72" />
+          <% end %>
         </div>
       </div>
       <hr class="top" />
@@ -67,7 +69,7 @@
       <hr class="top"/>
       <div class="register-button top clearfix">
         <div class="hand left"></div>
-        <h2><a href="#">register now</a></h2>
+        <h2><a href="#register">register now</a></h2>
         <div class="hand right"></div>
       </div>
     </div>
@@ -97,7 +99,7 @@
     <div id="main-continue">
       <div class="register-button bottom clearfix">
         <div class="hand left"></div>
-        <h2><a href="#">register now</a></h2>
+        <h2><a href="#register">register now</a></h2>
         <div class="hand right"></div>
       </div>
       <hr class="bottom"/>
@@ -117,17 +119,18 @@
       </div>
       <hr class="top"/>
       <div id="registration">
+        <a name="register"></a>
         <h2>Registration</h2>
         <form id="event-registration" name="Event Registration" action="submit" method="post">
           <ol class="left">
             <li>
-              <p><label for="twitter-username">Username</label><input type="text" name="twitter-username" id="twitter-username" value="Croaky" disabled /></p>
+              <p><label for="twitter-username">Twitter Name</label><input type="text" name="twitter-username" id="twitter-username" /></p>
             </li>
             <li>
               <p><label for="first">Full Name</label><input type="text" name="full-name" id="full-name" /></p>
             </li>
             <li>
-              <p><label for="first">University</label><input type="text" name="university-name" id="university-name" /></p>
+              <p><label for="first">School</label><input type="text" name="university-name" id="university-name" /></p>
             </li>
             <li id="checkbox">
               <p>Weapon of choice:</p>
@@ -135,10 +138,10 @@
               <p class="checkbox designer"><input type="checkbox" name="checkbox" id="checkbox" value="checked">Designer</p>
             </li>
             <li>
-              <p><label for="textarea">Textarea:</label></p><textarea name="textarea" id="textarea" rows="5" cols="30">Text</textarea>
+              <p><label for="textarea">In 140 characters or less, describe why you're attending:</label></p><textarea name="textarea" id="textarea" rows="5" cols="30"></textarea>
             </li>
             <li id="submit-button"><p><label for="textarea"> </label><input type="submit" name="submit" value="submit" id="submit"/></p></li>
-        	</ol>
+          </ol>
         </form>
       </div>
     </div>
