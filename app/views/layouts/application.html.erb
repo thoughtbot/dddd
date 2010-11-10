@@ -4,7 +4,8 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <title>dddd</title>
   <%= stylesheet_link_tag :flutie, 'screen', :media => 'all', :cache => true, :recursive => true %>
-  <link href='http://fonts.googleapis.com/css?family=IM+Fell+English:regular,italic&subset=latin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=IM+Fell+English&subset=latin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC&subset=latin' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/league-gothic/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/nashville/stylesheet.css' rel='stylesheet' type='text/css'>
   <link href='/stylesheets/font-face/carnival/stylesheet.css' rel='stylesheet' type='text/css'>
@@ -99,12 +100,22 @@
         <h2><a href="#">register now</a></h2>
         <div class="hand right"></div>
       </div>
-      <hr class="top"/>
-      <div id="after-party">
-        <h1>After Party!</h1>
-        <p>Details Coming Soon</p>
-      </div>
       <hr class="bottom"/>
+      <div id="after-party" class="clearfix">
+        <div class="wreath left">
+          <img src="/images/angel-investors.png" alt="angel-investors" width="215" height="200" />
+        </div>
+        <div id="after-party-description">
+          <h1>after party</h1>
+          <h4>drinks on the rich dudes</h4>
+          <h2>Flat Top Jonny's</h2>
+          <h3>One Kendall Square</h3>
+        </div>
+        <div class="wreath right">
+          <img src="/images/venture-capitalists.png" alt="venture-capitalists" width="215" height="200" />
+        </div>
+      </div>
+      <hr class="top"/>
       <div id="registration">
         <h2>Registration</h2>
         <form id="event-registration" name="Event Registration" action="submit" method="post">

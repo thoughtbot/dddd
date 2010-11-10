@@ -233,16 +233,18 @@ header p {
 @mixin font-LeagueGothic {
   font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
 }
+@mixin font-Lobster {
+  font-family: 'Lobster', arial, sans-serif;
+}
 @mixin font-Fell {
   font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
 }
-@mixin font-Lobster {
-  font-family: 'Lobster', arial, serif;
-}
 @mixin font-FellSC {
-  font-family: 'IM Fell DW Pica SC', arial, serif;
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
 }
-
+$brown: #332F26;
+$red: #990000;
+$lt-red: #ff4e51;
 /************************************************************************/
 // Start of New Design
 /************************************************************************/
@@ -252,12 +254,12 @@ html, body {
   height: 100%;
   width: 100%;
   h1 {
-    color: #332F26;
+    color: $brown;
     @include font-Nashville;
     font-size: 120px;
   }
   h2, h3, h4, h5, p {
-    color: #332F26;
+    color: $brown;
     @include font-Fell;
   }
 }
@@ -330,7 +332,7 @@ html, body {
         p.venue {
           @include font-Nashville;
           font-size: 32px;
-          color: #990000;
+          color: $red;
           border-bottom: 1px solid #5F5645;
           -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
           padding-bottom: 13px;
@@ -391,7 +393,7 @@ html, body {
               color: white;
               text-decoration: none;
             }
-            a:hover { color: #ff4e51; }
+            a:hover { color: $lt-red; }
           }
         }
       }
@@ -409,8 +411,53 @@ html, body {
     min-height: 500px;
     div#after-party {
       text-align: center;
-      margin: 30px 0;
-      p { font-size: 18px; }
+      margin: 40px 0;
+      div.wreath {
+        &.left {
+          float: left;
+        }
+        &.right {
+          float: right;
+        }
+      }
+      div#after-party-description {
+        display: inline-block;
+        text-align: center;
+        h1, h2, h3, h4 {
+          font-weight: normal;
+          margin: 0px;
+          @include font-FellSC;
+          letter-spacing: -0.05em;
+          line-height: 1.0em;
+        }
+        h1 {
+          font-size: 42px;
+        }
+        h2 {
+          border-top: 1px solid black;
+          color: $red;
+          font-size: 44px;
+          margin-top: 6px;
+          padding: 10px 10px 2px;
+          position: relative;
+          z-index: 10;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+          -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+          box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+        }
+        h3 {
+          border-top: 1px solid black;
+          font-size: 32px;
+          margin-top: 5px;
+          padding-top: 5px;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+          -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+          box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+        }
+        h4 {
+          font-size: 22px;
+        }
+      }
     }
     div#registration {
       margin: 30px 0;
@@ -545,6 +592,16 @@ hr {
     width: 100%;
     &.top { background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
     &.bottom { background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
+    &.mini {
+      background: #5F5645;
+      bottom: 4px;
+      height: 1px;
+      margin: 0 auto;
+      position: relative;
+      width: 92%;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
+      z-index: 0;
+    }
    }
 
 /************************************************************************/

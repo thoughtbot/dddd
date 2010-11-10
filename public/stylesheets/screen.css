@@ -266,11 +266,11 @@ html, body {
   height: 100%;
   width: 100%; }
   html h1, body h1 {
-    color: #332F26;
+    color: #332f26;
     font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
     font-size: 120px; }
   html h2, html h3, html h4, html h5, html p, body h2, body h3, body h4, body h5, body p {
-    color: #332F26;
+    color: #332f26;
     font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
 
 #container {
@@ -370,7 +370,7 @@ html, body {
           vertical-align: top; }
           #container div#schedule ol#schedule li p.event-time {
             display: inline-block;
-            font-family: 'Lobster', arial, serif;
+            font-family: 'Lobster', arial, sans-serif;
             letter-spacing: 1px;
             line-height: 33px;
             margin: 0 30px 0 0;
@@ -395,9 +395,43 @@ html, body {
     min-height: 500px; }
     #container div#main-continue div#after-party {
       text-align: center;
-      margin: 30px 0; }
-      #container div#main-continue div#after-party p {
-        font-size: 18px; }
+      margin: 40px 0; }
+      #container div#main-continue div#after-party div.wreath.left {
+        float: left; }
+      #container div#main-continue div#after-party div.wreath.right {
+        float: right; }
+      #container div#main-continue div#after-party div#after-party-description {
+        display: inline-block;
+        text-align: center; }
+        #container div#main-continue div#after-party div#after-party-description h1, #container div#main-continue div#after-party div#after-party-description h2, #container div#main-continue div#after-party div#after-party-description h3, #container div#main-continue div#after-party div#after-party-description h4 {
+          font-weight: normal;
+          margin: 0px;
+          font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+          letter-spacing: -0.05em;
+          line-height: 1.0em; }
+        #container div#main-continue div#after-party div#after-party-description h1 {
+          font-size: 42px; }
+        #container div#main-continue div#after-party div#after-party-description h2 {
+          border-top: 1px solid black;
+          color: #990000;
+          font-size: 44px;
+          margin-top: 6px;
+          padding: 10px 10px 2px;
+          position: relative;
+          z-index: 10;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+          -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+          box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+        #container div#main-continue div#after-party div#after-party-description h3 {
+          border-top: 1px solid black;
+          font-size: 32px;
+          margin-top: 5px;
+          padding-top: 5px;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+          -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+          box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+        #container div#main-continue div#after-party div#after-party-description h4 {
+          font-size: 22px; }
     #container div#main-continue div#registration {
       margin: 30px 0; }
       #container div#main-continue div#registration form#event-registration ol {
@@ -506,6 +540,15 @@ hr {
     background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
   hr.bottom {
     background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
+  hr.mini {
+    background: #5F5645;
+    bottom: 4px;
+    height: 1px;
+    margin: 0 auto;
+    position: relative;
+    width: 92%;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
+    z-index: 0; }
 
 /************************************************************************/
 /************************************************************************/
