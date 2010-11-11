@@ -410,19 +410,15 @@ html, body {
     padding: 0px 60px 20px;
     min-height: 500px;
     div#after-party {
-      text-align: center;
       margin: 40px 0;
       div.wreath {
-        &.left {
-          float: left;
-        }
-        &.right {
-          float: right;
-        }
+        display: inline-block;
       }
       div#after-party-description {
         display: inline-block;
+        margin: 5px 15px;
         text-align: center;
+        vertical-align: top;
         h1, h2, h3, h4 {
           font-weight: normal;
           margin: 0px;
@@ -461,70 +457,128 @@ html, body {
     }
     div#registration {
       margin: 30px 0;
+      div#registration-banner {
+        margin-bottom: 10px;
+        position: relative;
+        text-align: center;
+        p#subtitle {
+          font-size: 17px;
+          position: relative;
+          bottom: 20px;
+        }
+      }
       form#event-registration {
       ol {
-        /*display: inline-block; */
+        display: inline-block;
         vertical-align: top;
         &.left {
-          width: 340px;
+          width: 380px;
         }
         &.right {
-          width: 430px;
+          width: 380px;
+          margin-left: 15px;
         }
       }
         li {
+          margin-bottom: 1.8em;
+          label {
+            font-size: 15px;
+            @include font-FellSC;
+            text-transform: lowercase;
+          }
           input, textarea {
-            background: #b4a282;
-            border: 1px solid #7e6749;
+            background: rgb(174, 151, 105);
+            background: -webkit-gradient(
+                        linear,
+                        left bottom,
+                        left top,
+                        color-stop(1, rgba(174, 151, 105, 0.33)),
+                        color-stop(0, rgba(225, 211, 181, 0)));
+            background: -moz-linear-gradient(
+                        top,
+                        rgba(174, 151, 105, 0.33),
+                        rgba(225, 211, 181, 0.0));
+            border: 1px solid #AE9769;
             font-size: 17px;
-            padding: 10px;
             @include font-Fell;
           }
-          textarea {
-            width: 398px;
-            height: 100px;
-            margin: 0;
-            resize: none;
+          input {
+            height: 34px;
+            line-height: 2.0em;
+            width: 370px;
           }
-          &#checkbox {
+          textarea {
+            height: 71px;
+            line-height: 1.4em;
+            margin: 0;
+            padding: 12px 6px;
+            resize: none;
+            width: 360px;
+          }
+          &#description { margin-bottom: 12px; }
+          &#radio {
             display: inline-block;
-            p.checkbox {
+            margin: -4px 0 6px;
+            label { display: none; }
+            p.radio {
               display: inline-block;
-              font-size: 32px;
               margin-right: 15px;
               text-transform: uppercase;
               vertical-align: baseline;
-              input[type="checkbox"] {
+              input[type="radio"] {
                 margin-right: 6px;
+                width: auto;
               }
               &.developer {
                 @include font-Nashville;
+                font-size: 30px;
               }
               &.designer {
                 @include font-Carnival;
-                vertical-align: bottom;
-                height: 49px;
-                font-size: 34px;
+                vertical-align: 4px;
+                font-size: 32px;
               }
             }
           }
           &#submit-button {
             display: inline-block;
+            margin-top: 10px;
             text-align: right;
-            margin-top: 20px;
-            input#submit {
-              width: 420px;
+            input#submit-btn {
+              background: rgb(174, 151, 105);
+              background: -webkit-gradient(
+                          linear,
+                          left bottom,
+                          left top,
+                          color-stop(0, rgba(174, 151, 105, 0.66)),
+                          color-stop(1, rgba(225, 211, 181, 0.33)));
+              background: -moz-linear-gradient(
+                          bottom,
+                          rgba(174, 151, 105, 0.66),
+                          rgba(225, 211, 181, 0.33));
+              font-size: 22px;
+              height: 40px;
+              line-height: 1.6em;
+              width: 375px;
+              @include font-FellSC;
+              &:hover {
+              background: -webkit-gradient(
+                          linear,
+                          left bottom,
+                          left top,
+                          color-stop(1, rgba(174, 151, 105, 0.66)),
+                          color-stop(0, rgba(225, 211, 181, 0.33)));
+              background: -moz-linear-gradient(
+                          top,
+                          rgba(174, 151, 105, 0.66),
+                          rgba(225, 211, 181, 0.33));
+              }
             }
-          }
-          &#tweet{
-            float: right;
           }
         }
       }
     }
   }
-
-
   div.register-button {
     div.hand {
       background: url(/stylesheets/images/download-hand.png) 0 0;
@@ -611,5 +665,8 @@ hr {
 @-moz-document url-prefix() {
   div#container div#main div#event-location div#location p.date {
     letter-spacing: -0.024em;
+  }
+  #container div#main-continue div#registration form#event-registration li#description {
+  margin-bottom: 15px;
   }
 }

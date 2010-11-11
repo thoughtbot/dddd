@@ -119,12 +119,14 @@
       </div>
       <hr class="top"/>
       <div id="registration">
-        <a name="register"></a>
-        <h2>Registration</h2>
+        <div id="registration-banner">
+          <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
+          <p id="subtitle">Tell us more about yourself</p>
+        </div>
         <form id="event-registration" name="Event Registration" action="submit" method="post">
           <ol class="left">
             <li>
-              <p><label for="twitter-username">Twitter Name</label><input type="text" name="twitter-username" id="twitter-username" /></p>
+              <p><label for="twitter-username">Twitter Name</label><input type="text" name="twitter-username" id="twitter-username"/></p>
             </li>
             <li>
               <p><label for="first">Full Name</label><input type="text" name="full-name" id="full-name" /></p>
@@ -132,16 +134,18 @@
             <li>
               <p><label for="first">School</label><input type="text" name="university-name" id="university-name" /></p>
             </li>
-            <li id="checkbox">
-              <p>Weapon of choice:</p>
-              <p class="checkbox developer"><input type="checkbox" name="checkbox" id="checkbox" value="checked">Developer</p>
-              <p class="checkbox designer"><input type="checkbox" name="checkbox" id="checkbox" value="checked">Designer</p>
-            </li>
-            <li>
+          </ol>
+          <ol class="right">
+            <li id="description">
               <p><label for="textarea">In 140 characters or less, describe why you're attending:</label></p><textarea name="textarea" id="textarea" rows="5" cols="30"></textarea>
             </li>
-            <li id="submit-button"><p><label for="textarea"> </label><input type="submit" name="submit" value="submit" id="submit"/></p></li>
-          </ol>
+            <li id="radio">
+              <label>Weapon of choice:</label>
+              <p class="radio developer"><input type="radio" name="radio" id="radio_one" value="Developers">Developer</p>
+              <p class="radio designer"><input type="radio" name="radio" id="radio_two" value="Designer">Designer</p>
+            </li>
+            <li id="submit-button"><p><label for="textarea"></label></p><input type="submit" name="submit" value="submit" id="submit-btn"/></li>
+        	</ol>
         </form>
       </div>
     </div>
