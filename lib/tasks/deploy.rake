@@ -6,15 +6,15 @@ namespace :deploy do
   desc "Deploy to heroku staging"
   task :staging => "heroku:dependencies" do
     `git push heroku master --force`
-    `heroku rake db:migrate --remote staging`
-    `heroku rake hoptoad:deploy TO=staging --remote staging`
+    `bundle exec heroku rake db:migrate --remote staging`
+    `bundle exec heroku rake hoptoad:deploy TO=staging --remote staging`
   end
 
   desc "Deploy to heroku production"
   task :production => "heroku:dependencies" do
     `git push production master --force`
-    `heroku rake db:migrate --remote production`
-    `heroku rake hoptoad:deploy TO=production --remote production`
+    `bundle exec heroku rake db:migrate --remote production`
+    `bundle exec heroku rake hoptoad:deploy TO=production --remote production`
   end
 end
 
