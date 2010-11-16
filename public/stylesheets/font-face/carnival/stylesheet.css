@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'CarnivaleeFreakshowRegular';
-  src: url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.eot');
-  src: local('☺'), url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.woff') format('woff'), url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.ttf') format('truetype'), url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.svg#webfontVUoV9ToU') format('svg');
+  src: local('☺'), url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
