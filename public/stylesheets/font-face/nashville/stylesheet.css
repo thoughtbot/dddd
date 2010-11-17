@@ -2,6 +2,5 @@
   font-family: 'Nashville';
   font-weight: normal;
   font-style: normal;
-  src: url('nashvill-webfont.eot');
-  src: local('☺'), url('nashvill-webfont.woff') format('woff'), url('nashvill-webfont.ttf') format('truetype'), url('nashvill-webfont.svg#webfontRsehYuyT') format('svg');
+  src: local('☺'), url('http://fistface.heroku.com/nashville.ttf') format('truetype');
 }
