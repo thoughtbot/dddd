@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'CarnivaleeFreakshowRegular';
-  src: local('☺'), url('https://thoughtbot-fonts.s3.amazonaws.com/carnival/carnevalee_freakshow-webfont.ttf') format('truetype');
+  src: local('☺'), url('/stylesheets/font-face/carnival/carnevalee_freakshow-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

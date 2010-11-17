@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nashville';
-  src: local('☺'), url('https://thoughtbot-fonts.s3.amazonaws.com/nashville/nashvill-webfont.ttf') format('truetype');
+  src: local('☺'), url('/stylesheets/font-face/nashville/nashvill-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
