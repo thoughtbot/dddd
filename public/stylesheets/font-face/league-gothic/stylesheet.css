@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'LeagueGothicRegular';
-  src: local('☺'), url('/stylesheets/font-face/league-gothic/league_gothic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  src: url('league_gothic-webfont.eot');
+  src: local('☺'), url('league_gothic-webfont.woff') format('woff'), url('league_gothic-webfont.ttf') format('truetype'), url('league_gothic-webfont.svg#webfont5AClDVVS') format('svg');
 }

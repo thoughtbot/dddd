@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Nashville';
-  src: local('☺'), url('/stylesheets/font-face/nashville/nashvill-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  src: url('nashvill-webfont.eot');
+  src: local('☺'), url('nashvill-webfont.woff') format('woff'), url('nashvill-webfont.ttf') format('truetype'), url('nashvill-webfont.svg#webfontRsehYuyT') format('svg');
 }

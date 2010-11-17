@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'CarnivaleeFreakshowRegular';
-  src: local('☺'), url('/stylesheets/font-face/carnival/carnevalee_freakshow-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  src: url('carnevalee_freakshow-webfont.eot');
+  src: local('☺'), url('carnevalee_freakshow-webfont.woff') format('woff'), url('carnevalee_freakshow-webfont.ttf') format('truetype'), url('carnevalee_freakshow-webfont.svg#webfontVUoV9ToU') format('svg');
 }
