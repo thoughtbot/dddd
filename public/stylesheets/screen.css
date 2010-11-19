@@ -380,7 +380,10 @@ html, body {
             font-size: 16px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
         #container div#schedule ol#schedule li:nth-child(odd) {
-          background: rgba(0, 0, 0, 0.3); }
+          background: rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
+          box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px; }
   #container div#main-continue-top {
     background: url(/stylesheets/images/paper-rip-bottom.png);
     height: 75px;
