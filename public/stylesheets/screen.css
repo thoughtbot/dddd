@@ -235,6 +235,17 @@ tt {
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
+div#flash {
+  background: url(/stylesheets/images/paper-tile.png) repeat-y; }
+  div#flash div#flash_success {
+    margin: 0px 60px 20px; }
+  div#flash div#flash_notice {
+    margin: 0px 60px 20px; }
+  div#flash div#flash_failure {
+    margin: 0px 60px 20px; }
+
+/************************************************************************/
+/************************************************************************/
 html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
   background-position: 50% 0;
@@ -439,6 +450,7 @@ html, body {
         margin-bottom: 1.8em; }
         #container div#main-continue div#registration form#event-registration li label {
           font-size: 15px;
+          font-weight: normal;
           font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
           text-transform: lowercase; }
         #container div#main-continue div#registration form#event-registration li input, #container div#main-continue div#registration form#event-registration li textarea {
@@ -492,6 +504,7 @@ html, body {
             font-size: 22px;
             height: 40px;
             line-height: 1.6em;
+            text-transform: lowercase;
             width: 375px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
             #container div#main-continue div#registration form#event-registration li#submit-button input#submit-btn:hover {

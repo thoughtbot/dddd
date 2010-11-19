@@ -219,6 +219,23 @@ tt {
 $brown: #332F26;
 $red: #990000;
 $lt-red: #ff4e51;
+
+/************************************************************************/
+// Flashes
+/************************************************************************/
+div#flash {
+  background: url(/stylesheets/images/paper-tile.png) repeat-y;
+  div#flash_success {
+    margin: 0px 60px 20px;
+  }
+  div#flash_notice {
+    margin: 0px 60px 20px;
+  }
+  div#flash_failure {
+    margin: 0px 60px 20px;
+  }
+}
+
 /************************************************************************/
 // Start of New Design
 /************************************************************************/
@@ -473,6 +490,7 @@ html, body {
           margin-bottom: 1.8em;
           label {
             font-size: 15px;
+            font-weight: normal;
             @include font-FellSC;
             text-transform: lowercase;
           }
@@ -549,6 +567,7 @@ html, body {
               font-size: 22px;
               height: 40px;
               line-height: 1.6em;
+              text-transform: lowercase;
               width: 375px;
               @include font-FellSC;
               &:hover {
