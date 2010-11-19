@@ -339,31 +339,37 @@ html, body {
       text-transform: uppercase; }
     #container div#schedule ol#schedule {
       display: block;
-      margin: 0px 0px 0px 220px;
+      margin: 0px 0px 0px 0px;
       list-style: none;
       padding-bottom: 30px; }
       #container div#schedule ol#schedule li {
-        margin: 25px 0; }
+        margin: 12px 0;
+        padding: 12px 30px; }
         #container div#schedule ol#schedule li p {
-          color: white;
+          color: #d9cdb1;
           font-size: 24px;
           vertical-align: top; }
           #container div#schedule ol#schedule li p.event-time {
             display: inline-block;
             font-family: 'Lobster', arial, sans-serif;
-            letter-spacing: 1px;
             line-height: 33px;
-            margin: 0 30px 0 0;
+            margin: 0 45px 0 0;
             text-align: right;
             width: 80px; }
           #container div#schedule ol#schedule li p.event-title {
-            display: inline-block;
-            width: 80%; }
+            display: inline-block; }
             #container div#schedule ol#schedule li p.event-title a:link, #container div#schedule ol#schedule li p.event-title a:visited, #container div#schedule ol#schedule li p.event-title a:active {
               color: white;
               text-decoration: none; }
             #container div#schedule ol#schedule li p.event-title a:hover {
               color: #ff4e51; }
+          #container div#schedule ol#schedule li p.event-speaker {
+            line-height: 38px;
+            float: right;
+            font-size: 16px;
+            font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
+        #container div#schedule ol#schedule li:nth-child(odd) {
+          background: rgba(0, 0, 0, 0.3); }
   #container div#main-continue-top {
     background: url(/stylesheets/images/paper-rip-bottom.png);
     height: 75px;
