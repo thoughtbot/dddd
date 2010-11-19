@@ -1,0 +1,31 @@
+<div id="registration-banner">
+  <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
+  <p id="subtitle">Tell us more about yourself</p>
+</div>
+<%= semantic_form_for @registration, :remote => true,
+      :html => { :name => "Event Registration",
+                 :id   => "event-registration",
+                 'data-type' => 'html' } do |form| %>
+  <ol class="left">
+    <li><p><%= form.input :twitter, :label => "Twitter Name" %></p></li>
+    <li><p><%= form.input :name,    :label => "Full Name" %></p></li>
+    <li><p><%= form.input :school,  :label => "School" %></p></li>
+  </ol>
+  <ol class="right">
+    <li id="description">
+      <p><%= form.input :why, :label => "Why are you attending?" %></p>
+    </li>
+    <li id="radio">
+      <label>Weapon of choice:</label>
+      <p class="radio developer">
+        <%= form.radio_button :role, "Developer" %>Developer
+      </p>
+      <p class="radio designer">
+        <%= form.radio_button :role, "Designer" %>Designer
+      </p>
+    </li>
+    <li id="submit-button">
+      <%= form.submit "Register", :id => 'submit-btn' %>
+    </li>
+  </ol>
+<% end %>

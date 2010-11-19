@@ -1,5 +1,6 @@
-$(document).ready(function() {
-  $('.title h2 a').click(function() {
-    $(this).parent().parent().parent().find('.details').toggle();
-  });
+jQuery(function($) {
+  $("#event-registration")
+    .live("ajax:success", function(xhr, data, status) {
+      $("#registration").html(data);
+    });
 });

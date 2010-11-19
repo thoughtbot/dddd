@@ -5,11 +5,11 @@ class RegistrationsController < ApplicationController
 
   def create
     @registration = Registration.new(params[:registration])
+
     if @registration.save
-      flash[:success] = "Thanks for registering! We can't wait to see you!"
-      redirect_to root_path
+      render :partial => 'thanks'
     else
-      render :action => :new
+      render :partial => 'form', :locals => { :registration => @registration }
     end
   end
 end
