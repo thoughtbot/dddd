@@ -7,11 +7,11 @@
                  :id   => "event-registration",
                  'data-type' => 'html' } do |form| %>
   <ol class="left">
-    <li><p><%= form.input :twitter, :label => "Twitter Name" %></p></li>
-    <li><p><%= form.input :name,    :label => "Full Name" %></p></li>
+    <%= form.input :twitter, :label => "Twitter Name" %>
+    <%= form.input :name,    :label => "Full Name" %>
+    <%= form.input :school,  :label => "School" %>
   </ol>
   <ol class="right">
-    <li><p><%= form.input :school,  :label => "School" %></p></li>
     <li id="radio">
       <label>Weapon of choice<abbr title="required">*</abbr></label>
       <p class="radio developer">
