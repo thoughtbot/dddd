@@ -596,53 +596,55 @@ html, body {
   }
   div.register-button {
     div.hand {
-      background: url(/stylesheets/images/download-hand.png) 0 0;
       height: 51px;
       width: 105px;
       &.left {
+        background: url(/stylesheets/images/download-hand-left.png) 0 0;
         float: left;
       }
       &.right {
         float: right;
-        margin: 40px 80px 0px 50px;
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+
+        background: url(/stylesheets/images/download-hand-right.png) 0 0;
       }
     }
     &.top div.hand {
-      &.left { margin: 40px 50px 0px 80px; }
-      &.right { margin: 40px 80px 0px 50px; }
+      &.left { margin: 36px 50px 0px 80px; }
+      &.right { margin: 36px 80px 0px 50px; }
     }
     &:hover {
       div.hand {
-        background: url(/stylesheets/images/download-hand.png) 0 99%;
         height: 51px;
         width: 105px;
         @include transition;
+        &.left {
+          background: url(/stylesheets/images/download-hand-left.png) 0 99%;
+        }
+        &.right {
+          background: url(/stylesheets/images/download-hand-right.png) 0 99%;
+        }
       }
     }
-    h2, h2 a:link, h2 a:visited, h2 a:active {
-    color: #3a3429;
-    float: left;
-    @include font-Carnival;
-    font-size: 68px;
-    font-weight: normal;
-    line-height: 1.0em;
-    margin-bottom: 0px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
-    @include transition;
-     &:hover {
-      color: #463B2B;
-      text-shadow: rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.5) 0px -3px 6px;
-      top: 3px;
-     }
+    h2 {
+      float: left;
+      @include font-Carnival;
+      font-size: 68px;
+      font-weight: normal;
+      line-height: 1.0em;
+      margin-bottom: 0px;
+      text-align: center;
+      & a:link, & a:visited, & a:active {
+      color: #3a3429;
+      position: relative;
+      text-decoration: none;
+      text-shadow: #E1D9C3 0 1px;
+      @include transition;
+        &:hover {
+        color: #463B2B;
+        text-shadow: #E1D9C3 0 1px, #695e4b 0px 3px;
+        top: -3px;
+        }
+      }
     }
     &.bottom {
       h2 { margin-top: 0px; }

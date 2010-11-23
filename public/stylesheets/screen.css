@@ -515,52 +515,50 @@ html, body {
               background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.66)), color-stop(0, rgba(225, 211, 181, 0.33)));
               background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33)); }
   #container div.register-button div.hand {
-    background: url(/stylesheets/images/download-hand.png) 0 0;
     height: 51px;
     width: 105px; }
     #container div.register-button div.hand.left {
+      background: url(/stylesheets/images/download-hand-left.png) 0 0;
       float: left; }
     #container div.register-button div.hand.right {
       float: right;
-      margin: 40px 80px 0px 50px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH"; }
+      background: url(/stylesheets/images/download-hand-right.png) 0 0; }
   #container div.register-button.top div.hand.left {
-    margin: 40px 50px 0px 80px; }
+    margin: 36px 50px 0px 80px; }
   #container div.register-button.top div.hand.right {
-    margin: 40px 80px 0px 50px; }
+    margin: 36px 80px 0px 50px; }
   #container div.register-button:hover div.hand {
-    background: url(/stylesheets/images/download-hand.png) 0 99%;
     height: 51px;
     width: 105px;
     -webkit-transition: all 0.15s ease-out;
     -moz-transition: all 0.15s ease-out;
     -o-transition: all 0.15s ease-out;
     transition: all 0.15s ease-out; }
-  #container div.register-button h2, #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
-    color: #3a3429;
+    #container div.register-button:hover div.hand.left {
+      background: url(/stylesheets/images/download-hand-left.png) 0 99%; }
+    #container div.register-button:hover div.hand.right {
+      background: url(/stylesheets/images/download-hand-right.png) 0 99%; }
+  #container div.register-button h2 {
     float: left;
     font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
     font-size: 68px;
     font-weight: normal;
     line-height: 1.0em;
     margin-bottom: 0px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
-    -webkit-transition: all 0.15s ease-out;
-    -moz-transition: all 0.15s ease-out;
-    -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out; }
-    #container div.register-button h2:hover, #container div.register-button h2 a:link:hover, #container div.register-button h2 a:visited:hover, #container div.register-button h2 a:active:hover {
-      color: #463B2B;
-      text-shadow: rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.5) 0px -3px 6px;
-      top: 3px; }
+    text-align: center; }
+    #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
+      color: #3a3429;
+      position: relative;
+      text-decoration: none;
+      text-shadow: #E1D9C3 0 1px;
+      -webkit-transition: all 0.15s ease-out;
+      -moz-transition: all 0.15s ease-out;
+      -o-transition: all 0.15s ease-out;
+      transition: all 0.15s ease-out; }
+      #container div.register-button h2 a:link:hover, #container div.register-button h2 a:visited:hover, #container div.register-button h2 a:active:hover {
+        color: #463B2B;
+        text-shadow: #E1D9C3 0 1px, #695e4b 0px 3px;
+        top: -3px; }
   #container div.register-button.bottom h2 {
     margin-top: 0px; }
   #container div.register-button.bottom div.hand.left {
@@ -605,7 +603,7 @@ hr {
       font-size: 20px; }
     .student .student-details .role-and-school {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 30px;
       font-weight: lighter; }
 
 .thanks {
