@@ -7,7 +7,7 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new(params[:registration])
 
     if @registration.save
-      render :partial => 'thanks'
+      render :partial => 'thanks', :locals => { :registration => @registration }
     else
       render :partial => 'form', :locals => { :registration => @registration }
     end

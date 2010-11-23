@@ -1,3 +1,14 @@
-<p>
-  Thanks for registering! We can't wait to see you!
-</p>
+<p class="thanks">Thanks for registering! We can't wait to see you!</p>
+
+<div class="student">
+  <div class="avatar">
+    <img src="http://avatar.statusok.com/<%= registration.twitter %>?size=73" />
+  </div>
+  <div class="student-details">
+    <div class="name"><%= registration.name %></div>
+    <div class="twitter">@<%= registration.twitter %></div>
+    <div class="role-and-school">
+      <%= registration.role %>, <%= registration.school %>
+    </div>
+  </div>
+</div>

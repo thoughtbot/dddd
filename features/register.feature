@@ -9,7 +9,6 @@ Feature: As a student, I want to register for D4
     When I fill in "Twitter Name" with "Croaky"
     And I fill in "Full Name" with "Dan Croak"
     And I fill in "School" with "Nobles"
-    And I fill in "Why are you attending?" with "I'm a special snowflake."
     And I choose the "Developer" role
     And I press "Register"
     Then I should see "Thanks for registering! We can't wait to see you!"

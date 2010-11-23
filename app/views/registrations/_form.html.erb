@@ -9,14 +9,11 @@
   <ol class="left">
     <li><p><%= form.input :twitter, :label => "Twitter Name" %></p></li>
     <li><p><%= form.input :name,    :label => "Full Name" %></p></li>
-    <li><p><%= form.input :school,  :label => "School" %></p></li>
   </ol>
   <ol class="right">
-    <li id="description">
-      <p><%= form.input :why, :label => "Why are you attending?" %></p>
-    </li>
+    <li><p><%= form.input :school,  :label => "School" %></p></li>
     <li id="radio">
-      <label>Weapon of choice:</label>
+      <label>Weapon of choice<abbr title="required">*</abbr></label>
       <p class="radio developer">
         <%= form.radio_button :role, "Developer" %>Developer
       </p>
@@ -25,7 +22,7 @@
       </p>
     </li>
     <li id="submit-button">
-      <%= form.submit "Register", :id => 'submit-btn' %>
+      <%= form.submit "Register", :id => "submit-btn", :disable_with => "Please wait..." %>
     </li>
   </ol>
 <% end %>

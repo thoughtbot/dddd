@@ -482,8 +482,6 @@ html, body {
         #container div#main-continue div#registration form#event-registration li#radio {
           display: inline-block;
           margin: -4px 0 6px; }
-          #container div#main-continue div#registration form#event-registration li#radio label {
-            display: none; }
           #container div#main-continue div#registration form#event-registration li#radio p.radio {
             display: inline-block;
             margin-right: 15px;
@@ -588,6 +586,27 @@ hr {
     width: 92%;
     -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
     z-index: 0; }
+
+.student {
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+  width: 500px;
+  margin-top: 20px; }
+  .student .avatar {
+    float: left; }
+  .student .student-details {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    width: 350px; }
+    .student .student-details .name {
+      font-size: 24px;
+      font-weight: bold; }
+    .student .student-details .twitter {
+      font-size: 20px; }
+    .student .student-details .role-and-school {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: lighter; }
 
 /************************************************************************/
 /************************************************************************/
