@@ -250,7 +250,8 @@ html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
   background-position: 50% 0;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
   html h1, body h1 {
     color: #332f26;
     font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
@@ -279,53 +280,58 @@ html, body {
         float: right; }
     #container header div#dddd-logo {
       padding: 30px 0; }
-  #container div#free-event {
+  #container section#free-event {
     background: url(/stylesheets/images/subhead-bg.png) no-repeat;
     height: 80px;
     text-align: center;
     width: 100%; }
-    #container div#free-event img {
+    #container section#free-event img {
       margin-top: 16px; }
-  #container div#main {
+    #container section#free-event h1 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-size: 42px;
+      font-weight: normal;
+      padding-top: 16px; }
+  #container section#main {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 20px 60px 0px; }
-    #container div#main div#descriptions {
+    #container section#main div#descriptions {
       margin-bottom: 30px; }
-      #container div#main div#descriptions div#developers, #container div#main div#descriptions div#designers {
+      #container section#main div#descriptions section#what, #container section#main div#descriptions section#why {
         float: left;
         text-align: center;
         padding: 15px 25px;
         width: 315px; }
-        #container div#main div#descriptions div#developers h2, #container div#main div#descriptions div#designers h2 {
+        #container section#main div#descriptions section#what h2, #container section#main div#descriptions section#why h2 {
           font-size: 19px;
           font-weight: normal;
           letter-spacing: 4px;
           text-transform: uppercase; }
-        #container div#main div#descriptions div#developers p, #container div#main div#descriptions div#designers p {
+        #container section#main div#descriptions section#what p, #container section#main div#descriptions section#why p {
           font-size: 14px;
           line-height: 1.4em; }
-      #container div#main div#descriptions div#divider {
+      #container section#main div#descriptions div#divider {
         float: left; }
-    #container div#main div#event-location div#compass {
+    #container section#main section#event-location div#compass {
       display: inline-block;
       margin: 30px; }
-    #container div#main div#event-location div#location {
+    #container section#main section#event-location div#location {
       padding: 55px 100px 55px 70px;
       display: inline-block;
       vertical-align: top; }
-      #container div#main div#event-location div#location p {
+      #container section#main section#event-location div#location p {
         text-transform: uppercase;
         font-size: 14px;
         line-height: 20px;
         padding-bottom: 13px; }
-      #container div#main div#event-location div#location p.venue {
+      #container section#main section#event-location div#location p.venue {
         font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
         font-size: 32px;
         color: #990000;
         border-bottom: 1px solid #5F5645;
         -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
         padding-bottom: 13px; }
-      #container div#main div#event-location div#location p.date {
+      #container section#main section#event-location div#location p.date {
         font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
         font-size: 37px;
         letter-spacing: -0.05em;
@@ -336,53 +342,53 @@ html, body {
     height: 75px;
     position: relative;
     z-index: 10; }
-  #container div#schedule {
+  #container section#schedule {
     background: url(/stylesheets/images/wood-wear-overlay.png);
     padding: 30px 60px 0;
     position: relative;
     z-index: 0; }
-    #container div#schedule h1 {
+    #container section#schedule h1 {
       color: rgba(0, 0, 0, 0.8);
       font-size: 120px;
       margin-bottom: 0px;
       text-align: center;
       text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
       text-transform: uppercase; }
-    #container div#schedule ol#schedule {
+    #container section#schedule ol#schedule {
       display: block;
       margin: 0px 0px 0px 0px;
       list-style: none;
       padding-bottom: 30px; }
-      #container div#schedule ol#schedule li {
+      #container section#schedule ol#schedule li {
         margin: 12px 0;
         padding: 12px 30px; }
-        #container div#schedule ol#schedule li p {
+        #container section#schedule ol#schedule li p {
           color: #d9cdb1;
           font-size: 24px;
           vertical-align: top; }
-          #container div#schedule ol#schedule li p.event-time {
+          #container section#schedule ol#schedule li p.event-time {
             display: inline-block;
             font-family: 'Lobster', arial, sans-serif;
             line-height: 33px;
             margin: 0 45px 0 0;
             text-align: right;
             width: 80px; }
-          #container div#schedule ol#schedule li p.event-title {
+          #container section#schedule ol#schedule li p.event-title {
             display: inline-block; }
-            #container div#schedule ol#schedule li p.event-title a:link, #container div#schedule ol#schedule li p.event-title a:visited, #container div#schedule ol#schedule li p.event-title a:active {
+            #container section#schedule ol#schedule li p.event-title a:link, #container section#schedule ol#schedule li p.event-title a:visited, #container section#schedule ol#schedule li p.event-title a:active {
               color: white;
               text-decoration: none; }
-            #container div#schedule ol#schedule li p.event-title a:hover {
+            #container section#schedule ol#schedule li p.event-title a:hover {
               color: #ff4e51; }
-          #container div#schedule ol#schedule li p.event-speaker {
+          #container section#schedule ol#schedule li p.event-speaker {
             line-height: 38px;
             float: right;
             font-size: 16px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
-          #container div#schedule ol#schedule li p.double {
+          #container section#schedule ol#schedule li p.double {
             line-height: 16px;
             text-align: right; }
-        #container div#schedule ol#schedule li:nth-child(odd) {
+        #container section#schedule ol#schedule li:nth-child(odd) {
           background: rgba(0, 0, 0, 0.3);
           -moz-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
           -webkit-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
@@ -392,28 +398,28 @@ html, body {
     height: 75px;
     position: relative;
     z-index: 10; }
-  #container div#main-continue {
+  #container section#main-continue {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 0px 60px 20px;
     min-height: 500px; }
-    #container div#main-continue div#after-party {
+    #container section#main-continue div#after-party {
       margin: 40px 0; }
-      #container div#main-continue div#after-party div.wreath {
+      #container section#main-continue div#after-party div.wreath {
         display: inline-block; }
-      #container div#main-continue div#after-party div#after-party-description {
+      #container section#main-continue div#after-party div#after-party-description {
         display: inline-block;
         margin: 5px 15px;
         text-align: center;
         vertical-align: top; }
-        #container div#main-continue div#after-party div#after-party-description h1, #container div#main-continue div#after-party div#after-party-description h2, #container div#main-continue div#after-party div#after-party-description h3, #container div#main-continue div#after-party div#after-party-description h4 {
+        #container section#main-continue div#after-party div#after-party-description h1, #container section#main-continue div#after-party div#after-party-description h2, #container section#main-continue div#after-party div#after-party-description h3, #container section#main-continue div#after-party div#after-party-description h4 {
           font-weight: normal;
           margin: 0px;
           font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
           letter-spacing: -0.05em;
           line-height: 1.0em; }
-        #container div#main-continue div#after-party div#after-party-description h1 {
+        #container section#main-continue div#after-party div#after-party-description h1 {
           font-size: 42px; }
-        #container div#main-continue div#after-party div#after-party-description h2 {
+        #container section#main-continue div#after-party div#after-party-description h2 {
           border-top: 1px solid black;
           color: #990000;
           font-size: 44px;
@@ -424,7 +430,7 @@ html, body {
           -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
           -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
           box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
-        #container div#main-continue div#after-party div#after-party-description h3 {
+        #container section#main-continue div#after-party div#after-party-description h3 {
           border-top: 1px solid black;
           font-size: 32px;
           margin-top: 5px;
@@ -432,76 +438,76 @@ html, body {
           -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
           -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
           box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
-        #container div#main-continue div#after-party div#after-party-description h4 {
+        #container section#main-continue div#after-party div#after-party-description h4 {
           font-size: 22px; }
-    #container div#main-continue div#registration {
+    #container section#main-continue section#registration {
       margin: 30px 0; }
-      #container div#main-continue div#registration div#registration-banner {
+      #container section#main-continue section#registration div#registration-banner {
         margin-bottom: 10px;
         position: relative;
         text-align: center; }
-        #container div#main-continue div#registration div#registration-banner p#subtitle {
+        #container section#main-continue section#registration div#registration-banner p#subtitle {
           font-size: 17px;
           position: relative;
           bottom: 20px; }
-      #container div#main-continue div#registration form#event-registration ol {
+      #container section#main-continue section#registration form#event-registration ol {
         display: inline-block;
         vertical-align: top; }
-        #container div#main-continue div#registration form#event-registration ol.left {
+        #container section#main-continue section#registration form#event-registration ol.left {
           width: 380px; }
-        #container div#main-continue div#registration form#event-registration ol.right {
+        #container section#main-continue section#registration form#event-registration ol.right {
           width: 380px;
           margin-left: 15px; }
-      #container div#main-continue div#registration form#event-registration li {
+      #container section#main-continue section#registration form#event-registration li {
         margin-bottom: 1.8em; }
-        #container div#main-continue div#registration form#event-registration li label {
+        #container section#main-continue section#registration form#event-registration li label {
           font-size: 15px;
           font-weight: normal;
           font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
           text-transform: lowercase; }
-        #container div#main-continue div#registration form#event-registration li input, #container div#main-continue div#registration form#event-registration li textarea {
+        #container section#main-continue section#registration form#event-registration li input, #container section#main-continue section#registration form#event-registration li textarea {
           background: #ae9769;
           background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.33)), color-stop(0, rgba(225, 211, 181, 0)));
           background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.33), rgba(225, 211, 181, 0));
           border: 1px solid #AE9769;
           font-size: 17px;
           font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
-        #container div#main-continue div#registration form#event-registration li input {
+        #container section#main-continue section#registration form#event-registration li input {
           height: 34px;
           line-height: 2.0em;
           width: 370px; }
-        #container div#main-continue div#registration form#event-registration li textarea {
+        #container section#main-continue section#registration form#event-registration li textarea {
           height: 71px;
           line-height: 1.4em;
           margin: 0;
           padding: 12px 6px;
           resize: none;
           width: 360px; }
-        #container div#main-continue div#registration form#event-registration li#description {
+        #container section#main-continue section#registration form#event-registration li#description {
           margin-bottom: 12px; }
-        #container div#main-continue div#registration form#event-registration li#radio {
+        #container section#main-continue section#registration form#event-registration li#radio {
           display: inline-block;
           margin: -4px 0 6px; }
-          #container div#main-continue div#registration form#event-registration li#radio p.radio {
+          #container section#main-continue section#registration form#event-registration li#radio p.radio {
             display: inline-block;
             margin-right: 15px;
             text-transform: uppercase;
             vertical-align: baseline; }
-            #container div#main-continue div#registration form#event-registration li#radio p.radio input[type="radio"] {
+            #container section#main-continue section#registration form#event-registration li#radio p.radio input[type="radio"] {
               margin-right: 6px;
               width: auto; }
-            #container div#main-continue div#registration form#event-registration li#radio p.radio.developer {
+            #container section#main-continue section#registration form#event-registration li#radio p.radio.developer {
               font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
               font-size: 30px; }
-            #container div#main-continue div#registration form#event-registration li#radio p.radio.designer {
+            #container section#main-continue section#registration form#event-registration li#radio p.radio.designer {
               font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
               vertical-align: 4px;
               font-size: 32px; }
-        #container div#main-continue div#registration form#event-registration li#submit-button {
+        #container section#main-continue section#registration form#event-registration li#submit-button {
           display: inline-block;
           margin-top: 10px;
           text-align: right; }
-          #container div#main-continue div#registration form#event-registration li#submit-button input#submit-btn {
+          #container section#main-continue section#registration form#event-registration li#submit-button input#submit-btn {
             background: #ae9769;
             background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(174, 151, 105, 0.66)), color-stop(1, rgba(225, 211, 181, 0.33)));
             background: -moz-linear-gradient(bottom, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33));
@@ -511,7 +517,7 @@ html, body {
             text-transform: lowercase;
             width: 375px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
-            #container div#main-continue div#registration form#event-registration li#submit-button input#submit-btn:hover {
+            #container section#main-continue section#registration form#event-registration li#submit-button input#submit-btn:hover {
               background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.66)), color-stop(0, rgba(225, 211, 181, 0.33)));
               background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33)); }
   #container div.register-button div.hand {
@@ -584,6 +590,9 @@ hr {
     width: 92%;
     -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
     z-index: 0; }
+  hr.alternate {
+    background: url(/stylesheets/images/hr-alternate.png) no-repeat;
+    height: 34px; }
 
 .student {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
@@ -608,6 +617,42 @@ hr {
 
 .thanks {
   margin: 20px 0; }
+
+/************************************************************************/
+/************************************************************************/
+section.talk-wrapper {
+  padding: 25px 20px 0px; }
+  section.talk-wrapper div.speaker-image {
+    display: inline-block;
+    height: 110px;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 110px; }
+  section.talk-wrapper div.talk-description {
+    display: inline-block;
+    width: 600px; }
+    section.talk-wrapper div.talk-description h2, section.talk-wrapper div.talk-description h3 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-weight: normal;
+      line-height: 1em;
+      margin: 0 0 0.3em; }
+    section.talk-wrapper div.talk-description h2 {
+      font-size: 30px; }
+    section.talk-wrapper div.talk-description h3 {
+      font-size: 24px; }
+    section.talk-wrapper div.talk-description p {
+      line-height: 140%;
+      margin-bottom: 10px;
+      padding: 0px; }
+    section.talk-wrapper div.talk-description a:link, section.talk-wrapper div.talk-description a:active, section.talk-wrapper div.talk-description a:visited {
+      color: #990000;
+      text-decoration: none; }
+    section.talk-wrapper div.talk-description a:hover {
+      text-decoration: underline; }
+    section.talk-wrapper div.talk-description a:first-of-type::after {
+      content: ":"; }
+    section.talk-wrapper div.talk-description ul li {
+      margin: 5px 0; }
 
 /************************************************************************/
 /************************************************************************/

@@ -244,6 +244,7 @@ html, body {
   background-position: 50% 0;
   height: 100%;
   width: 100%;
+  @include font-Fell;
   h1 {
     color: $brown;
     @include font-Nashville;
@@ -279,7 +280,7 @@ html, body {
       padding: 30px 0;
     }
   }
-  div#free-event {
+  section#free-event {
     background: url(/stylesheets/images/subhead-bg.png) no-repeat;
     height: 80px;
     text-align: center;
@@ -287,13 +288,19 @@ html, body {
     img {
       margin-top: 16px;
     }
+    h1 {
+      @include font-LeagueGothic;
+      font-size: 42px;
+      font-weight: normal;
+      padding-top: 16px;
+    }
   }
-  div#main {
+  section#main {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 20px 60px 0px;
     div#descriptions {
       margin-bottom: 30px;
-      div#developers, div#designers {
+      section#what, section#why {
         float: left;
         text-align: center;
         padding: 15px 25px;
@@ -313,7 +320,7 @@ html, body {
         float: left;
       }
     }
-    div#event-location {
+    section#event-location {
       div#compass {
         display: inline-block;
         margin: 30px;
@@ -352,7 +359,7 @@ html, body {
     position: relative;
     z-index: 10;
   }
-  div#schedule {
+  section#schedule {
     background: url(/stylesheets/images/wood-wear-overlay.png);
     padding: 30px 60px 0;
     position: relative;
@@ -419,7 +426,7 @@ html, body {
     position: relative;
     z-index: 10;
   }
-  div#main-continue {
+  section#main-continue {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 0px 60px 20px;
     min-height: 500px;
@@ -469,7 +476,7 @@ html, body {
         }
       }
     }
-    div#registration {
+    section#registration {
       margin: 30px 0;
       div#registration-banner {
         margin-bottom: 10px;
@@ -673,8 +680,11 @@ hr {
     -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
     z-index: 0;
   }
+  &.alternate {
+    background: url(/stylesheets/images/hr-alternate.png) no-repeat;
+    height: 34px;
+  }
 }
-
 .student {
   @include font-FellSC;
   width: 500px;
@@ -704,6 +714,54 @@ hr {
 
 .thanks {
   margin: 20px 0;
+}
+/************************************************************************/
+// Schedule & Resources Page
+/************************************************************************/
+section.talk-wrapper {
+  padding: 25px 20px 0px;
+  div.speaker-image {
+    display: inline-block;
+    height: 110px;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 110px;
+  }
+  div.talk-description {
+    display: inline-block;
+    width: 600px;
+    h2, h3 {
+      @include font-LeagueGothic;
+      font-weight: normal;
+      line-height: 1em;
+      margin: 0 0 0.3em;
+    }
+    h2 { font-size: 30px; }
+    h3 { font-size: 24px; }
+    p {
+      line-height: 140%;
+      margin-bottom: 10px;
+      padding: 0px;
+    }
+    a {
+      &:link, &:active, &:visited {
+        color: $red;
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:first-of-type::after {
+        content: ":"
+      }
+    }
+    ul {
+      li {
+        margin: 5px 0;
+      }
+    }
+
+  }
 }
 
 /************************************************************************/
