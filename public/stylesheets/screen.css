@@ -589,8 +589,7 @@ hr {
 
 .student {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
-  width: 500px;
-  margin-top: 20px; }
+  width: 500px; }
   .student .avatar {
     float: left; }
   .student .student-details {
@@ -600,13 +599,17 @@ hr {
     width: 350px; }
     .student .student-details .name {
       font-size: 24px;
-      font-weight: bold; }
+      font-weight: bold;
+      line-height: 28px; }
     .student .student-details .twitter {
       font-size: 20px; }
     .student .student-details .role-and-school {
-      margin-top: 6px;
       font-size: 16px;
+      line-height: 20px;
       font-weight: lighter; }
+
+.thanks {
+  margin: 20px 0; }
 
 /************************************************************************/
 /************************************************************************/
