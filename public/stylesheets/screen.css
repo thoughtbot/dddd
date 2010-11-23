@@ -379,6 +379,9 @@ html, body {
             float: right;
             font-size: 16px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
+          #container div#schedule ol#schedule li p.double {
+            line-height: 16px;
+            text-align: right; }
         #container div#schedule ol#schedule li:nth-child(odd) {
           background: rgba(0, 0, 0, 0.3);
           -moz-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;

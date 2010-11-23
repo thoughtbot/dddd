@@ -399,6 +399,10 @@ html, body {
             font-size: 16px;
             @include font-FellSC;
           }
+          &.double {
+            line-height: 16px;
+            text-align: right;
+          }
         }
         &:nth-child(odd) {
           background: rgba(0, 0, 0, 0.3);
