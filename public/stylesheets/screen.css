@@ -259,6 +259,11 @@ html, body {
   html h2, html h3, html h4, html h5, html p, body h2, body h3, body h4, body h5, body p {
     color: #332f26;
     font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+  html a:link, html a:active, html a:visited, body a:link, body a:active, body a:visited {
+    color: #990000;
+    text-decoration: none; }
+  html a:hover, body a:hover {
+    color: #ff4e51; }
 
 #container {
   margin: 0 auto;
@@ -577,6 +582,32 @@ html, body {
     margin: 10px 50px 40px 80px; }
   #container div.register-button.bottom div.hand.right {
     margin: 10px 80px 40px 50px; }
+  #container div#registration-complete {
+    text-align: center; }
+    #container div#registration-complete h2, #container div#registration-complete h3 {
+      font-weight: normal; }
+    #container div#registration-complete div.student {
+      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+      margin: 20px 0; }
+      #container div#registration-complete div.student div.avatar {
+        display: inline-block; }
+      #container div#registration-complete div.student div.student-details {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        text-align: left; }
+        #container div#registration-complete div.student div.student-details div.name {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 140%; }
+        #container div#registration-complete div.student div.student-details div.twitter {
+          font-size: 18px;
+          line-height: 100%;
+          text-transform: lowercase; }
+        #container div#registration-complete div.student div.student-details div.role-and-school {
+          font-size: 16px;
+          line-height: 120%;
+          text-transform: lowercase; }
 
 hr {
   background: #3a3429;
@@ -600,43 +631,19 @@ hr {
     background: url(/stylesheets/images/hr-alternate.png) no-repeat;
     height: 34px; }
 
-.student {
-  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
-  width: 500px; }
-  .student .avatar {
-    float: left; }
-  .student .student-details {
-    display: inline-block;
-    float: left;
-    margin-left: 15px;
-    width: 350px; }
-    .student .student-details .name {
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 28px; }
-    .student .student-details .twitter {
-      font-size: 20px; }
-    .student .student-details .role-and-school {
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: lighter; }
-
-.thanks {
-  margin: 20px 0; }
-
 /************************************************************************/
 /************************************************************************/
 section.talk-wrapper {
   padding: 25px 20px 0px; }
   section.talk-wrapper div.speaker-image {
     display: inline-block;
-    height: 110px;
+    height: 73px;
     margin-right: 20px;
     vertical-align: top;
-    width: 110px; }
+    width: 73px; }
   section.talk-wrapper div.talk-description {
     display: inline-block;
-    width: 600px; }
+    width: 635px; }
     section.talk-wrapper div.talk-description h2, section.talk-wrapper div.talk-description h3 {
       font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
       font-weight: normal;

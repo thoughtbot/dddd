@@ -254,6 +254,15 @@ html, body {
     color: $brown;
     @include font-Fell;
   }
+  a {
+    &:link, &:active, &:visited {
+      color: $red;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $lt-red
+    }
+  }
 }
 #container {
   margin: 0 auto;
@@ -667,6 +676,40 @@ html, body {
       }
     }
   }
+  div#registration-complete {
+    text-align: center;
+    h2, h3 {
+      font-weight: normal;
+    }
+    div.student {
+      @include font-FellSC;
+      margin: 20px 0;
+      div.avatar {
+        display: inline-block;
+      }
+      div.student-details {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        text-align: left;
+        div.name {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 140%;
+        }
+        div.twitter {
+          font-size: 18px;
+          line-height: 100%;
+          text-transform: lowercase;
+        }
+        div.role-and-school {
+          font-size: 16px;
+          line-height: 120%;
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
 }
 
 hr {
@@ -691,36 +734,6 @@ hr {
     height: 34px;
   }
 }
-.student {
-  @include font-FellSC;
-  width: 500px;
-  .avatar {
-    float: left;
-  }
-  .student-details {
-    display: inline-block;
-    float: left;
-    margin-left: 15px;
-    width: 350px;
-    .name {
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 28px;
-    }
-    .twitter {
-      font-size: 20px;
-    }
-    .role-and-school {
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: lighter;
-    }
-  }
-}
-
-.thanks {
-  margin: 20px 0;
-}
 /************************************************************************/
 // Schedule & Resources Page
 /************************************************************************/
@@ -728,14 +741,14 @@ section.talk-wrapper {
   padding: 25px 20px 0px;
   div.speaker-image {
     display: inline-block;
-    height: 110px;
+    height: 73px;
     margin-right: 20px;
     vertical-align: top;
-    width: 110px;
+    width: 73px;
   }
   div.talk-description {
     display: inline-block;
-    width: 600px;
+    width: 635px;
     h2, h3 {
       @include font-LeagueGothic;
       font-weight: normal;
