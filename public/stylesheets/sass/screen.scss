@@ -492,16 +492,16 @@ html, body {
       ol {
         display: inline-block;
         vertical-align: top;
-        &.left {
-          width: 380px;
+        li {
+          display: inline-block;
+          vertical-align: top;
+          &:nth-child(odd){
+            margin-right: 20px
+          }
         }
-        &.right {
-          width: 380px;
-          margin-left: 15px;
-        }
+
       }
         li {
-          margin-bottom: 1.8em;
           label {
             font-size: 15px;
             font-weight: normal;
@@ -540,7 +540,6 @@ html, body {
           &#description { margin-bottom: 12px; }
           &#radio {
             display: inline-block;
-            margin: -4px 0 6px;
             p.radio {
               display: inline-block;
               margin-right: 15px;
@@ -565,6 +564,7 @@ html, body {
             display: inline-block;
             margin-top: 10px;
             text-align: right;
+            width: 100%;
             input#submit-btn {
               background: rgb(174, 151, 105);
               background: -webkit-gradient(
@@ -581,9 +581,15 @@ html, body {
               height: 40px;
               line-height: 1.6em;
               text-transform: lowercase;
-              width: 375px;
+              width: 100%;
               @include font-FellSC;
               &:hover {
+                -webkit-box-shadow: 0 0 2px 2px #E1D9C3;
+                -moz-box-shadow: 0 0 2px 2px #E1D9C3;
+                box-shadow: 0 0 4px 2px #E1D9C3;
+                @include transition;
+              }
+              &:active {
               background: -webkit-gradient(
                           linear,
                           left bottom,

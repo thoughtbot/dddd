@@ -6,23 +6,20 @@
       :html => { :name => "Event Registration",
                  :id   => "event-registration",
                  'data-type' => 'html' } do |form| %>
-  <ol class="left">
-    <%= form.input :twitter, :label => "Twitter Name" %>
-    <%= form.input :name,    :label => "Full Name" %>
-    <%= form.input :school,  :label => "School" %>
-  </ol>
-  <ol class="right">
+  <ol class="form">
+    <%= form.input :twitter, :label => "Twitter Name", :input_html => { :tabindex => 1 }%>
+    <%= form.input :name,    :label => "Full Name", :input_html => { :tabindex => 2 } %>
+    <%= form.input :school,  :label => "School", :input_html => { :tabindex => 3 }%>
     <li id="radio">
       <label>Weapon of choice<abbr title="required">*</abbr></label>
       <p class="radio developer">
-        <%= form.radio_button :role, "Developer" %>Developer
+        <%= form.radio_button :role, "Developer", :input_html => { :tabindex => 4 } %>Developer
       </p>
       <p class="radio designer">
-        <%= form.radio_button :role, "Designer" %>Designer
+        <%= form.radio_button :role, "Designer", :input_html => { :tabindex => 5 } %>Designer
       </p>
-    </li>
-    <li id="submit-button">
-      <%= form.submit "Register", :id => "submit-btn", :disable_with => "Please wait..." %>
-    </li>
   </ol>
+      <li id="submit-button">
+      <%= form.submit "Register", :id => "submit-btn", :disable_with => "Please wait...", :input_html => { :tabindex => 6 }%>
+    </li>
 <% end %>
