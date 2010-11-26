@@ -184,6 +184,3 @@ DEPENDENCIES
   timecop
   treetop
   will_paginate
-
-METADATA
-  version: 1.0.6
