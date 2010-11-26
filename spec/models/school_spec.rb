@@ -1,5 +1,12 @@
 require 'spec_helper'
 
+describe School do
+  before { Factory(:school) }
+
+  it { should validate_presence_of(:name) }
+  it { should validate_uniqueness_of(:name) }
+end
+
 describe School, ".names" do
   before do
     @bu      = Factory(:school, :name => "Boston University")

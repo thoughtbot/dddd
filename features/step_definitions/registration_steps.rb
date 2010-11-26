@@ -3,7 +3,7 @@ When /^I choose the "([^"]*)" role$/ do |role|
 end
 
 Then /^I should see "([^"]*)" on all text inputs of the registration form$/ do |content|
-  %w(twitter name school why).each do |field|
+  %w(twitter name school_name).each do |field|
     with_scope("#registration_#{field}_input") { page.should have_content(content) }
   end
 end

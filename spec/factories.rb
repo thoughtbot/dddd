@@ -1,8 +1,12 @@
+Factory.sequence :handle do |sequence|
+  "Croaky#{sequence}"
+end
+
 Factory.define :registration do |factory|
-  factory.twitter { 'Croaky'    }
-  factory.name    { 'Dan Croak' }
-  factory.school  { 'Nobles'    }
-  factory.role    { 'Developer' }
+  factory.twitter     { Factory.next(:handle) }
+  factory.name        { 'Dan Croak' }
+  factory.school_name { 'School of the Museum of Fine Arts, Boston' }
+  factory.role        { 'Developer' }
 end
 
 Factory.define :school do |factory|
