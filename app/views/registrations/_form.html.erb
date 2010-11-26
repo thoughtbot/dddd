@@ -8,8 +8,8 @@
                  'data-type' => 'html' } do |form| %>
   <ol class="form">
     <%= form.input :twitter, :label => "Twitter Name", :input_html => { :tabindex => 1 }%>
-    <%= form.input :name,    :label => "Full Name", :input_html => { :tabindex => 2 } %>
-    <%= form.input :school,  :label => "School", :input_html => { :tabindex => 3 }%>
+    <%= form.input :name,    :label => "Full Name",    :input_html => { :tabindex => 2 } %>
+    <%= form.input :school,  :label => "School",       :input_html => { :tabindex => 3 }%>
     <li id="radio">
       <label>Weapon of choice<abbr title="required">*</abbr></label>
       <p class="radio developer">
@@ -18,8 +18,17 @@
       <p class="radio designer">
         <%= form.radio_button :role, "Designer", :input_html => { :tabindex => 5 } %>Designer
       </p>
-  </ol>
-      <li id="submit-button">
-      <%= form.submit "Register", :id => "submit-btn", :disable_with => "Please wait...", :input_html => { :tabindex => 6 }%>
     </li>
+    <li id="submit-button">
+      <%= form.submit "Register", :disable_with => "Please wait...", :input_html => { :tabindex => 6 }%>
+    </li>
+  </ol>
+<% end %>
+
+<% content_for :javascript do %>
+  $(document).ready(function() {
+    $("input#registration_school").autocomplete({
+      source: <%= School.names.to_json.html_safe %>
+    });
+  });
 <% end %>

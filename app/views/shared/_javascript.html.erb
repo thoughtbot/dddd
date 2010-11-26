@@ -2,22 +2,9 @@
 <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.js"%3E%3C/script%3E'))</script>
 
 <%= javascript_include_tag 'jquery-ui', 'prefilled_input', 'rails', 'application' %>
-<%= yield :javascript %>
+
+<% javascript_tag do %>
+  <%= yield :javascript %>
+<% end %>
 
 <%= render :partial => 'shared/google_analytics' %>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $('a[href^=#]').bind('click', function(e) {
-    e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
-
-    var target = $(this).attr("href");
-
-    $('html, body').stop().animate({ scrollTop: $(target).offset().top }, 1000, function() {
-      location.hash = target;
-    });
-
-    return false;
-  });
-});
-</script>

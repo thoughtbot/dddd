@@ -486,8 +486,6 @@ html, body {
         padding: 12px 6px;
         resize: none;
         width: 360px; }
-      #container section#main-continue section#registration form#event-registration li#description {
-        margin-bottom: 12px; }
       #container section#main-continue section#registration form#event-registration li#radio {
         display: inline-block; }
         #container section#main-continue section#registration form#event-registration li#radio p.radio {
@@ -510,7 +508,7 @@ html, body {
         margin-top: 10px;
         text-align: right;
         width: 100%; }
-        #container section#main-continue section#registration form#event-registration li#submit-button input#submit-btn {
+        #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"] {
           background: #ae9769;
           background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(174, 151, 105, 0.66)), color-stop(1, rgba(225, 211, 181, 0.33)));
           background: -moz-linear-gradient(bottom, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33));
@@ -520,7 +518,7 @@ html, body {
           text-transform: lowercase;
           width: 100%;
           font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
-          #container section#main-continue section#registration form#event-registration li#submit-button input#submit-btn:hover {
+          #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"]:hover {
             -webkit-box-shadow: 0 0 2px 2px #E1D9C3;
             -moz-box-shadow: 0 0 2px 2px #E1D9C3;
             box-shadow: 0 0 4px 2px #E1D9C3;
@@ -528,7 +526,7 @@ html, body {
             -moz-transition: all 0.15s ease-out;
             -o-transition: all 0.15s ease-out;
             transition: all 0.15s ease-out; }
-          #container section#main-continue section#registration form#event-registration li#submit-button input#submit-btn:active {
+          #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"]:active {
             background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.66)), color-stop(0, rgba(225, 211, 181, 0.33)));
             background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33)); }
   #container div.register-button div.hand {
