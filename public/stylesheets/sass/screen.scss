@@ -782,6 +782,90 @@ section.talk-wrapper {
   }
 }
 
+/* AUTOCOMPLETE */
+
+ul.ui-autocomplete {
+  background: #F2F2F2;
+  border-radius: 3px 3px;
+  width: 370px;
+  list-style: none;
+  li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 2em;
+    a, a:visited, a:hover {
+      border-top-left-radius: 3px 3px;
+      border-top-right-radius: 3px 3px;
+      text-decoration: none;
+      color: #222;
+    }
+    a:hover {
+      background-color: #666;
+    }
+  }
+}
+
+.ui-menu {
+  list-style:none;
+  padding: 2px;
+  margin: 0;
+  display:block;
+  float: left;
+  .ui-menu {
+    margin-top: -3px;
+  }
+  .ui-menu-item {
+    margin:0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%;
+    a {
+      text-decoration:none;
+      display:block;
+      padding:.2em .4em;
+      line-height:1.5;
+      zoom:1;
+    }
+    a.ui-state-hover,
+    a.ui-state-active {
+      font-weight: normal;
+    }
+  }
+}
+
+.ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6;
+  color: #555555;
+  a, a:link, a:visited {
+    color: #555555;
+    text-decoration: none;
+  }
+}
+.ui-state-hover, .ui-state-focus {
+  border: 1px solid #999999;
+  background: #dadada;
+  color: #212121;
+  a, a:hover {
+    color: #212121;
+    text-decoration: none;
+  }
+}
+.ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  color: #212121;
+  a, a:link, a:visited {
+    color: #212121;
+    text-decoration: none;
+  }
+}
+.ui-widget :active { outline: none; }
+
 /************************************************************************/
 // Browser Specific Fixes
 /************************************************************************/
