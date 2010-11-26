@@ -10,7 +10,7 @@ gem "paperclip"
 gem "will_paginate"
 gem "formtastic"
 gem "mysql"
-gem "flutie"
+gem "flutie", "1.1.3"
 gem "dynamic_form"
 
 # http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
