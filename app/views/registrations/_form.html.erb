@@ -27,7 +27,7 @@
 
 <% content_for :javascript do %>
   $(document).ready(function() {
-    $("input#registration_school").autocomplete({
+    $("input#registration_school_name").autocomplete({
       source: <%= School.names.to_json.html_safe %>
     });
   });
