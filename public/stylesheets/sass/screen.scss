@@ -633,43 +633,38 @@ ul.ui-autocomplete {
     font-size: 17px;
     line-height: 2em;
     a, a:visited, a:hover {
-      border-top-left-radius: 3px 3px;
-      border-top-right-radius: 3px 3px;
       text-decoration: none;
       color: #222;
     }
     a:hover {
-      background-color: #666;
     }
   }
 }
 
-.ui-menu {
+ul.ui-menu {
   list-style:none;
   padding: 2px;
   margin: 0;
-  display:block;
+  display: block;
   float: left;
   .ui-menu {
     margin-top: -3px;
   }
-  .ui-menu-item {
-    margin:0;
+  li.ui-menu-item {
+    margin: 0;
     padding: 0;
     zoom: 1;
     float: left;
     clear: left;
     width: 100%;
     a {
-      text-decoration:none;
-      display:block;
-      padding:.2em .4em;
-      line-height:1.5;
-      zoom:1;
+      text-decoration: none;
+      display: block;
+      padding: .2em .4em;
+      zoom: 1;
     }
     a.ui-state-hover,
     a.ui-state-active {
-      font-weight: normal;
     }
   }
 }
@@ -684,7 +679,6 @@ ul.ui-autocomplete {
   }
 }
 .ui-state-hover, .ui-state-focus {
-  border: 1px solid #999999;
   background: #dadada;
   color: #212121;
   a, a:hover {
