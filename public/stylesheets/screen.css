@@ -642,11 +642,17 @@ html, body {
   #container img {
     margin: 0px; }
   #container header {
-    background: url(/stylesheets/images/paper-top.png) no-repeat, url(/stylesheets/images/paper-tile.png) repeat-y;
+    background: url(/stylesheets/images/paper-tile.png) repeat-y;
     display: block;
     padding: 0 60px; }
+    #container header div#top {
+      background: url(/stylesheets/images/paper-top.png) no-repeat;
+      height: 30px;
+      position: relative;
+      right: 60px;
+      width: 900px; }
     #container header div#benefactors {
-      padding: 30px 0 20px; }
+      padding: 0 0 20px; }
       #container header div#benefactors div#logo-left {
         float: left; }
       #container header div#benefactors div#banner {
