@@ -1,0 +1,33 @@
+.ff3:not(.ff3_5) div#container {
+  div.register-button h2 {
+    font-size: 62px;
+  }
+  section#main section#event-location {
+    div#compass {
+      float: left;
+      position: relative;
+    }
+    div#location {
+      right: 85px;
+      text-align: center;
+      p.venue {
+        font-size: 30px;
+      }
+      p.date {
+        font-size: 31px;
+        letter-spacing: -0.075em;
+      }
+    }
+  }
+  section#schedule ol#schedule li p.event-speaker {
+    bottom: 23px;
+    line-height: 1em;
+    position: relative;
+  }
+  section#main-continue section#registration form#event-registration li#radio {
+    p.radio.designer, p.radio.developer {
+      font-size: 28px;
+      vertical-align: 0px;
+    }
+  }
+}

@@ -698,13 +698,16 @@ html, body {
       display: inline-block;
       margin: 30px; }
     #container section#main section#event-location div#location {
-      padding: 55px 100px 55px 70px;
+      float: right;
       display: inline-block;
-      vertical-align: top; }
+      position: relative;
+      top: 55px;
+      right: 122px; }
       #container section#main section#event-location div#location p {
         text-transform: uppercase;
         font-size: 14px;
         line-height: 20px;
+        margin: 0px;
         padding-bottom: 13px; }
       #container section#main section#event-location div#location p.venue {
         font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
@@ -747,6 +750,7 @@ html, body {
         #container section#schedule ol#schedule li p {
           color: #d9cdb1;
           font-size: 24px;
+          margin-bottom: 0px;
           vertical-align: top; }
           #container section#schedule ol#schedule li p.event-time {
             display: inline-block;
@@ -846,7 +850,7 @@ html, body {
         font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
         text-transform: lowercase; }
       #container section#main-continue section#registration form#event-registration li input, #container section#main-continue section#registration form#event-registration li textarea {
-        background: #ae9769;
+        background: transparent;
         background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.33)), color-stop(0, rgba(225, 211, 181, 0)));
         background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.33), rgba(225, 211, 181, 0));
         border: 1px solid #AE9769;
@@ -886,7 +890,7 @@ html, body {
         text-align: right;
         width: 100%; }
         #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"] {
-          background: #ae9769;
+          background: rgba(174, 151, 105, 0.33);
           background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(174, 151, 105, 0.66)), color-stop(1, rgba(225, 211, 181, 0.33)));
           background: -moz-linear-gradient(bottom, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33));
           font-size: 22px;
@@ -936,7 +940,7 @@ html, body {
     font-size: 68px;
     font-weight: normal;
     line-height: 1.0em;
-    margin-bottom: 0px;
+    margin: 25px 0 0;
     text-align: center; }
     #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
       color: #3a3429;
@@ -1116,9 +1120,10 @@ ul.ui-autocomplete {
 
 /************************************************************************/
 /************************************************************************/
+/* Target Firefox 3.5+ */
 @-moz-document url-prefix() {
-  div#container div#main div#event-location div#location p.date {
+  div#container section#main section#event-location div#location p.date {
     letter-spacing: -0.024em; }
 
-  #container div#main-continue div#registration form#event-registration li#description {
+  div#container section#main-continue section#registration form#event-registration li#description {
     margin-bottom: 15px; } }

@@ -167,13 +167,17 @@ html, body {
         margin: 30px;
       }
       div#location {
-        padding: 55px 100px 55px 70px;
+        float: right;
         display: inline-block;
-        vertical-align: top;
+        position: relative;
+        top: 55px;
+        right: 122px;
+
         p {
           text-transform: uppercase;
           font-size: 14px;
           line-height: 20px;
+          margin: 0px;
           padding-bottom: 13px;
         }
         p.venue {
@@ -224,6 +228,7 @@ html, body {
         p {
           color: #d9cdb1;
           font-size: 24px;
+          margin-bottom: 0px;
           vertical-align: top;
           &.event-time {
             display: inline-block;
@@ -350,7 +355,7 @@ html, body {
             text-transform: lowercase;
           }
           input, textarea {
-            background: rgb(174, 151, 105);
+            background: transparent;
             background: -webkit-gradient(
                         linear,
                         left bottom,
@@ -406,7 +411,7 @@ html, body {
             text-align: right;
             width: 100%;
             input[type="submit"] {
-              background: rgb(174, 151, 105);
+              background: rgba(174, 151, 105, 0.33);
               background: -webkit-gradient(
                           linear,
                           left bottom,
@@ -484,7 +489,7 @@ html, body {
       font-size: 68px;
       font-weight: normal;
       line-height: 1.0em;
-      margin-bottom: 0px;
+      margin: 25px 0 0;
       text-align: center;
       & a:link, & a:visited, & a:active {
       color: #3a3429;
@@ -701,12 +706,12 @@ ul.ui-autocomplete {
 /************************************************************************/
 // Browser Specific Fixes
 /************************************************************************/
-
+/* Target Firefox */
 @-moz-document url-prefix() {
-  div#container div#main div#event-location div#location p.date {
+  div#container section#main section#event-location div#location p.date {
     letter-spacing: -0.024em;
   }
-  #container div#main-continue div#registration form#event-registration li#description {
+  div#container section#main-continue section#registration form#event-registration li#description {
   margin-bottom: 15px;
   }
 }
