@@ -1020,7 +1020,7 @@ hr {
 /************************************************************************/
 /************************************************************************/
 section.talk-wrapper {
-  padding: 25px 0px 0px; }
+  padding: 25px 0px 20px; }
   section.talk-wrapper h2, section.talk-wrapper h3 {
     font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
     font-weight: normal; }
@@ -1043,7 +1043,7 @@ section.talk-wrapper {
       text-decoration: none; }
     section.talk-wrapper div.left a:hover, section.talk-wrapper div.right a:hover {
       text-decoration: underline; }
-    section.talk-wrapper div.left a:first-of-type::after, section.talk-wrapper div.right a:first-of-type::after {
+    section.talk-wrapper div.left.resources a:first-of-type::after, section.talk-wrapper div.right.resources a:first-of-type::after {
       content: " -"; }
     section.talk-wrapper div.left ul li, section.talk-wrapper div.right ul li {
       margin: 10px 0;

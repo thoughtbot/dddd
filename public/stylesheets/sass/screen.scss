@@ -614,9 +614,9 @@ section.talk-wrapper {
       &:hover {
         text-decoration: underline;
       }
-      &:first-of-type::after {
-        content: " -"
-      }
+    }
+    &.resources a:first-of-type::after {
+      content: " -"
     }
     ul {
       li {
