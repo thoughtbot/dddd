@@ -388,20 +388,33 @@ html, body {
             p.radio {
               display: inline-block;
               margin-right: 15px;
-              text-transform: uppercase;
-              vertical-align: baseline;
               input[type="radio"] {
                 margin-right: 6px;
+                vertical-align: top;
                 width: auto;
               }
               &.developer {
-                @include font-Nashville;
-                font-size: 30px;
+                input[type="radio"] {
+                  margin-top: 5px;
+                }
+                label {
+                  display: inline-block;
+                  font-size: 30px;
+                  @include font-Nashville;
+                  text-transform: uppercase;
+                }
               }
               &.designer {
-                @include font-Carnival;
-                vertical-align: 4px;
-                font-size: 32px;
+                input[type="radio"] {
+                  margin-top: 10px;
+                }
+                label {
+                  display: inline-block;
+                  font-size: 32px;
+                  @include font-Carnival;
+                  text-transform: uppercase;
+                  vertical-align: 4px;
+                }
               }
             }
           }
@@ -574,25 +587,20 @@ hr {
 // Schedule & Resources Page
 /************************************************************************/
 section.talk-wrapper {
-  padding: 25px 20px 0px;
-  div.speaker-image {
-    display: inline-block;
-    height: 73px;
-    margin-right: 20px;
-    vertical-align: top;
-    width: 73px;
+  padding: 25px 0px 0px;
+  h2, h3 {
+    @include font-LeagueGothic;
+    font-weight: normal;
   }
-  div.talk-description {
+  h2 { font-size: 34px; }
+  h3 { font-size: 24px; }
+  div.left {
+    margin-right: 20px;
+  }
+  div.left, div.right {
     display: inline-block;
-    width: 635px;
-    h2, h3 {
-      @include font-LeagueGothic;
-      font-weight: normal;
-      line-height: 1em;
-      margin: 0 0 0.3em;
-    }
-    h2 { font-size: 30px; }
-    h3 { font-size: 24px; }
+    width: 375px;
+    vertical-align: top;
     p {
       line-height: 140%;
       margin-bottom: 10px;
@@ -607,15 +615,18 @@ section.talk-wrapper {
         text-decoration: underline;
       }
       &:first-of-type::after {
-        content: ":"
+        content: " -"
       }
     }
     ul {
       li {
-        margin: 5px 0;
+        margin: 10px 0;
+        list-style: none;
+        &:first-child {
+          margin: 0px;
+        }
       }
     }
-
   }
 }
 

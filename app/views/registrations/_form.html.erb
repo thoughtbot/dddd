@@ -13,10 +13,12 @@
     <li id="radio">
       <label>Weapon of choice<abbr title="required">*</abbr></label>
       <p class="radio developer">
-        <%= form.radio_button :role, "Developer", :input_html => { :tabindex => 4 } %>Developer
+        <%= form.radio_button :role, "Developer", :input_html => { :tabindex => 4 } %>
+        <%= form.label :role, "Developer", :for => "registration_role_developer" %>
       </p>
       <p class="radio designer">
-        <%= form.radio_button :role, "Designer", :input_html => { :tabindex => 5 } %>Designer
+        <%= form.radio_button :role, "Designer", :input_html => { :tabindex => 5 } %>
+        <%= form.label :role, "Designer", :for => "registration_role_designer" %>
       </p>
     </li>
     <li id="submit-button">

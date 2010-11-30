@@ -871,19 +871,26 @@ html, body {
         display: inline-block; }
         #container section#main-continue section#registration form#event-registration li#radio p.radio {
           display: inline-block;
-          margin-right: 15px;
-          text-transform: uppercase;
-          vertical-align: baseline; }
+          margin-right: 15px; }
           #container section#main-continue section#registration form#event-registration li#radio p.radio input[type="radio"] {
             margin-right: 6px;
+            vertical-align: top;
             width: auto; }
-          #container section#main-continue section#registration form#event-registration li#radio p.radio.developer {
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.developer input[type="radio"] {
+            margin-top: 5px; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.developer label {
+            display: inline-block;
+            font-size: 30px;
             font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
-            font-size: 30px; }
-          #container section#main-continue section#registration form#event-registration li#radio p.radio.designer {
+            text-transform: uppercase; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.designer input[type="radio"] {
+            margin-top: 10px; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.designer label {
+            display: inline-block;
+            font-size: 32px;
             font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
-            vertical-align: 4px;
-            font-size: 32px; }
+            text-transform: uppercase;
+            vertical-align: 4px; }
       #container section#main-continue section#registration form#event-registration li#submit-button {
         display: inline-block;
         margin-top: 10px;
@@ -1013,38 +1020,36 @@ hr {
 /************************************************************************/
 /************************************************************************/
 section.talk-wrapper {
-  padding: 25px 20px 0px; }
-  section.talk-wrapper div.speaker-image {
+  padding: 25px 0px 0px; }
+  section.talk-wrapper h2, section.talk-wrapper h3 {
+    font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+    font-weight: normal; }
+  section.talk-wrapper h2 {
+    font-size: 34px; }
+  section.talk-wrapper h3 {
+    font-size: 24px; }
+  section.talk-wrapper div.left {
+    margin-right: 20px; }
+  section.talk-wrapper div.left, section.talk-wrapper div.right {
     display: inline-block;
-    height: 73px;
-    margin-right: 20px;
-    vertical-align: top;
-    width: 73px; }
-  section.talk-wrapper div.talk-description {
-    display: inline-block;
-    width: 635px; }
-    section.talk-wrapper div.talk-description h2, section.talk-wrapper div.talk-description h3 {
-      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
-      font-weight: normal;
-      line-height: 1em;
-      margin: 0 0 0.3em; }
-    section.talk-wrapper div.talk-description h2 {
-      font-size: 30px; }
-    section.talk-wrapper div.talk-description h3 {
-      font-size: 24px; }
-    section.talk-wrapper div.talk-description p {
+    width: 375px;
+    vertical-align: top; }
+    section.talk-wrapper div.left p, section.talk-wrapper div.right p {
       line-height: 140%;
       margin-bottom: 10px;
       padding: 0px; }
-    section.talk-wrapper div.talk-description a:link, section.talk-wrapper div.talk-description a:active, section.talk-wrapper div.talk-description a:visited {
+    section.talk-wrapper div.left a:link, section.talk-wrapper div.left a:active, section.talk-wrapper div.left a:visited, section.talk-wrapper div.right a:link, section.talk-wrapper div.right a:active, section.talk-wrapper div.right a:visited {
       color: #990000;
       text-decoration: none; }
-    section.talk-wrapper div.talk-description a:hover {
+    section.talk-wrapper div.left a:hover, section.talk-wrapper div.right a:hover {
       text-decoration: underline; }
-    section.talk-wrapper div.talk-description a:first-of-type::after {
-      content: ":"; }
-    section.talk-wrapper div.talk-description ul li {
-      margin: 5px 0; }
+    section.talk-wrapper div.left a:first-of-type::after, section.talk-wrapper div.right a:first-of-type::after {
+      content: " -"; }
+    section.talk-wrapper div.left ul li, section.talk-wrapper div.right ul li {
+      margin: 10px 0;
+      list-style: none; }
+      section.talk-wrapper div.left ul li:first-child, section.talk-wrapper div.right ul li:first-child {
+        margin: 0px; }
 
 /* AUTOCOMPLETE */
 ul.ui-autocomplete {
