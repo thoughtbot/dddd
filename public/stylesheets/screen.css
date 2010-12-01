@@ -1019,6 +1019,32 @@ hr {
 
 /************************************************************************/
 /************************************************************************/
+.no-fontface div#container div.register-button h2 {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 62px; }
+.no-fontface div#container section#main section#event-location div#compass {
+  float: left;
+  position: relative; }
+.no-fontface div#container section#main section#event-location div#location {
+  right: 85px;
+  text-align: center; }
+  .no-fontface div#container section#main section#event-location div#location p.venue {
+    font-size: 30px; }
+  .no-fontface div#container section#main section#event-location div#location p.date {
+    font-size: 31px;
+    letter-spacing: -0.075em; }
+.no-fontface div#container section#schedule ol#schedule li p.event-speaker {
+  bottom: 23px;
+  line-height: 1em;
+  position: relative; }
+.no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.designer input[type="radio"], .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.developer input[type="radio"] {
+  margin-top: 10px; }
+.no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.designer label, .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.developer label {
+  font-size: 26px;
+  vertical-align: 0px; }
+
+/************************************************************************/
+/************************************************************************/
 section.talk-wrapper {
   padding: 25px 0px 20px; }
   section.talk-wrapper h2, section.talk-wrapper h3 {

@@ -41,6 +41,12 @@
 @mixin font-FellSC {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
 }
+@mixin font-Serif { 
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-Sans-Serif { 
+  font-family: "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+}
 $brown: #332F26;
 $red: #990000;
 $lt-red: #ff4e51;
@@ -62,7 +68,7 @@ div#flash {
 }
 
 /************************************************************************/
-// Start of New Design
+// Homepage
 /************************************************************************/
 html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
@@ -560,7 +566,6 @@ html, body {
     }
   }
 }
-
 hr {
   background: #3a3429;
   height: 12px;
@@ -581,6 +586,48 @@ hr {
   &.alternate {
     background: url(/stylesheets/images/hr-alternate.png) no-repeat;
     height: 34px;
+  }
+}
+/************************************************************************/
+// Modernizer Specific Rule Sets (Homepage)
+/************************************************************************/
+.no-fontface div#container {
+  div.register-button h2 {
+    @include font-Serif;
+    font-size: 62px;
+  }
+  section#main section#event-location {
+    div#compass {
+      float: left;
+      position: relative;
+    }
+    div#location {
+      right: 85px;
+      text-align: center;
+      p.venue {
+        font-size: 30px;
+      }
+      p.date {
+        font-size: 31px;
+        letter-spacing: -0.075em;
+      }
+    }
+  }
+  section#schedule ol#schedule li p.event-speaker {
+    bottom: 23px;
+    line-height: 1em;
+    position: relative;
+  }
+  section#main-continue section#registration form#event-registration li#radio {
+    p.radio.designer, p.radio.developer {
+      input[type="radio"] {
+        margin-top: 10px;
+      }
+      label {
+        font-size: 26px;
+        vertical-align: 0px;
+      }
+    }
   }
 }
 /************************************************************************/
