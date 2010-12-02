@@ -10,6 +10,5 @@ test: &test
   <<: *default
   database: dddd_test
 
-
 cucumber:
   <<: *test
