@@ -1,14 +1,13 @@
 <div id="registration-banner">
   <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
-  <p id="subtitle">Tell us more about yourself</p>
 </div>
 <%= semantic_form_for @registration, :remote => true,
       :html => { :name => "Event Registration",
                  :id   => "event-registration",
                  'data-type' => 'html' } do |form| %>
   <ol class="form">
-    <%= form.input :twitter,     :label => "Twitter Name", :input_html => { :tabindex => 1 }%>
-    <%= form.input :name,        :label => "Full Name",    :input_html => { :tabindex => 2 } %>
+    <%= form.input :name,        :label => "Full Name",    :input_html => { :tabindex => 1 } %>
+    <%= form.input :twitter,     :label => "Twitter Name", :input_html => { :tabindex => 2 }%>
     <%= form.input :school_name, :label => "School",       :input_html => { :tabindex => 3 }%>
     <li id="radio">
       <label>Weapon of choice<abbr title="required">*</abbr></label>
