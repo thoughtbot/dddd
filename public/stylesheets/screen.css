@@ -620,6 +620,7 @@ div#flash {
 html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
   background-position: 50% 0;
+  font-size: 14px;
   height: 100%;
   width: 100%;
   font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
@@ -634,7 +635,7 @@ html, body {
     color: #990000;
     text-decoration: none; }
   html a:hover, body a:hover {
-    color: #ff4e51; }
+    text-decoration: underline; }
 
 #container {
   margin: 0 auto;
@@ -673,7 +674,7 @@ html, body {
       font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
       font-size: 42px;
       font-weight: normal;
-      padding-top: 16px; }
+      padding-top: 20px; }
   #container section#main {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 20px 60px 0px; }
@@ -690,7 +691,6 @@ html, body {
           letter-spacing: 4px;
           text-transform: uppercase; }
         #container section#main div#descriptions section#what p, #container section#main div#descriptions section#why p {
-          font-size: 14px;
           line-height: 1.4em; }
       #container section#main div#descriptions div#divider {
         float: left; }
@@ -705,7 +705,6 @@ html, body {
       right: 122px; }
       #container section#main section#event-location div#location p {
         text-transform: uppercase;
-        font-size: 14px;
         line-height: 20px;
         margin: 0px;
         padding-bottom: 13px; }
@@ -739,14 +738,14 @@ html, body {
       text-align: center;
       text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
       text-transform: uppercase; }
-    #container section#schedule p {
-      margin: 10px 0 25px;
-      color: white;
-      font-size: 14px; }
-      #container section#schedule p a:link, #container section#schedule p a:active, #container section#schedule p a:visited {
-        color: #ff4e51; }
-      #container section#schedule p a:hover {
-        color: #990000; }
+    #container section#schedule p#schedule-info {
+      line-height: 20px;
+      margin: 15px 0 30px;
+      color: white; }
+      #container section#schedule p#schedule-info a:link, #container section#schedule p#schedule-info a:active, #container section#schedule p#schedule-info a:visited {
+        color: #d9cdb1; }
+      #container section#schedule p#schedule-info a:hover {
+        text-decoration: underline; }
     #container section#schedule ol#schedule {
       display: block;
       margin: 0px 0px 0px 0px;
@@ -774,7 +773,7 @@ html, body {
             #container section#schedule ol#schedule li p.event-title a:hover {
               color: #ff4e51; }
           #container section#schedule ol#schedule li p.event-speaker {
-            line-height: 38px;
+            line-height: 42px;
             float: right;
             font-size: 16px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
@@ -1070,37 +1069,42 @@ hr {
 
 /************************************************************************/
 /************************************************************************/
-section.talk-wrapper {
-  padding: 25px 0px 20px; }
-  section.talk-wrapper h2, section.talk-wrapper h3 {
-    font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
-    font-weight: normal; }
-  section.talk-wrapper h2 {
-    font-size: 34px; }
-  section.talk-wrapper h3 {
-    font-size: 24px; }
-  section.talk-wrapper div.left {
-    margin-right: 20px; }
-  section.talk-wrapper div.left, section.talk-wrapper div.right {
-    display: inline-block;
-    width: 375px;
-    vertical-align: top; }
-    section.talk-wrapper div.left p, section.talk-wrapper div.right p {
-      line-height: 140%;
-      margin-bottom: 10px;
-      padding: 0px; }
-    section.talk-wrapper div.left a:link, section.talk-wrapper div.left a:active, section.talk-wrapper div.left a:visited, section.talk-wrapper div.right a:link, section.talk-wrapper div.right a:active, section.talk-wrapper div.right a:visited {
-      color: #990000;
-      text-decoration: none; }
-    section.talk-wrapper div.left a:hover, section.talk-wrapper div.right a:hover {
-      text-decoration: underline; }
-    section.talk-wrapper div.left.resources a:first-of-type::after, section.talk-wrapper div.right.resources a:first-of-type::after {
-      content: " -"; }
-    section.talk-wrapper div.left ul li, section.talk-wrapper div.right ul li {
-      margin: 10px 0;
-      list-style: none; }
-      section.talk-wrapper div.left ul li:first-child, section.talk-wrapper div.right ul li:first-child {
-        margin: 0px; }
+section#main {
+  font-size: 14px;
+  line-height: 20px; }
+  section#main p#what-it-is {
+    margin: 10px 0 20px; }
+  section#main section.talk-wrapper {
+    padding: 25px 0px 20px; }
+    section#main section.talk-wrapper h2, section#main section.talk-wrapper h3 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-weight: normal; }
+    section#main section.talk-wrapper h2 {
+      font-size: 34px; }
+    section#main section.talk-wrapper h3 {
+      font-size: 24px; }
+    section#main section.talk-wrapper div.left {
+      margin-right: 20px; }
+    section#main section.talk-wrapper div.left, section#main section.talk-wrapper div.right {
+      display: inline-block;
+      width: 375px;
+      vertical-align: top; }
+      section#main section.talk-wrapper div.left p, section#main section.talk-wrapper div.right p {
+        margin-bottom: 10px;
+        padding: 0px; }
+      section#main section.talk-wrapper div.left a:link, section#main section.talk-wrapper div.left a:active, section#main section.talk-wrapper div.left a:visited, section#main section.talk-wrapper div.right a:link, section#main section.talk-wrapper div.right a:active, section#main section.talk-wrapper div.right a:visited {
+        color: #990000;
+        text-decoration: none; }
+      section#main section.talk-wrapper div.left a:hover, section#main section.talk-wrapper div.right a:hover {
+        text-decoration: underline; }
+      section#main section.talk-wrapper div.left.resources a:first-of-type::after, section#main section.talk-wrapper div.right.resources a:first-of-type::after {
+        content: " -"; }
+      section#main section.talk-wrapper div.left ul li, section#main section.talk-wrapper div.right ul li {
+        margin: 10px 0;
+        line-height: 20px;
+        list-style: none; }
+        section#main section.talk-wrapper div.left ul li:first-child, section#main section.talk-wrapper div.right ul li:first-child {
+          margin: 0px; }
 
 /* AUTOCOMPLETE */
 ul.ui-autocomplete {

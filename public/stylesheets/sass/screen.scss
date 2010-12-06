@@ -73,6 +73,7 @@ div#flash {
 html, body {
   background: url(/stylesheets/images/wood_bg.jpg);
   background-position: 50% 0;
+  font-size: 14px;
   height: 100%;
   width: 100%;
   @include font-Fell;
@@ -91,7 +92,7 @@ html, body {
       text-decoration: none;
     }
     &:hover {
-      color: $light-red;
+      text-decoration: underline;
     }
   }
 }
@@ -139,7 +140,7 @@ html, body {
       @include font-LeagueGothic;
       font-size: 42px;
       font-weight: normal;
-      padding-top: 16px;
+      padding-top: 20px;
     }
   }
   section#main {
@@ -159,7 +160,6 @@ html, body {
           text-transform: uppercase;
         }
         p {
-          font-size: 14px;
           line-height: 1.4em;
         }
       }
@@ -181,7 +181,6 @@ html, body {
 
         p {
           text-transform: uppercase;
-          font-size: 14px;
           line-height: 20px;
           margin: 0px;
           padding-bottom: 13px;
@@ -223,13 +222,13 @@ html, body {
       text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
       text-transform: uppercase;
     }
-    p {
-      margin: 10px 0 25px;
+    p#schedule-info {
+      line-height: 20px;
+      margin: 15px 0 30px;
       color: white;
-      font-size: 14px;
     a {
-      &:link, &:active, &:visited { color: $light-red; }
-      &:hover { color: $red; }
+      &:link, &:active, &:visited { color: #d9cdb1; }
+      &:hover { text-decoration: underline; }
     }
     }
     ol#schedule {
@@ -261,7 +260,7 @@ html, body {
             a:hover { color: $light-red; }
           }
           &.event-speaker {
-            line-height: 38px;
+            line-height: 42px;
             float: right;
             font-size: 16px;
             @include font-FellSC;
@@ -668,50 +667,54 @@ hr {
 /************************************************************************/
 // Schedule & Resources Page
 /************************************************************************/
-section.talk-wrapper {
-  padding: 25px 0px 20px;
-  h2, h3 {
-    @include font-LeagueGothic;
-    font-weight: normal;
-  }
-  h2 { font-size: 34px; }
-  h3 { font-size: 24px; }
-  div.left {
-    margin-right: 20px;
-  }
-  div.left, div.right {
-    display: inline-block;
-    width: 375px;
-    vertical-align: top;
-    p {
-      line-height: 140%;
-      margin-bottom: 10px;
-      padding: 0px;
+section#main {
+  font-size: 14px;
+  line-height: 20px;
+  p#what-it-is { margin: 10px 0 20px; }
+  section.talk-wrapper {
+    padding: 25px 0px 20px;
+    h2, h3 {
+      @include font-LeagueGothic;
+      font-weight: normal;
     }
-    a {
-      &:link, &:active, &:visited {
-        color: $red;
-        text-decoration: none;
+    h2 { font-size: 34px; }
+    h3 { font-size: 24px; }
+    div.left {
+      margin-right: 20px;
+    }
+    div.left, div.right {
+      display: inline-block;
+      width: 375px;
+      vertical-align: top;
+      p {
+        margin-bottom: 10px;
+        padding: 0px;
       }
-      &:hover {
-        text-decoration: underline;
+      a {
+        &:link, &:active, &:visited {
+          color: $red;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
       }
-    }
-    &.resources a:first-of-type::after {
-      content: " -"
-    }
-    ul {
-      li {
-        margin: 10px 0;
-        list-style: none;
-        &:first-child {
-          margin: 0px;
+      &.resources a:first-of-type::after {
+        content: " -"
+      }
+      ul {
+        li {
+          margin: 10px 0;
+          line-height: 20px;
+          list-style: none;
+          &:first-child {
+            margin: 0px;
+          }
         }
       }
     }
   }
 }
-
 /* AUTOCOMPLETE */
 
 ul.ui-autocomplete {
