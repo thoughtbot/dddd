@@ -49,7 +49,7 @@
 }
 $brown: #332F26;
 $red: #990000;
-$lt-red: #ff4e51;
+$light-red: #ff4e51;
 
 /************************************************************************/
 // Flashes
@@ -91,7 +91,7 @@ html, body {
       text-decoration: none;
     }
     &:hover {
-      color: $lt-red
+      color: $light-red;
     }
   }
 }
@@ -223,6 +223,15 @@ html, body {
       text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
       text-transform: uppercase;
     }
+    p {
+      margin: 10px 0 25px;
+      color: white;
+      font-size: 14px;
+    a {
+      &:link, &:active, &:visited { color: $light-red; }
+      &:hover { color: $red; }
+    }
+    }
     ol#schedule {
       display: block;
       margin: 0px 0px 0px 0px;
@@ -250,7 +259,7 @@ html, body {
               color: white;
               text-decoration: none;
             }
-            a:hover { color: $lt-red; }
+            a:hover { color: $light-red; }
           }
           &.event-speaker {
             line-height: 38px;

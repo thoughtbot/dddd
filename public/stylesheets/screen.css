@@ -739,6 +739,14 @@ html, body {
       text-align: center;
       text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
       text-transform: uppercase; }
+    #container section#schedule p {
+      margin: 10px 0 25px;
+      color: white;
+      font-size: 14px; }
+      #container section#schedule p a:link, #container section#schedule p a:active, #container section#schedule p a:visited {
+        color: #ff4e51; }
+      #container section#schedule p a:hover {
+        color: #990000; }
     #container section#schedule ol#schedule {
       display: block;
       margin: 0px 0px 0px 0px;
