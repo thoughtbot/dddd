@@ -175,4 +175,19 @@
     <a name="register"></a>
     <%= render :partial => 'form', :locals => { :registration => @registration } %>
   </section>
+  <hr class="bottom"/>
+  <section id="startup_tables">
+    <div id="banner">
+      <img src="/images/startup_tables.png" alt="Startup Tables" width="422" height="130" />
+    </div>
+    <ul id="startup_tables_list">
+      <% 3.times do %>
+      <li>
+        <h2>Foursquare</h2>
+        <div class="logo"><img src="http://avatar.statusok.com/foursquare?size=73" alt="Foursquare" width="73px" height="73px" /></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem ligula. Phasellus vulputate risus vel diam placerat ac tempor massa elementum. Pellentesque id nisl vitae elit tincidunt hendrerit non et felis. Vivamus luctus, tellus ut rhoncus ornare, tellus mauris eleifend neque, eu congue risus augue sed nisl. Duis odio felis, lobortis et cursus vitae, auctor non risus. Nulla facilisi. Nullam in nunc ut metus tristique iaculis.</p>
+      </li>
+      <% end %>
+    </ul>
+  </section>
 </section>
