@@ -244,7 +244,6 @@ html, body {
           color: #d9cdb1;
           font-size: 24px;
           margin-bottom: 0px;
-          vertical-align: top;
           &.event-time {
             display: inline-block;
             @include font-Lobster;
@@ -623,7 +622,7 @@ hr {
     }
   }
   section#schedule ol#schedule li p.event-speaker {
-    bottom: 23px;
+    bottom: 32px;
     line-height: 1em;
     position: relative;
   }

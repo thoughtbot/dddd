@@ -758,8 +758,7 @@ html, body {
         #container section#schedule ol#schedule li p {
           color: #d9cdb1;
           font-size: 24px;
-          margin-bottom: 0px;
-          vertical-align: top; }
+          margin-bottom: 0px; }
           #container section#schedule ol#schedule li p.event-time {
             display: inline-block;
             font-family: 'Lobster', arial, sans-serif;
@@ -1042,7 +1041,7 @@ hr {
     font-size: 31px;
     letter-spacing: -0.075em; }
 .no-fontface div#container section#schedule ol#schedule li p.event-speaker {
-  bottom: 23px;
+  bottom: 32px;
   line-height: 1em;
   position: relative; }
 .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.designer input[type="radio"], .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.developer input[type="radio"] {
