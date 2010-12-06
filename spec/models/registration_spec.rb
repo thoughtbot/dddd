@@ -3,12 +3,9 @@ require 'spec_helper'
 describe Registration do
   subject { Factory(:registration) }
 
-  it { should validate_presence_of(:twitter)     }
   it { should validate_presence_of(:name)        }
   it { should validate_presence_of(:role)        }
   it { should validate_presence_of(:school_name) }
-
-  it { should validate_uniqueness_of(:twitter) }
 
   it { should belong_to(:school) }
 
@@ -17,6 +14,18 @@ describe Registration do
 
   it { should_not allow_value("Recruiter").          for(:role) }
   it { should_not allow_value("Social Media Expert").for(:role) }
+end
+
+describe Registration, "#twitter" do
+  context "when blank" do
+    subject { Factory(:registration, :twitter => "") }
+    it { should be_valid }
+  end
+
+  context "when present" do
+    subject { Factory(:registration, :twitter => "Croaky") }
+    it { should validate_uniqueness_of(:twitter) }
+  end
 end
 
 describe Registration, "#create" do

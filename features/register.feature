@@ -16,4 +16,4 @@ Feature: As a student, I want to register for D4
   Scenario: Student does not fill in all fields on register form
     Given I am on the home page
     And I press "Register"
-    Then I should see "can't be blank" on all text inputs of the registration form
+    Then I should see "can't be blank" on text inputs of the registration form
