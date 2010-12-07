@@ -17,6 +17,9 @@
 /************************************************************************/
 // Mixins
 /************************************************************************/
+@mixin letterpress ($x: 1px, $y: 1px, $blur: 1px, $color: rgb(232, 217, 196)) {
+  text-shadow: $x $y $blur $color;
+}
 @mixin transition($ratio: 0.15s) {
   -webkit-transition: all $ratio ease-out;
   -moz-transition: all $ratio ease-out;
@@ -41,10 +44,10 @@
 @mixin font-FellSC {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
 }
-@mixin font-Serif { 
+@mixin font-Serif {
   font-family: Times, "Times New Roman", Georgia, serif;
 }
-@mixin font-Sans-Serif { 
+@mixin font-Sans-Serif {
   font-family: "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
 }
 $brown: #332F26;
@@ -100,7 +103,7 @@ html, body {
   margin: 0 auto;
   width: 900px;
   img { margin: 0px; }
-  header {
+  header#logo {
     background: url(/stylesheets/images/paper-tile.png) repeat-y;
     display: block;
     padding: 0 60px;
@@ -337,7 +340,7 @@ html, body {
     }
     section#registration {
       margin: 30px 0;
-      div#registration-banner {
+      header#registration-banner {
         margin-bottom: 10px;
         position: relative;
         text-align: center;
@@ -573,7 +576,8 @@ html, body {
     }
   }
   section#startup_tables {
-    div#banner {
+    margin-bottom: 30px;
+    header#banner {
       margin: 25px 0 20px;
       position: relative;
       text-align: center;
@@ -595,6 +599,62 @@ html, body {
           display: inline-block;
           vertical-align: top;
           width: 740px - 93px;
+        }
+      }
+    }
+  }
+  section#attendees {
+    header > h1 {
+      @include font-Lobster;
+      font-size: 62px;
+      letter-spacing: -0.05em;
+      margin: 30px 0;;
+      text-align: center;
+      @include letterpress;
+    }
+    h2 {
+      display: inline-block;
+      font-weight: normal;
+      width: 390px;
+      &#developer-title {
+        @include font-Nashville;
+        font-size: 30px;
+      }
+      &#designer-title {
+        @include font-Carnival;
+        font-size: 40px;
+        line-height: 0.64em;
+      }
+    }
+    div.right {
+      margin-left: 20px;
+    }
+    div#developer-attendees, div#designer-attendees {
+      display: inline-block;
+      vertical-align: top;
+      width: 368px;
+      ul {
+        list-style: none;
+        li:first-child { margin: 0 0 15px; }
+        li {
+          background: #d8caad;
+          background: rgba(216, 202, 173, 0.75);
+          margin: 15px 0;
+          padding: 5px;
+          div.avatar {
+            float: left;
+            margin: 0 10px 0 0;
+          }
+          h3 {
+            @include font-FellSC;
+            font-size: 24px;
+            font-weight: normal;
+            text-transform: lowercase;
+          }
+          h4 {
+            font-size: 14px;
+            font-weight: normal;
+          }
         }
       }
     }

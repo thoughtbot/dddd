@@ -7,7 +7,9 @@
 <section id="main">
   <div id="descriptions" class="clearfix">
     <section id="what">
-      <h2>What</h2>
+      <header>
+        <h2>What</h2>
+      </header>
       <p>
         On a cold Saturday in February, 140 high school and college students will gather to talk about making
         web and mobile applications. In-demand technologies will be introduced by some of the premier members
@@ -18,7 +20,9 @@
       <img src="/images/description-divider.png" alt="description-divider" width="48" height="174" />
     </div>
     <section id="why">
-      <h2>Why</h2>
+      <header>
+        <h2>Why</h2>
+      </header>
       <p>
         There is a shortage of great designer and developer talent in Boston, San Francisco, New York, and
         elsewhere as startup demand has increased recently. Jobs are available but more importantly,
@@ -47,7 +51,9 @@
 <div id="main-bottom">
 </div>
 <section id="schedule">
-  <h1>Schedule</h1>
+  <header>
+    <h1>Schedule</h1>
+  <header>
   <p id="schedule-info">Students will eat, hear some talks, then meet designers and developers from startups. The talks are short and motivational. Many focus on one technology or technique which is currently in high demand by startups. Students will hear why it's awesome and some of the cool things you can do with it. They will not be introductory tutorials. We're <%= link_to "carefully curating resources", page_path("what") %> for further study on each topic.</p>
   <ol id="schedule">
     <li>
@@ -177,9 +183,9 @@
   </section>
   <hr class="bottom"/>
   <section id="startup_tables">
-    <div id="banner">
+    <header id="banner">
       <img src="/images/startup_tables.png" alt="Startup Tables" width="422" height="130" />
-    </div>
+    </header>
     <ul id="startup_tables_list">
       <li>
         <h2>Performable</h2>
@@ -187,5 +193,42 @@
         <p>Every day, 98% of the people who visit your website make a near-instantaneous decision NOT to do business with you. They end up leaving, never to return. With Performable's easy-to-use, do-it-yourself tools you can improve your website and convert online visitors into customers.</p>
       </li>
     </ul>
+  </section>
+  <hr class="alternate"/>
+  <section id="attendees">
+    <header>
+      <h1>The Attendees</h1>
+    </header>
+    <h2 id="developer-title">developers</h2><h2 id="designer-title">designers</h2>
+    <div id="developer-attendees" class="left">
+      <ul>
+        <% 3.times do %>
+          <li>
+          <div class="avatar">
+            <a href="#"><img src="http://avatar.statusok.com/drdre?size=48" alt="Twiiter Avatar" /></a>
+          </div>
+          <hgroup>
+            <h3>First Last</h3>
+            <h4>University / School Name</h4>
+          </hgroup>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="designer-attendees" class="right">
+      <ul>
+        <% 3.times do %>
+          <li>
+          <div class="avatar">
+            <a href="#"><img src="http://avatar.statusok.com/kanye?size=48" alt="Twiiter Avatar" /></a>
+          </div>
+          <hgroup>
+            <h3>First Last</h3>
+            <h4>University / School Name</h4>
+          </hgroup>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </section>
 </section>
