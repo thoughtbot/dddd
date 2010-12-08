@@ -1019,7 +1019,8 @@ html, body {
       #container section#startup_tables ul#startup_tables_list li p {
         display: inline-block;
         vertical-align: top;
-        width: 647px; }
+        width: 740px;
+        /*# - 93px; */ }
   #container section#attendees {
     margin-bottom: 30px; }
     #container section#attendees header > h1 {

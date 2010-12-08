@@ -598,7 +598,7 @@ html, body {
         p {
           display: inline-block;
           vertical-align: top;
-          width: 740px - 93px;
+          width: 740px; /*# - 93px; */
         }
       }
     }
