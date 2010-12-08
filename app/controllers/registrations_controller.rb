@@ -1,6 +1,8 @@
 class RegistrationsController < ApplicationController
   def new
     @registration = Registration.new
+    @developers   = Registration.developers
+    @designers    = Registration.designers
   end
 
   def create

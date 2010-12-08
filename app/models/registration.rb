@@ -4,8 +4,20 @@ class Registration < ActiveRecord::Base
   validates_inclusion_of  :role,    :in => %w(Designer Developer)
 
   belongs_to    :school
-  attr_accessor :school_name
+  attr_writer   :school_name
   before_create :find_or_create_school
+
+  def school_name
+    @school_name || school.try(:name)
+  end
+
+  def self.developers
+    where(:role => "Developer").order("created_at desc")
+  end
+
+  def self.designers
+    where(:role => "Designer").order("created_at desc")
+  end
 
   private
 

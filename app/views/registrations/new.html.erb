@@ -190,7 +190,7 @@
     <ul id="startup_tables_list">
       <li>
         <h2>Performable</h2>
-        <%= twitter_avatar "Performable" %>
+        <%= twitter_avatar "Performable", 73 %>
         <p>Every day, 98% of the people who visit your website make a near-instantaneous decision NOT to do business with you. They end up leaving, never to return. With Performable's easy-to-use, do-it-yourself tools you can improve your website and convert online visitors into customers.</p>
       </li>
     </ul>
@@ -203,30 +203,26 @@
     <h2 id="developer-title">developers</h2><h2 id="designer-title">designers</h2>
     <div id="developer-attendees" class="left">
       <ul>
-        <% 3.times do %>
+        <% @developers.each do |developer| %>
           <li>
-          <div class="avatar">
-            <a href="#"><img src="http://avatar.statusok.com/drdre?size=48" alt="Twiiter Avatar" /></a>
-          </div>
-          <hgroup>
-            <h3>First Last</h3>
-            <h4>University / School Name</h4>
-          </hgroup>
+            <%= twitter_avatar developer.twitter, 48 %>
+            <hgroup>
+              <h3><%= developer.name %></h3>
+              <h4><%= developer.school_name %></h4>
+            </hgroup>
           </li>
         <% end %>
       </ul>
     </div>
     <div id="designer-attendees" class="right">
       <ul>
-        <% 3.times do %>
+        <% @designers.each do |designer| %>
           <li>
-          <div class="avatar">
-            <a href="#"><img src="http://avatar.statusok.com/kanye?size=48" alt="Twiiter Avatar" /></a>
-          </div>
-          <hgroup>
-            <h3>First Last</h3>
-            <h4>University / School Name</h4>
-          </hgroup>
+            <%= twitter_avatar designer.twitter, 48 %>
+            <hgroup>
+              <h3><%= designer.name %></h3>
+              <h4><%= designer.school_name %></h4>
+            </hgroup>
           </li>
         <% end %>
       </ul>
