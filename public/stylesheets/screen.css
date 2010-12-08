@@ -1052,10 +1052,14 @@ html, body {
         background: #d8caad;
         background: rgba(216, 202, 173, 0.75);
         margin: 15px 0;
+        min-height: 50px;
         padding: 5px; }
         #container section#attendees div#developer-attendees ul li div.logo, #container section#attendees div#designer-attendees ul li div.logo {
+          background: url("/stylesheets/images/default-avatar.png") no-repeat;
           float: left;
-          margin: 0 10px 0 0; }
+          margin: 0 10px 0 0;
+          height: 48px;
+          width: 48px; }
         #container section#attendees div#developer-attendees ul li h3, #container section#attendees div#designer-attendees ul li h3 {
           font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
           font-size: 24px;
