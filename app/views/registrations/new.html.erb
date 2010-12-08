@@ -178,11 +178,6 @@
   </div>
   -->
   <hr class="top"/>
-  <hr class="bottom"/>
-  <section id="registration">
-    <a name="register"></a>
-    <%= render :partial => 'form', :locals => { :registration => @registration } %>
-  </section>
   <section id="startup_tables">
     <header id="banner">
       <img src="/images/startup_tables.png" alt="Startup Tables" width="422" height="130" />
@@ -224,6 +219,11 @@
         <p><a href="http://swipely.com">Swipely</a> provides a secure platform for consumers to recommend purchase experiences, discover new places and products through trusted friends, save money, and have more fun shopping. Our vision is to reinvent how people shop, share and save by adding value to every swipe.</p>
       </li>
     </ul>
+  </section>
+  <hr class="bottom"/>
+  <section id="registration">
+    <a name="register"></a>
+    <%= render :partial => 'form', :locals => { :registration => @registration } %>
   </section>
   <hr class="alternate"/>
   <section id="attendees">

@@ -1020,54 +1020,56 @@ html, body {
         display: inline-block;
         vertical-align: top;
         width: 647px; }
-  #container section#attendees header > h1 {
-    font-family: 'Lobster', arial, sans-serif;
-    font-size: 62px;
-    letter-spacing: -0.05em;
-    margin: 30px 0;
-    text-align: center;
-    text-shadow: 1px 1px 1px #e8d9c4; }
-  #container section#attendees h2 {
-    display: inline-block;
-    font-weight: normal;
-    width: 390px; }
-    #container section#attendees h2#developer-title {
-      font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
-      font-size: 30px; }
-    #container section#attendees h2#designer-title {
-      font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
-      font-size: 40px;
-      line-height: 0.64em; }
-  #container section#attendees div.right {
-    margin-left: 20px; }
-  #container section#attendees div#developer-attendees, #container section#attendees div#designer-attendees {
-    display: inline-block;
-    vertical-align: top;
-    width: 368px; }
-    #container section#attendees div#developer-attendees ul, #container section#attendees div#designer-attendees ul {
-      list-style: none; }
-      #container section#attendees div#developer-attendees ul li:first-child, #container section#attendees div#designer-attendees ul li:first-child {
-        margin: 0 0 15px; }
-      #container section#attendees div#developer-attendees ul li, #container section#attendees div#designer-attendees ul li {
-        background: #d8caad;
-        background: rgba(216, 202, 173, 0.75);
-        margin: 15px 0;
-        min-height: 50px;
-        padding: 5px; }
-        #container section#attendees div#developer-attendees ul li div.logo, #container section#attendees div#designer-attendees ul li div.logo {
-          background: url("/stylesheets/images/default-avatar.png") no-repeat;
-          float: left;
-          margin: 0 10px 0 0;
-          height: 48px;
-          width: 48px; }
-        #container section#attendees div#developer-attendees ul li h3, #container section#attendees div#designer-attendees ul li h3 {
-          font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
-          font-size: 24px;
-          font-weight: normal;
-          text-transform: lowercase; }
-        #container section#attendees div#developer-attendees ul li h4, #container section#attendees div#designer-attendees ul li h4 {
-          font-size: 14px;
-          font-weight: normal; }
+  #container section#attendees {
+    margin-bottom: 30px; }
+    #container section#attendees header > h1 {
+      font-family: 'Lobster', arial, sans-serif;
+      font-size: 62px;
+      letter-spacing: -0.05em;
+      margin: 30px 0;
+      text-align: center;
+      text-shadow: 1px 1px 1px #e8d9c4; }
+    #container section#attendees h2 {
+      display: inline-block;
+      font-weight: normal;
+      width: 390px; }
+      #container section#attendees h2#developer-title {
+        font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+        font-size: 30px; }
+      #container section#attendees h2#designer-title {
+        font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+        font-size: 40px;
+        line-height: 0.64em; }
+    #container section#attendees div.right {
+      margin-left: 20px; }
+    #container section#attendees div#developer-attendees, #container section#attendees div#designer-attendees {
+      display: inline-block;
+      vertical-align: top;
+      width: 368px; }
+      #container section#attendees div#developer-attendees ul, #container section#attendees div#designer-attendees ul {
+        list-style: none; }
+        #container section#attendees div#developer-attendees ul li:first-child, #container section#attendees div#designer-attendees ul li:first-child {
+          margin: 0 0 15px; }
+        #container section#attendees div#developer-attendees ul li, #container section#attendees div#designer-attendees ul li {
+          background: #d8caad;
+          background: rgba(216, 202, 173, 0.75);
+          margin: 15px 0;
+          min-height: 50px;
+          padding: 5px; }
+          #container section#attendees div#developer-attendees ul li div.logo, #container section#attendees div#designer-attendees ul li div.logo {
+            background: url("/stylesheets/images/default-avatar.png") no-repeat;
+            float: left;
+            margin: 0 10px 0 0;
+            height: 48px;
+            width: 48px; }
+          #container section#attendees div#developer-attendees ul li h3, #container section#attendees div#designer-attendees ul li h3 {
+            font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+            font-size: 24px;
+            font-weight: normal;
+            text-transform: lowercase; }
+          #container section#attendees div#developer-attendees ul li h4, #container section#attendees div#designer-attendees ul li h4 {
+            font-size: 14px;
+            font-weight: normal; }
 
 hr {
   background: #3a3429;

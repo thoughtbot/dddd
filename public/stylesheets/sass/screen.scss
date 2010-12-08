@@ -604,6 +604,7 @@ html, body {
     }
   }
   section#attendees {
+    margin-bottom: 30px;
     header > h1 {
       @include font-Lobster;
       font-size: 62px;
