@@ -6,9 +6,10 @@ Feature: Visitor views startups
 
   Scenario: Student views startups
     Given I am on the home page
-    Then I should see "Github"
-    Then I should see "GroupMe"
-    Then I should see "Heroku"
-    Then I should see "Panjiva"
-    Then I should see "Performable"
-    Then I should see "Swipely"
+    And I should see "Github"
+    And I should see "GroupMe"
+    And I should see "Heroku"
+    And I should see "Panjiva"
+    And I should see "Performable"
+    And I should see "Swipely"
+    And I should see "Contact Jason if your company would like to attend."
