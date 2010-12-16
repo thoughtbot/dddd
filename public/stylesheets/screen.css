@@ -746,41 +746,41 @@ html, body {
         color: #d9cdb1; }
       #container section#schedule p#schedule-info a:hover {
         text-decoration: underline; }
-    #container section#schedule ol#schedule {
+    #container section#schedule ol#schedule-list {
       display: block;
       margin: 0px 0px 0px 0px;
       list-style: none;
       padding-bottom: 30px; }
-      #container section#schedule ol#schedule li {
+      #container section#schedule ol#schedule-list li {
         margin: 12px 0;
         padding: 12px 30px; }
-        #container section#schedule ol#schedule li p {
+        #container section#schedule ol#schedule-list li p {
           color: #d9cdb1;
           font-size: 24px;
           margin-bottom: 0px; }
-          #container section#schedule ol#schedule li p.event-time {
+          #container section#schedule ol#schedule-list li p.event-time {
             display: inline-block;
             font-family: 'Lobster', arial, sans-serif;
             line-height: 33px;
             margin: 0 45px 0 0;
             text-align: right;
             width: 80px; }
-          #container section#schedule ol#schedule li p.event-title {
+          #container section#schedule ol#schedule-list li p.event-title {
             display: inline-block; }
-            #container section#schedule ol#schedule li p.event-title a:link, #container section#schedule ol#schedule li p.event-title a:visited, #container section#schedule ol#schedule li p.event-title a:active {
+            #container section#schedule ol#schedule-list li p.event-title a:link, #container section#schedule ol#schedule-list li p.event-title a:visited, #container section#schedule ol#schedule-list li p.event-title a:active {
               color: white;
               text-decoration: none; }
-            #container section#schedule ol#schedule li p.event-title a:hover {
+            #container section#schedule ol#schedule-list li p.event-title a:hover {
               color: #ff4e51; }
-          #container section#schedule ol#schedule li p.event-speaker {
+          #container section#schedule ol#schedule-list li p.event-speaker {
             line-height: 42px;
             float: right;
             font-size: 16px;
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
-          #container section#schedule ol#schedule li p.double {
+          #container section#schedule ol#schedule-list li p.double {
             line-height: 16px;
             text-align: right; }
-        #container section#schedule ol#schedule li:nth-child(odd) {
+        #container section#schedule ol#schedule-list li:nth-child(odd) {
           background: rgba(0, 0, 0, 0.3);
           -moz-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
           -webkit-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
@@ -1000,23 +1000,23 @@ html, body {
           font-size: 16px;
           line-height: 120%;
           text-transform: lowercase; }
-  #container section#startup_tables {
+  #container section#startup-tables {
     margin-bottom: 30px; }
-    #container section#startup_tables header#banner {
+    #container section#startup-tables header#startup-banner {
       margin: 25px 0 20px;
       position: relative;
       text-align: center; }
-    #container section#startup_tables ul#startup_tables_list li {
+    #container section#startup-tables ul#startup_tables_list li {
       list-style: none;
       margin-bottom: 20px; }
-      #container section#startup_tables ul#startup_tables_list li h2 {
+      #container section#startup-tables ul#startup_tables_list li h2 {
         font-size: 2.2em;
         font-weight: normal;
         font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif; }
-      #container section#startup_tables ul#startup_tables_list li div.logo {
+      #container section#startup-tables ul#startup_tables_list li div.logo {
         display: inline-block;
         margin-right: 15px; }
-      #container section#startup_tables ul#startup_tables_list li p {
+      #container section#startup-tables ul#startup_tables_list li p {
         display: inline-block;
         vertical-align: top;
         width: 740px;

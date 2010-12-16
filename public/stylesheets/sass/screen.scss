@@ -234,7 +234,7 @@ html, body {
       &:hover { text-decoration: underline; }
     }
     }
-    ol#schedule {
+    ol#schedule-list {
       display: block;
       margin: 0px 0px 0px 0px;
       list-style: none;
@@ -575,9 +575,9 @@ html, body {
       }
     }
   }
-  section#startup_tables {
+  section#startup-tables {
     margin-bottom: 30px;
-    header#banner {
+    header#startup-banner {
       margin: 25px 0 20px;
       position: relative;
       text-align: center;
