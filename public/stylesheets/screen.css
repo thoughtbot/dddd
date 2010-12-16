@@ -927,7 +927,10 @@ html, body {
       font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
       padding: 15px 30px; }
       #container section#main-continue div.student div.avatar {
-        display: inline-block; }
+        background: url("../images/default-avatar-lg.png") no-repeat;
+        display: inline-block;
+        height: 73px;
+        width: 73px; }
       #container section#main-continue div.student div.student-details {
         display: inline-block;
         margin-left: 15px;
