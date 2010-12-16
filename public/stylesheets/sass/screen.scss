@@ -480,6 +480,40 @@ html, body {
         }
       }
     }
+    div.student {
+      @include font-FellSC;
+      padding: 15px 30px;
+      div.avatar {
+        display: inline-block;
+      }
+      div.student-details {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        text-align: left;
+        div.name {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 140%;
+        }
+        div.twitter {
+          font-size: 16px;
+          line-height: 100%;
+          text-transform: lowercase;
+        }
+        div.role-and-school {
+          font-size: 16px;
+          line-height: 120%;
+          text-transform: lowercase;
+        }
+      }
+      h2, h3 { font-weight: normal; }
+      h2 { margin: 20px 0 10px; }
+      h3 {
+        font-size: 1.15em;
+        line-height: 1.2em;
+      }
+    }
   }
   div.register-button {
     div.hand {
@@ -538,40 +572,6 @@ html, body {
       div.hand {
         &.left { margin: 10px 50px 40px 80px; }
         &.right { margin: 10px 80px 40px 50px; }
-      }
-    }
-  }
-  div#registration-complete {
-    text-align: center;
-    h2, h3 {
-      font-weight: normal;
-    }
-    div.student {
-      @include font-FellSC;
-      margin: 20px 0;
-      div.avatar {
-        display: inline-block;
-      }
-      div.student-details {
-        display: inline-block;
-        margin-left: 15px;
-        vertical-align: top;
-        text-align: left;
-        div.name {
-          font-size: 24px;
-          font-weight: bold;
-          line-height: 140%;
-        }
-        div.twitter {
-          font-size: 18px;
-          line-height: 100%;
-          text-transform: lowercase;
-        }
-        div.role-and-school {
-          font-size: 16px;
-          line-height: 120%;
-          text-transform: lowercase;
-        }
       }
     }
   }

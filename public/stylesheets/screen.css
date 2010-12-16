@@ -923,6 +923,35 @@ html, body {
           #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"]:active {
             background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.66)), color-stop(0, rgba(225, 211, 181, 0.33)));
             background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33)); }
+    #container section#main-continue div.student {
+      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+      padding: 15px 30px; }
+      #container section#main-continue div.student div.avatar {
+        display: inline-block; }
+      #container section#main-continue div.student div.student-details {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        text-align: left; }
+        #container section#main-continue div.student div.student-details div.name {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 140%; }
+        #container section#main-continue div.student div.student-details div.twitter {
+          font-size: 16px;
+          line-height: 100%;
+          text-transform: lowercase; }
+        #container section#main-continue div.student div.student-details div.role-and-school {
+          font-size: 16px;
+          line-height: 120%;
+          text-transform: lowercase; }
+      #container section#main-continue div.student h2, #container section#main-continue div.student h3 {
+        font-weight: normal; }
+      #container section#main-continue div.student h2 {
+        margin: 20px 0 10px; }
+      #container section#main-continue div.student h3 {
+        font-size: 1.15em;
+        line-height: 1.2em; }
   #container div.register-button div.hand {
     height: 51px;
     width: 105px; }
@@ -974,32 +1003,6 @@ html, body {
     margin: 10px 50px 40px 80px; }
   #container div.register-button.bottom div.hand.right {
     margin: 10px 80px 40px 50px; }
-  #container div#registration-complete {
-    text-align: center; }
-    #container div#registration-complete h2, #container div#registration-complete h3 {
-      font-weight: normal; }
-    #container div#registration-complete div.student {
-      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
-      margin: 20px 0; }
-      #container div#registration-complete div.student div.avatar {
-        display: inline-block; }
-      #container div#registration-complete div.student div.student-details {
-        display: inline-block;
-        margin-left: 15px;
-        vertical-align: top;
-        text-align: left; }
-        #container div#registration-complete div.student div.student-details div.name {
-          font-size: 24px;
-          font-weight: bold;
-          line-height: 140%; }
-        #container div#registration-complete div.student div.student-details div.twitter {
-          font-size: 18px;
-          line-height: 100%;
-          text-transform: lowercase; }
-        #container div#registration-complete div.student div.student-details div.role-and-school {
-          font-size: 16px;
-          line-height: 120%;
-          text-transform: lowercase; }
   #container section#startup-tables {
     margin-bottom: 30px; }
     #container section#startup-tables header#startup-banner {
