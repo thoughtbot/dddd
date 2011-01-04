@@ -6,10 +6,20 @@ Feature: Visitor views startups
 
   Scenario: Student views startups
     Given I am on the home page
-    And I should see "Github"
-    And I should see "GroupMe"
-    And I should see "Heroku"
-    And I should see "Panjiva"
-    And I should see "Performable"
-    And I should see "Swipely"
+    Then I should see the following startups:
+      | name           |
+      | Acquia         |
+      | Box.net        |
+      | CampusLIVE     |
+      | Digital Lumens |
+      | Github         |
+      | GroupMe        |
+      | Heroku         |
+      | Nimbit         |
+      | Panjiva        |
+      | Performable    |
+      | SCVNGR         |
+      | Swipely        |
+      | uTest          |
+      | Yottaa         |
     And I should see "Contact Jason if your company would like to attend."

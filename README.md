@@ -1,9 +1,5 @@
 # Developers Developers Developers Developers
 
-and
-
-# Designers Designers Designers Designers
-
 This is the source code to http://developersdevelopersdevelopersdevelopers.org.
 
 It is a Ruby on Rails app that uses:
