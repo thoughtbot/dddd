@@ -1,14 +1,12 @@
 development: &default
-  adapter: mysql
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  min_messages: warning
   database: dddd_development
-  username: root
-  password:
   host: localhost
   encoding: utf8
 
 test: &test
   <<: *default
   database: dddd_test
-
-cucumber:
-  <<: *test
