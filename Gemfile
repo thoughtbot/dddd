@@ -5,18 +5,17 @@ gem "rack"
 gem "haml"
 gem "high_voltage"
 gem "hoptoad_notifier"
-gem "RedCloth", :require => "redcloth"
-gem "paperclip"
-gem "will_paginate"
 gem "formtastic"
-gem "mysql"
+gem "pg"
 gem "flutie", "1.1.3"
 gem "dynamic_form"
 
-# http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
-group :development, :test, :cucumber do
-  gem "rspec-rails", "~> 2.0.0"
-  gem "ruby-debug"
+# RSpec needs to be in :development group to expose generators
+# and rake tasks without having to type RAILS_ENV=test.
+group :development, :test do
+  gem "rspec-rails", "~> 2.4.0"
+  gem "ruby-debug",   :platforms => :mri_18
+  gem "ruby-debug19", :platforms => :mri_19
 end
 
 group :test, :cucumber do

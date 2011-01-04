@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.3)
     abstract (1.0.0)
     actionmailer (3.0.3)
       actionpack (= 3.0.3)
@@ -29,6 +28,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    archive-tar-minitar (0.5.2)
     arel (2.0.4)
     bourne (1.0)
       mocha (= 0.9.8)
@@ -88,6 +88,8 @@ GEM
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
     linecache (0.43)
+    linecache19 (0.5.11)
+      ruby_core_source (>= 0.1.4)
     mail (2.2.10)
       activesupport (>= 2.3.6)
       i18n (~> 0.4.1)
@@ -96,11 +98,8 @@ GEM
     mime-types (1.16)
     mocha (0.9.8)
       rake
-    mysql (2.8.1)
     nokogiri (1.4.4)
-    paperclip (2.3.5)
-      activerecord
-      activesupport
+    pg (0.10.0)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -121,23 +120,34 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
-    rspec (2.0.1)
-      rspec-core (~> 2.0.1)
-      rspec-expectations (~> 2.0.1)
-      rspec-mocks (~> 2.0.1)
-    rspec-core (2.0.1)
-    rspec-expectations (2.0.1)
-      diff-lcs (>= 1.1.2)
-    rspec-mocks (2.0.1)
-      rspec-core (~> 2.0.1)
-      rspec-expectations (~> 2.0.1)
-    rspec-rails (2.0.1)
-      rspec (~> 2.0.0)
+    rspec (2.4.0)
+      rspec-core (~> 2.4.0)
+      rspec-expectations (~> 2.4.0)
+      rspec-mocks (~> 2.4.0)
+    rspec-core (2.4.0)
+    rspec-expectations (2.4.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.4.0)
+    rspec-rails (2.4.1)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.4.0)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
+    ruby-debug-base19 (0.11.24)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby_core_source (>= 0.1.4)
+    ruby-debug19 (0.11.6)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby-debug-base19 (>= 0.11.19)
+    ruby_core_source (0.1.4)
+      archive-tar-minitar (>= 0.5.2)
     rubyzip (0.9.4)
     selenium-webdriver (0.1.0)
       childprocess (= 0.1.4)
@@ -151,7 +161,6 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
-    will_paginate (2.3.15)
     xpath (0.1.2)
       nokogiri (~> 1.3)
 
@@ -159,7 +168,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   bourne
   capybara
   cucumber-rails
@@ -173,14 +181,13 @@ DEPENDENCIES
   high_voltage
   hoptoad_notifier
   launchy
-  mysql
   nokogiri
-  paperclip
+  pg
   rack
   rails (>= 3.0)
-  rspec-rails (~> 2.0.0)
+  rspec-rails (~> 2.4.0)
   ruby-debug
+  ruby-debug19
   shoulda
   timecop
   treetop
-  will_paginate
