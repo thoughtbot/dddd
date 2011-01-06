@@ -16,3 +16,4 @@ Feature: Visitor views attendees
     And I should see "Dan Croak" and "Holy Cross" in the developer attendee section
     And I should see "Chad Mazzola" and "WPI" in the designer attendee section
     And I should see "Mike Burns" and "Northeastern" in the developer attendee section
+    And I should see "3 high school and college students"
