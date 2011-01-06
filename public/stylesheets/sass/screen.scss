@@ -7,6 +7,7 @@
   display: inline;
   *margin-left: -0.04em;
 }
+
 .whole { width: 100%; }
 .one-fourth { width: 25%; }
 .one-third { width: 33.33%; }
@@ -586,22 +587,33 @@ html, body {
       text-align: center;
     }
     ul#startup_tables_list {
-      li {
-        list-style: none;
-        margin-bottom: 20px;
+      .row {
+        @extend .clearfix;
+        margin: 0 0 20px 0;
+      }
+
+      section.company {
+        float: left;
+        width: 370px;
+
+        &.first {
+          margin-right: 40px;
+        }
+
         h2 {
           font-size: 2.2em;
           font-weight: normal;
           @include font-LeagueGothic;
         }
+
         div.logo {
           display: inline-block;
           margin-right: 15px;
         }
+
         p {
           display: inline-block;
           vertical-align: top;
-          width: 740px; /*# - 93px; */
         }
       }
     }

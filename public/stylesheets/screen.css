@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .clearfix:after {
+.clearfix:before, #container section#startup-tables ul#startup_tables_list .row:before, .clearfix:after, #container section#startup-tables ul#startup_tables_list .row:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after {
+.clearfix:after, #container section#startup-tables ul#startup_tables_list .row:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix {
+.clearfix, #container section#startup-tables ul#startup_tables_list .row {
   zoom: 1; }
 
 .ie7 img {
@@ -1012,21 +1012,23 @@ html, body {
       margin: 25px 0 20px;
       position: relative;
       text-align: center; }
-    #container section#startup-tables ul#startup_tables_list li {
-      list-style: none;
-      margin-bottom: 20px; }
-      #container section#startup-tables ul#startup_tables_list li h2 {
+    #container section#startup-tables ul#startup_tables_list .row {
+      margin: 0 0 20px 0; }
+    #container section#startup-tables ul#startup_tables_list section.company {
+      float: left;
+      width: 370px; }
+      #container section#startup-tables ul#startup_tables_list section.company.first {
+        margin-right: 40px; }
+      #container section#startup-tables ul#startup_tables_list section.company h2 {
         font-size: 2.2em;
         font-weight: normal;
         font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif; }
-      #container section#startup-tables ul#startup_tables_list li div.logo {
+      #container section#startup-tables ul#startup_tables_list section.company div.logo {
         display: inline-block;
         margin-right: 15px; }
-      #container section#startup-tables ul#startup_tables_list li p {
+      #container section#startup-tables ul#startup_tables_list section.company p {
         display: inline-block;
-        vertical-align: top;
-        width: 740px;
-        /*# - 93px; */ }
+        vertical-align: top; }
   #container section#attendees {
     margin-bottom: 30px; }
     #container section#attendees header > h1 {
