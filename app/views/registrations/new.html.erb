@@ -165,7 +165,7 @@
       <img src="/images/startup_tables.png" alt="Startup Tables" width="422" height="130" />
     </header>
 
-    <ul id="startup_tables_list">
+    <section id="startup_tables_list">
 
       <section class="row">
         <section class="company first">
@@ -250,14 +250,18 @@
         </section>
       </section>
 
-    <p>Contact <a href="mailto:jason@greenhornconnect.com">Jason</a> if your company would like to attend.</p>
+    <p id="contact-for-table">Contact <a href="mailto:jason@greenhornconnect.com">Jason</a> if your company would like to attend.</p>
   </section>
+
   <hr class="bottom"/>
+
   <section id="registration">
     <a name="register"></a>
     <%= render :partial => 'form', :locals => { :registration => @registration } %>
   </section>
+
   <hr class="alternate"/>
+
   <section id="attendees">
     <header>
       <h1>The Attendees</h1>

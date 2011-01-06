@@ -358,6 +358,12 @@ html, body {
         li {
           display: inline-block;
           vertical-align: top;
+
+          &#registration-note {
+            display: block;
+            text-align: center;
+          }
+
           &:nth-child(odd){
             margin-right: 20px
           }
@@ -586,7 +592,8 @@ html, body {
       position: relative;
       text-align: center;
     }
-    ul#startup_tables_list {
+
+    #startup_tables_list {
       .row {
         @extend .clearfix;
         margin: 0 0 20px 0;
@@ -615,6 +622,12 @@ html, body {
           display: inline-block;
           vertical-align: top;
         }
+      }
+
+      #contact-for-table {
+        font-size: 1.4em;
+        margin: 1.4em 0 0.6em 0;
+        text-align: center;
       }
     }
   }
