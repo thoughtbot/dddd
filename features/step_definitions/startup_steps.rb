@@ -6,7 +6,7 @@ end
 Then /^I should see the following startups:$/ do |table|
   within "#startup_tables_list" do
     table.hashes.each do |startup|
-      page.should have_css("li h2", :text => startup['name'])
+      page.should have_css(".company h2", :text => startup['name'])
     end
   end
 end
