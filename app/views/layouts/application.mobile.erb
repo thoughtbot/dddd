@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Developers Developers Developers Developers</title>
+  <%= render :partial => 'shared/head' %>
+</head>
+<body class="<%= body_class %>">
+  <div id="container">
+    <%= render :partial => 'shared/flashes' %>
+
+    <%= yield %>
+
+    <%= render :partial => 'shared/javascript' %>
+  </div>
+</body>
+</html>
