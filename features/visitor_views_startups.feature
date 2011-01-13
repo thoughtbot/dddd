@@ -5,21 +5,19 @@ Feature: Visitor views startups
   I want to see the startups and what they do
 
   Scenario: Student views startups
-    Given I am on the home page
+    Given the following startups exist:
+      | name           | description  |
+      | Foursquare     | Check-ins    |
+      | Github         | Social code  |
+      | GroupMe        | Group chat   |
+      | Heroku         | Deploy       |
+      | Twitter        | Info network |
+    And I am on the home page
     Then I should see the following startups:
-      | name           |
-      | Acquia         |
-      | Box.net        |
-      | CampusLIVE     |
-      | Digital Lumens |
-      | Github         |
-      | GroupMe        |
-      | Heroku         |
-      | Nimbit         |
-      | Panjiva        |
-      | Performable    |
-      | SCVNGR         |
-      | Swipely        |
-      | uTest          |
-      | Yottaa         |
+      | name           | description  |
+      | Foursquare     | Check-ins    |
+      | Github         | Social code  |
+      | GroupMe        | Group chat   |
+      | Heroku         | Deploy       |
+      | Twitter        | Info network |
     And I should see "Contact Jason if your company would like to attend."

@@ -11,3 +11,8 @@ end
 Factory.define :school do |factory|
   factory.name { 'School of the Museum of Fine Arts, Boston' }
 end
+
+Factory.define :startup do |factory|
+  factory.name        { 'Heroku' }
+  factory.description { 'Deploy' }
+end

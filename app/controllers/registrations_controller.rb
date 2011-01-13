@@ -3,6 +3,7 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new
     @developers   = Registration.developers
     @designers    = Registration.designers
+    @startups     = Startup.alphabetical
   end
 
   def create
