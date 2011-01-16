@@ -1,0 +1,69 @@
+<section id="free-event">
+  <h1>What It Is</h1>
+</section>
+<section id="main">
+  <p id="what-it-is">The goal of this event is to act as a welcome wagon for student entering the startup community as developers and designers. The content is driven by what actual startups need right now. Each 10-minute talk is given by a community leader. Further resources on each topic are listed below (this is a constant work in progress: check back often). Startups that are interested in hiring students as interns or full-time employees post-graduation will be available afterwards to chat and hand out information.</p>
+
+  <% @talks.each do |talk| %>
+    <hr class="alternate"/>
+    <section class="talk-wrapper">
+      <a name="<%= talk.slug %>"></a>
+      <h2><%= talk.name %> - <%= talk.speaker_name %></h2>
+      <div class="left abstract bio">
+        <%= simple_format talk.abstract %>
+        <h3>Speaker Bio</h3>
+        <%= simple_format talk.speaker_bio %>
+      </div>
+      <div class="right resources">
+        <h3>Learn More</h3>
+        <ul>
+          <% talk.resources.each do |resource| %>
+            <li><%= link_to resource.name, resource.url %> &#8220;<%= resource.description %>&#8221;</li>
+          <% end %>
+        </ul>
+      </div>
+    </section>
+  <% end %>
+
+  <hr class="alternate"/>
+  <section class="talk-wrapper">
+    <h2>More details coming soon...</h2>
+  </section>
+  <!--
+  <hr class="alternate"/>
+  <section class="talk-wrapper">
+    <a name="postgresql"></a>
+    <h2>PostgreSQL - Jim Psota</h2>
+    <div class="left description">
+      <p></p>
+      <h3>Speaker Bio</h3>
+      <p></p>
+    </div>
+    <div class="right resources">
+      <h3>Learn More</h3>
+      <ul>
+        <li><a href="http://railsonpostgresql.com/">Rails on PostgreSQL</a> </li>
+        <li><a href=""></a> </li>
+      </ul>
+    </div>
+  </section>
+  <hr class="alternate"/>
+  <section class="talk-wrapper">
+    <a name="nosql"></a>
+    <h2>NoSQL - Daniel Weinreb</h2>
+    <div class="left description">
+      <p></p>
+      <h3>Speaker Bio</h3>
+      <p></p>
+    </div>
+    <div class="right resources">
+      <h3>Learn More</h3>
+      <ul>
+        <li><a href=""></a> </li>
+        <li><a href=""></a> </li>
+      </ul>
+    </div>
+  </section>
+  <hr class="alternate"/>
+  -->
+</section>
