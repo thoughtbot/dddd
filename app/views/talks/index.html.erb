@@ -18,7 +18,7 @@
         <h3>Learn More</h3>
         <ul>
           <% talk.resources.each do |resource| %>
-            <li><%= link_to resource.name, resource.url %> &#8220;<%= resource.description %>&#8221;</li>
+            <li><%= link_to resource.name, resource.url %> <%= resource.description %></li>
           <% end %>
         </ul>
       </div>

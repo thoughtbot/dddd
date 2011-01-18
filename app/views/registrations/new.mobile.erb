@@ -16,48 +16,31 @@
   </div>
 
   <ul data-role="listview">
-    <li><a href="#why-work-at-a-startup">Why Work at a Startup?</a></li>
-    <li><a href="#">A Day in the Life of a Designer</a></li>
-    <li><a href="#">A Day in the Life of a Developer</a></li>
-    <li><a href="#">User Experience</a></li>
-    <li><a href="#">Typography</a></li>
-    <li><a href="#">Grids</a></li>
-    <li><a href="#">Text Editor</a></li>
-    <li><a href="#">Unix Shell</a></li>
-    <li><a href="#">Git</a></li>
-    <li><a href="#">Web Standards</a></li>
-    <li><a href="#">HTML5 and CSS</a></li>
-    <li><a href="#">jQuery</a></li>
-    <li><a href="#">jQuery Mobile</a></li>
-    <li><a href="#">Ruby on Rails</a></li>
-    <li><a href="#">PostgreSQL</a></li>
-    <li><a href="#">NoSQL</a></li>
-    <li><a href="#">Ship It</a></li>
+    <% @talks.each do |talk| %>
+      <li><%= link_to talk.name, "##{talk.slug}" %></li>
+    <% end %>
   </ul>
 </div>
 
-<div data-role="page" id="why-work-at-a-startup">
-  <div data-role="header">
-    <h1>Why Work at a Startup?</h1>
+<% @talks.each do |talk| %>
+  <div data-role="page" id="<%= talk.slug %>">
+    <div data-role="header">
+      <h1><%= talk.name %></h1>
+    </div>
+
+    <div data-role="content" class="ui-content" role="main">
+      <%= simple_format talk.abstract %>
+
+      <h3>Speaker Bio - <%= talk.speaker_name %></h3>
+      <%= simple_format talk.speaker_bio %>
+
+      <h3>Learn More</h3>
+
+      <ul>
+        <% talk.resources.each do |resource| %>
+          <li><%= link_to resource.name, resource.url %> <%= resource.description %></li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-
-  <div data-role="content" class="ui-content" role="main">
-    <p>The people who are attracted to working at startups as designers and developers tend to be passionate, self-motivated, and caring. They care about creating something great and choose the form of a startup because it has fewer barriers to achieving great things.</p>
-    <p>Boston and its surrounding cities like Cambridge, Providence (RI), and Portsmouth (NH) are filled with such people. This event is intended to introduce students to this community.</p>
-
-    <h3>Speaker Bio - Angus Davis</h3>
-
-    <p>Angus is the founder and CEO of <a href="http://swipely.com">Swipely</a>. He previously founded Tellme, a speech recognition start-up that grew to over 300 employees with venture backing from Kleiner Perkins, Benchmark Capital, and others. In 2007, Microsoft acquired Tellme in its largest-ever acquisition of a private company.</p>
-    <p>Angus was also Netscape Communications's youngest employee in 1996 where he was product manager for the flagship web browser. He represented Netscape on the HTML and CSS standards groups and he helped establish Mozilla.org.</p>
-
-    <h3>Learn More</h3>
-
-    <ul>
-      <li><a href="http://www.paulgraham.com/mit.html">A Student's Guide to Startups</a> &#8220;Till recently graduating seniors had two choices: get a job or go to grad school. I think there will increasingly be a third option: to start your own startup.&#8221;</li>
-      <li><a href="http://paulgraham.com/wealth.html">How to Make Wealth</a> &#8220;If you wanted to get rich, how would you do it? I think your best bet would be to start or join a startup.&#8221;</li>
-      <li><a href="http://paulgraham.com/cities.html">Cities and Ambition</a> &#8220;As of this writing, Cambridge seems to be the intellectual capital of the world.&#8221;</li>
-      <li><a href="http://paulgraham.com/really.html">What Startups are Really Like</a> &#8220;Unconsciously, everyone expects a startup to be like a job, and that explains most of the surprises.&#8221;</li>
-      <li><a href="http://www.quora.com/Startup-Advice-Strategy/What-would-the-ideal-web-technology-start-up-team-be-composed-of">What would the ideal web technology startup team be composed of?</a> Opinions from investors, startup founders, and others.</li>
-    </ul>
-  </div>
-</div>
+<% end %>

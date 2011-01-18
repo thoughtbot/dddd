@@ -4,6 +4,7 @@ class RegistrationsController < ApplicationController
     @developers   = Registration.developers
     @designers    = Registration.designers
     @startups     = Startup.alphabetical
+    @talks        = Talk.chronological
   end
 
   def create

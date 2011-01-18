@@ -8,10 +8,10 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /the home\s?page/
+    when /^the home\s?page$/
       '/'
-    when /the what page/
-      '/pages/what'
+    when /the talks page/
+      talks_path
 
     # Add more mappings here.
     when /the sign up page/i

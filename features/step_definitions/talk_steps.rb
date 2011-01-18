@@ -14,3 +14,21 @@ Then /^I should see the following talks:$/ do |table|
     end
   end
 end
+
+Then /^I should see the "([^"]*)" talk$/ do |talk_name|
+  talk = Talk.find_by_name(talk_name)
+
+  steps %{
+    Then I should see "#{talk.name}"
+    And I should see "#{talk.speaker_name}"
+    And I should see "#{talk.abstract}"
+    And I should see "#{talk.speaker_bio}"
+  }
+
+  talk.resources.each do |resource|
+    steps %{
+      Then I should see "#{resource.name}"
+      And I should see "#{resource.description}"
+    }
+  end
+end
