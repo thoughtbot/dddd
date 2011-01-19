@@ -24,6 +24,7 @@ Factory.define :talk do |factory|
   factory.abstract do
     "The second most important thing you can do is ship something good. The most important thing you can do? Ship something."
   end
+  factory.time { Time.now }
 end
 
 Factory.define :resource do |factory|

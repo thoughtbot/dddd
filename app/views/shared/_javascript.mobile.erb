@@ -1,4 +1,8 @@
-<script src="//code.jquery.com/jquery-1.4.4.min.js"></script>
-<script src="//code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+<% if Rails.env.test? %>
+  <%= javascript_include_tag "jquery", "jquery-mobile" %>
+<% else %>
+  <script src="//code.jquery.com/jquery-1.4.4.min.js"></script>
+  <script src="//code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+<% end %>
 
 <%= render :partial => 'shared/google_analytics' %>
