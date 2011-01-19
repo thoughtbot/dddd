@@ -1,2 +1,6 @@
 .ui-content li {
   line-height: 1.5em; }
+
+body {
+  margin: 0;
+  padding: 0; }
