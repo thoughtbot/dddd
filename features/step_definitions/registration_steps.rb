@@ -7,3 +7,7 @@ Then /^I should see "([^"]*)" on text inputs of the registration form$/ do |cont
     with_scope("#registration_#{field}_input") { page.should have_content(content) }
   end
 end
+
+Then /^I should not see the registration form$/ do
+  page.should have_no_css("form[id='event-registration']")
+end

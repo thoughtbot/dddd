@@ -341,6 +341,9 @@ html, body {
     }
     section#registration {
       margin: 30px 0;
+      p#registration-closed {
+        text-align: center;
+      }
       header#registration-banner {
         margin-bottom: 10px;
         position: relative;
