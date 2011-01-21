@@ -1,10 +1,12 @@
 class RegistrationsController < ApplicationController
   def new
-    @registration = Registration.new
-    @developers   = Registration.developers
-    @designers    = Registration.designers
-    @startups     = Startup.alphabetical
-    @talks        = Talk.chronological
+    unless is_mobile_device?
+      @registration = Registration.new
+      @developers   = Registration.developers
+      @designers    = Registration.designers
+      @startups     = Startup.alphabetical
+      @talks        = Talk.chronological
+    end
   end
 
   def create
