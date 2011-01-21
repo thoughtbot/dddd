@@ -19,7 +19,7 @@ body {
   padding: 0;
 }
 div#home, div.ui-page{
-  background: url('images-mobile/paper-texture.png') repeat-y;
+  background: url('images-mobile/paper-texture-small.png') repeat-y;
   height: 100%;
 }
 div#home {
@@ -27,7 +27,7 @@ div#home {
     background: transparent;
     border: 0px;
     img {
-      padding: 20px 40px;
+      padding: 10px 21px;
     }
   }
 }
@@ -36,7 +36,7 @@ ul.ui-listview, ul.ui-listview li {
   border: 0px;
 }
 .ui-listview, .ui-li {
-  padding: 0 15px;
+  padding: 0 7px;
 }
 .ui-content {
   padding: 0 40px;
