@@ -12,18 +12,16 @@ a.ui-link, a.ui-link-inherit {
   line-height: 1.5em; }
 
 body {
-  background: url("images-mobile/wood-texture.png") 50% 50% repeat;
+  background: url("images-mobile/paper.png") repeat;
   margin: 0;
   padding: 0; }
-
-div#home, div.ui-page {
-  background: url("images-mobile/paper-texture-small.png") repeat-y;
-  height: 100%; }
 
 div#home div#logo-header {
   background: transparent;
   border: 0px; }
   div#home div#logo-header img {
+    max-width: 778px;
+    width: 90%;
     padding: 10px 21px; }
 
 ul.ui-listview, ul.ui-listview li {
