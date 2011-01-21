@@ -34,7 +34,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+h2, h3, h4, h5 {
+  @include font-LeagueGothic;
+  font-weight: normal;
+}
 div#home {
   div#logo-header {
     background: transparent;
@@ -50,14 +53,14 @@ div#home {
 
 ul.ui-listview {
   background: transparent;
-  border-bottom: 1px solid #EEEADD;
+  border-bottom: 1px solid #DDD5BB;
 
   & li {
     background: transparent;
     border-color: #A89F8A;
 
     .ui-btn-inner {
-      border-color: #EEEADD;
+      border-color: #DDD5BB;
     }
   }
 }

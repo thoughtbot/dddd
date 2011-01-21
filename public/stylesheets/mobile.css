@@ -1,11 +1,30 @@
 /************************************************************************/
 /************************************************************************/
+/*@mixin font-Nashville {
+  font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-Carnival {
+  font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+}*/
+/*@mixin font-Lobster {
+  font-family: 'Lobster', arial, sans-serif;
+}
+@mixin font-Fell {
+  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-FellSC {
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+}*/
 /************************************************************************/
 /************************************************************************/
 body {
   background: url("images-mobile/paper.png") repeat;
   margin: 0;
   padding: 0; }
+
+h2, h3, h4, h5 {
+  font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: normal; }
 
 div#home div#logo-header {
   background: transparent;
@@ -17,12 +36,12 @@ div#home div#logo-header {
 
 ul.ui-listview {
   background: transparent;
-  border-bottom: 1px solid #EEEADD; }
+  border-bottom: 1px solid #DDD5BB; }
   ul.ui-listview li {
     background: transparent;
     border-color: #A89F8A; }
     ul.ui-listview li .ui-btn-inner {
-      border-color: #EEEADD; }
+      border-color: #DDD5BB; }
 
 .ui-body-c {
   background: transparent;

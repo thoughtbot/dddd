@@ -6,10 +6,10 @@
   <div data-role="content" class="ui-content" role="main">
     <%= simple_format @talk.abstract %>
 
-    <h3>Speaker Bio - <%= @talk.speaker_name %></h3>
+    <h2>Speaker Bio - <%= @talk.speaker_name %></h2>
     <%= simple_format @talk.speaker_bio %>
 
-    <h3>Learn More</h3>
+    <h2>Learn More</h2>
 
     <ul>
       <% @talk.resources.each do |resource| %>
