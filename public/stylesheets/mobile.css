@@ -48,9 +48,9 @@ ul.ui-listview {
   color: #3A3429;
   text-shadow: #EEEADD 0 1px 0; }
 
-a.ui-link, a.ui-link-inherit {
+.ui-btn-up-c, a.ui-link, a.ui-link-inherit {
   color: #900 !important; }
-  a.ui-link:hover, a.ui-link:active, a.ui-link-inherit:hover, a.ui-link-inherit:active {
+  .ui-btn-up-c:hover, .ui-btn-up-c:active, a.ui-link:hover, a.ui-link:active, a.ui-link-inherit:hover, a.ui-link-inherit:active {
     color: #C00;
     text-shadow: none; }
 
