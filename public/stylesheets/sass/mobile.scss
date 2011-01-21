@@ -1,42 +1,87 @@
-.ui-body-c {
-  background: transparent;
-  color: #3A3429;
-  text-shadow: #EEEADD 0 1px 0;
+/************************************************************************/
+// Mixins
+/************************************************************************/
+@mixin letterpress ($x: 1px, $y: 1px, $blur: 1px, $color: rgb(232, 217, 196)) {
+  text-shadow: $x $y $blur $color;
 }
-a.ui-link, a.ui-link-inherit {
-  color: #900 !important;
-  &:hover, &:active {
-    color: #C00;
-  }
+/*@mixin font-Nashville {
+  font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
 }
-.ui-content li {
-  line-height: 1.5em;
+@mixin font-Carnival {
+  font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+}*/
+@mixin font-LeagueGothic {
+  font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
 }
+/*@mixin font-Lobster {
+  font-family: 'Lobster', arial, sans-serif;
+}
+@mixin font-Fell {
+  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+}
+@mixin font-FellSC {
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+}*/
+$brown: #332F26;
+$red: #990000;
+$light-red: #ff4e51;
 
+/************************************************************************/
+// RESET jQuery Mobile styles
+/************************************************************************/
 body {
   background: url('images-mobile/paper.png') repeat;
   margin: 0;
   padding: 0;
 }
+
 div#home {
   div#logo-header {
     background: transparent;
     border: 0px;
+
     img {
       max-width: 778px;
       width: 90%;
-      padding: 10px 21px;
+      padding: 10px 18px;
     }
   }
 }
 
-ul.ui-listview, ul.ui-listview li {
+ul.ui-listview {
   background: transparent;
-  border: 0px;
+  border-bottom: 1px solid #EEEADD;
+
+  & li {
+    background: transparent;
+    border-color: #A89F8A;
+
+    .ui-btn-inner {
+      border-color: #EEEADD;
+    }
+  }
 }
-.ui-listview, .ui-li {
-  padding: 0 7px;
+
+.ui-body-c {
+  background: transparent;
+  color: #3A3429;
+  text-shadow: #EEEADD 0 1px 0;
 }
-.ui-content {
-  padding: 0 40px;
+
+a.ui-link, a.ui-link-inherit {
+  color: #900 !important;
+  &:hover, &:active {
+    color: #C00;
+    text-shadow: none;
+  }
+}
+
+.ui-content li {
+  line-height: 1.5em;
+}
+
+ul .ui-btn-text {
+  @include font-LeagueGothic;
+  font-size: 1.4em;
+  font-weight: normal;
 }

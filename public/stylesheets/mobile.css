@@ -1,16 +1,7 @@
-.ui-body-c {
-  background: transparent;
-  color: #3A3429;
-  text-shadow: #EEEADD 0 1px 0; }
-
-a.ui-link, a.ui-link-inherit {
-  color: #900 !important; }
-  a.ui-link:hover, a.ui-link:active, a.ui-link-inherit:hover, a.ui-link-inherit:active {
-    color: #C00; }
-
-.ui-content li {
-  line-height: 1.5em; }
-
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
 body {
   background: url("images-mobile/paper.png") repeat;
   margin: 0;
@@ -22,14 +13,32 @@ div#home div#logo-header {
   div#home div#logo-header img {
     max-width: 778px;
     width: 90%;
-    padding: 10px 21px; }
+    padding: 10px 18px; }
 
-ul.ui-listview, ul.ui-listview li {
+ul.ui-listview {
   background: transparent;
-  border: 0px; }
+  border-bottom: 1px solid #EEEADD; }
+  ul.ui-listview li {
+    background: transparent;
+    border-color: #A89F8A; }
+    ul.ui-listview li .ui-btn-inner {
+      border-color: #EEEADD; }
 
-.ui-listview, .ui-li {
-  padding: 0 7px; }
+.ui-body-c {
+  background: transparent;
+  color: #3A3429;
+  text-shadow: #EEEADD 0 1px 0; }
 
-.ui-content {
-  padding: 0 40px; }
+a.ui-link, a.ui-link-inherit {
+  color: #900 !important; }
+  a.ui-link:hover, a.ui-link:active, a.ui-link-inherit:hover, a.ui-link-inherit:active {
+    color: #C00;
+    text-shadow: none; }
+
+.ui-content li {
+  line-height: 1.5em; }
+
+ul .ui-btn-text {
+  font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-size: 1.4em;
+  font-weight: normal; }
