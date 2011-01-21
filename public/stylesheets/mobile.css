@@ -1,6 +1,37 @@
+.ui-body-c {
+  background: transparent;
+  color: #3A3429;
+  text-shadow: #EEEADD 0 1px 0; }
+
+a.ui-link, a.ui-link-inherit {
+  color: #900 !important; }
+  a.ui-link:hover, a.ui-link:active, a.ui-link-inherit:hover, a.ui-link-inherit:active {
+    color: #C00; }
+
 .ui-content li {
   line-height: 1.5em; }
 
 body {
+  background: url("images-mobile/wood-texture.png") 50% 50% repeat;
   margin: 0;
   padding: 0; }
+
+div#home, div.ui-page {
+  background: url("images-mobile/paper-texture.png") repeat-y;
+  height: 100%; }
+
+div#home div#logo-header {
+  background: transparent;
+  border: 0px; }
+  div#home div#logo-header img {
+    padding: 20px 40px; }
+
+ul.ui-listview, ul.ui-listview li {
+  background: transparent;
+  border: 0px; }
+
+.ui-listview, .ui-li {
+  padding: 0 15px; }
+
+.ui-content {
+  padding: 0 40px; }
