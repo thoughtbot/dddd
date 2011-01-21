@@ -32,3 +32,21 @@ Then /^I should see the "([^"]*)" talk$/ do |talk_name|
     }
   end
 end
+
+Then /^I should not see the "([^"]*)" talk$/ do |talk_name|
+  talk = Talk.find_by_name(talk_name)
+
+  steps %{
+    Then I should not see "#{talk.name}"
+    And I should not see "#{talk.speaker_name}"
+    And I should not see "#{talk.abstract}"
+    And I should not see "#{talk.speaker_bio}"
+  }
+
+  talk.resources.each do |resource|
+    steps %{
+      Then I should not see "#{resource.name}"
+      And I should not see "#{resource.description}"
+    }
+  end
+end

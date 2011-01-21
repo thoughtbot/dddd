@@ -4,43 +4,19 @@
   </div>
 
   <ul data-role="listview">
-    <li><a href="#talks">Talks</a></li>
+    <li><%= link_to "Talks", talks_path %></li>
     <li><a href="#students">Students</a></li>
     <li><a href="#startups">Startups</a></li>
   </ul>
 </div>
 
-<div data-role="page" id="talks">
+<div data-role="page" id="students">
   <div data-role="header">
-    <h1>Talks</h1>
+    <h1>Students</h1>
   </div>
 
   <ul data-role="listview">
-    <% @talks.each do |talk| %>
-      <li><%= link_to talk.name, "##{talk.slug}" %></li>
-    <% end %>
+    <li><%= link_to "Designers", designers_path %></li>
+    <li><%= link_to "Developers", developers_path %></li>
   </ul>
 </div>
-
-<% @talks.each do |talk| %>
-  <div data-role="page" id="<%= talk.slug %>">
-    <div data-role="header">
-      <h1><%= talk.name %></h1>
-    </div>
-
-    <div data-role="content" class="ui-content" role="main">
-      <%= simple_format talk.abstract %>
-
-      <h3>Speaker Bio - <%= talk.speaker_name %></h3>
-      <%= simple_format talk.speaker_bio %>
-
-      <h3>Learn More</h3>
-
-      <ul>
-        <% talk.resources.each do |resource| %>
-          <li><%= link_to resource.name, resource.url %> <%= resource.description %></li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-<% end %>

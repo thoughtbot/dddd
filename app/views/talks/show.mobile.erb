@@ -1,0 +1,20 @@
+<div data-role="page" id="<%= @talk.slug %>">
+  <div data-role="header">
+    <h1><%= @talk.name %></h1>
+  </div>
+
+  <div data-role="content" class="ui-content" role="main">
+    <%= simple_format @talk.abstract %>
+
+    <h3>Speaker Bio - <%= @talk.speaker_name %></h3>
+    <%= simple_format @talk.speaker_bio %>
+
+    <h3>Learn More</h3>
+
+    <ul>
+      <% @talk.resources.each do |resource| %>
+        <li><%= link_to resource.name, resource.url %> <%= resource.description %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

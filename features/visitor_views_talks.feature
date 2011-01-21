@@ -12,9 +12,9 @@ Feature: Visitor views talks
     And the following resources exist:
       | name   | url               | description | talk         |
       | Github | http://github.com | Bad-ass.    | name: Git    |
-      | jQuery | http://jquery.com | Bad-ass.    | name: jQuery |
+      | jQuery | http://jquery.com | Sweet.      | name: jQuery |
 
-  Scenario: Student views talks
+  Scenario: Visitor views talks
     When I go to the talks page
     Then I should see the following talks:
       | name   |
@@ -22,12 +22,14 @@ Feature: Visitor views talks
       | jQuery |
 
   @akephalos @mobile
-  Scenario: Student views talks on mobile phone
+  Scenario: Visitor views talks on mobile phone
     When I go to the home page
     And I follow "Talks"
     And I follow "Git"
     Then I should see the "Git" talk
+    And I should not see the "jQuery" talk
     When I go to the home page
     And I follow "Talks"
     And I follow "jQuery"
     Then I should see the "jQuery" talk
+    And I should not see the "Git" talk

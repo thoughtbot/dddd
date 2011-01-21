@@ -1,0 +1,11 @@
+<div data-role="page" id="talks">
+  <div data-role="header">
+    <h1>Talks</h1>
+  </div>
+
+  <ul data-role="listview">
+    <% @talks.each do |talk| %>
+      <li><%= link_to talk.name, talk %></li>
+    <% end %>
+  </ul>
+</div>

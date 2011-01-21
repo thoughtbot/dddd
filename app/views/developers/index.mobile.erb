@@ -1,0 +1,11 @@
+<div data-role="page" id="developers">
+  <div data-role="header">
+    <h1>Developers</h1>
+  </div>
+
+  <ul data-role="listview">
+    <% @developers.each do |developer| %>
+      <li><%= developer.name %></li>
+    <% end %>
+  </ul>
+</div>
