@@ -8,4 +8,5 @@ Feature: Mobile user views offers
   Scenario: Student views offers on mobile phone
     When I go to the home page
     And I follow "Offers"
-    Then I should see "North-East College Hackathon"
+    Then I should see "Imagine Cup"
+    And I should see "North-East College Hackathon"
