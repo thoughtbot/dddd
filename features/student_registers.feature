@@ -6,7 +6,7 @@ Feature: As a student, I want to register for D8
 
   Scenario: Aspiring attendees discover registration is closed
     Given I am on the home page
-    Then I should see "Registration is now closed."
+    Then I should see "Registration is now closed"
     And I should not see the registration form
 
   # Scenario: Student registers for D4

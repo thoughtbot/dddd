@@ -834,7 +834,7 @@ html, body {
           font-size: 22px; }
     #container section#main-continue section#registration {
       margin: 30px 0; }
-      #container section#main-continue section#registration p#registration-closed {
+      #container section#main-continue section#registration #registration-closed {
         text-align: center; }
       #container section#main-continue section#registration header#registration-banner {
         margin-bottom: 10px;

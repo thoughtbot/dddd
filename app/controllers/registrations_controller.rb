@@ -9,6 +9,8 @@ class RegistrationsController < ApplicationController
     end
   end
 
+  # params hash will look like:
+  # "registration"=>{"name"=>"Bob", "school_name"=>"Boston College", "role"=>"Developer", "twitter"=>"bobbybc"
   def create
     @registration = Registration.new(params[:registration])
 
