@@ -614,6 +614,9 @@ html, body {
           font-size: 2.2em;
           font-weight: normal;
           @include font-LeagueGothic;
+          a, a:link, a:visited {
+            color: $brown;
+          }
         }
 
         div.logo {

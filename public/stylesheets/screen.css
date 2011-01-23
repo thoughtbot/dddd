@@ -1028,6 +1028,8 @@ html, body {
         font-size: 2.2em;
         font-weight: normal;
         font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif; }
+        #container section#startup-tables #startup_tables_list section.company h2 a, #container section#startup-tables #startup_tables_list section.company h2 a:link, #container section#startup-tables #startup_tables_list section.company h2 a:visited {
+          color: #332f26; }
       #container section#startup-tables #startup_tables_list section.company div.logo {
         display: inline-block;
         margin-right: 15px; }

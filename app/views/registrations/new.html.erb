@@ -170,7 +170,7 @@
         <section class="row">
           <% startup_pair.each do |startup| %>
             <section class="company <%= cycle('first', '') %>">
-              <h2><%= startup.name %></h2>
+              <h2><%= link_to startup.name, startup.url %></h2>
               <p><%= startup.description %></p>
             </section>
           <% end %>
