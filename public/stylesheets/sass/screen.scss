@@ -346,17 +346,17 @@ html, body {
     }
     section#registration {
       margin: 30px 0;
-      #registration-closed {
-        text-align: center;
-      }
+
       header#registration-banner {
         margin-bottom: 10px;
         position: relative;
         text-align: center;
-        p#subtitle {
-          font-size: 17px;
-          position: relative;
-          bottom: 20px;
+      }
+      div#other-events {
+        text-align: center;
+        p {
+          font-size: 1.4em;
+          margin-top: 25px;
         }
       }
       form#event-registration {
