@@ -1182,6 +1182,28 @@ section#main {
         section#main section.talk-wrapper div.left ul li:first-child, section#main section.talk-wrapper div.right ul li:first-child {
           margin: 0px; }
 
+/************************************************************************/
+/************************************************************************/
+section#main {
+  font-size: 14px;
+  line-height: 20px; }
+  section#main.events-wrapper {
+    padding: 25px 0px 20px;
+    padding-bottom: 50px !important; }
+    section#main.events-wrapper h2, section#main.events-wrapper h3 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-weight: normal; }
+    section#main.events-wrapper h2 {
+      font-size: 34px; }
+    section#main.events-wrapper h3 {
+      font-size: 24px; }
+    section#main.events-wrapper ul li {
+      text-align: center;
+      font-size: 1.4em;
+      margin: 1.2em 0;
+      line-height: 20px;
+      list-style: none; }
+
 /* AUTOCOMPLETE */
 ul.ui-autocomplete {
   background: #F2F2F2;
