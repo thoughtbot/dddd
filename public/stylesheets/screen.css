@@ -1081,11 +1081,12 @@ html, body {
           min-height: 50px;
           padding: 5px; }
           #container section#attendees div#developer-attendees ul li div.avatar, #container section#attendees div#designer-attendees ul li div.avatar {
-            background: url("/stylesheets/images/default-avatar.png") no-repeat;
             float: left;
             margin: 0 10px 0 0;
             height: 48px;
             width: 48px; }
+            #container section#attendees div#developer-attendees ul li div.avatar.default, #container section#attendees div#designer-attendees ul li div.avatar.default {
+              background: url("/stylesheets/images/default-avatar.png") no-repeat; }
           #container section#attendees div#developer-attendees ul li h3, #container section#attendees div#designer-attendees ul li h3 {
             font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
             font-size: 24px;

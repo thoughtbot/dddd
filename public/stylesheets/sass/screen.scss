@@ -683,11 +683,13 @@ html, body {
           min-height: 50px;
           padding: 5px;
           div.avatar {
-            background: url('/stylesheets/images/default-avatar.png') no-repeat;
             float: left;
             margin: 0 10px 0 0;
             height: 48px;
             width: 48px;
+            &.default {
+              background: url('/stylesheets/images/default-avatar.png') no-repeat;
+            }
           }
           h3 {
             @include font-FellSC;
