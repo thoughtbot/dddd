@@ -296,10 +296,10 @@ html, body {
     div#after-party {
       margin: 40px 0;
       div.wreath {
-        display: inline-block;
+        float: left;
       }
       div#after-party-description {
-        display: inline-block;
+        float: left;
         margin: 5px 15px;
         text-align: center;
         vertical-align: top;
@@ -336,6 +336,11 @@ html, body {
         }
         h4 {
           font-size: 22px;
+          margin: 4px 0;
+        }
+        h5 {
+          font-size: 14px;
+          font-weight: normal;
         }
       }
     }
