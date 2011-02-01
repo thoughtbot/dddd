@@ -15,7 +15,15 @@ class Array
 
     return '' if columns.empty?
 
-    output = CSV.generate do |csv|
+    this_csv = if RUBY_VERSION >= "1.9.0"
+      require 'csv'
+      CSV
+    else
+      require 'fastercsv'
+      FasterCSV
+    end
+
+    output = this_csv.generate do |csv|
       csv << columns.map { |column| klass.human_attribute_name(column) } unless options[:headers] == false
       self.each do |item|
         csv << columns.collect { |column| item.send(column) }
