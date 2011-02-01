@@ -1,7 +1,7 @@
 Dddd::Application.routes.draw do
   root :to => 'registrations#new'
 
-  resources :registrations, :only => [:new]
+  resources :registrations, :only => [:index, :new]
   resources :talks,         :only => [:index, :show]
   resources :designers,     :only => [:index]
   resources :developers,    :only => [:index]

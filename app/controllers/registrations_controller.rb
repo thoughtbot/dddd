@@ -18,4 +18,8 @@ class RegistrationsController < ApplicationController
     #   render :partial => 'form', :locals => { :registration => @registration }
     # end
   end
+
+  def index
+    send_data Registration.all.to_csv(:only => [:name, :role, :twitter], :methods => [:school_name])
+  end
 end
