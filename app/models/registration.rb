@@ -19,6 +19,10 @@ class Registration < ActiveRecord::Base
     where(:role => "Designer").order("created_at desc")
   end
 
+  def self.stats
+    all.to_csv(:only => [:name, :role, :twitter], :methods => [:school_name])
+  end
+
   private
 
   def find_or_create_school

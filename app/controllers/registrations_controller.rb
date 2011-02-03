@@ -20,6 +20,6 @@ class RegistrationsController < ApplicationController
   end
 
   def index
-    send_data Registration.all.to_csv(:only => [:name, :role, :twitter], :methods => [:school_name])
+    send_data Registration.stats
   end
 end
