@@ -6,7 +6,7 @@ Dddd::Application.routes.draw do
   resources :designers,     :only => [:index]
   resources :developers,    :only => [:index]
   resources :startups,      :only => [:index, :show]
-  resources :other_events,  :only => [:index]
+  resources :opportunities, :only => [:index]
   resources :schools,       :only => [:index]
 
   match 'pages/what' => 'talks#index'

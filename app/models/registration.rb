@@ -12,11 +12,11 @@ class Registration < ActiveRecord::Base
   end
 
   def self.developers
-    where(:role => "Developer").order("created_at desc")
+    where(:role => "Developer").order("name asc")
   end
 
   def self.designers
-    where(:role => "Designer").order("created_at desc")
+    where(:role => "Designer").order("name asc")
   end
 
   def self.stats
