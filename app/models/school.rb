@@ -5,6 +5,14 @@ class School < ActiveRecord::Base
   has_many :registrations
 
   def self.names
-    order('name asc').map(&:name)
+    alphabetical.map(&:name)
+  end
+
+  def self.alphabetical
+    order('name asc')
+  end
+
+  def self.stats
+    order('registrations_count desc').to_csv(:only => [:name, :registrations_count])
   end
 end

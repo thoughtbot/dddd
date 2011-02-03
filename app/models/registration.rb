@@ -3,7 +3,7 @@ class Registration < ActiveRecord::Base
   validates_uniqueness_of :twitter, :if => :twitter_present?
   validates_inclusion_of  :role,    :in => %w(Designer Developer)
 
-  belongs_to    :school
+  belongs_to    :school, :counter_cache => true
   attr_writer   :school_name
   before_create :find_or_create_school
 
