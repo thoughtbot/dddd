@@ -16,7 +16,6 @@ Feature: Visitor views startups
       | name    | description | url                |
       | GroupMe | Group chat  | http://groupme.com |
       | Heroku  | Deploy      | http://heroku.com  |
-    And I should see "Contact Jason if your company would like to attend."
 
   @akephalos @mobile
   Scenario: Visitor views talks on mobile phone

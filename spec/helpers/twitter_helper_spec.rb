@@ -8,6 +8,6 @@ describe TwitterHelper, "#twitter_avatar" do
   end
 
   it "is blank when screenname is blank" do
-    twitter_avatar("", 73).should == '<div class="avatar"></div>'
+    twitter_avatar("", 73).should == '<div class="avatar default"></div>'
   end
 end
