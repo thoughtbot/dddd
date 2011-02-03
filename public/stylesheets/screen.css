@@ -798,6 +798,8 @@ html, body {
       margin: 40px 0; }
       #container section#main-continue div#after-party div.wreath {
         float: left; }
+      #container section#main-continue div#after-party a:visited, #container section#main-continue div#after-party a:link, #container section#main-continue div#after-party a:hover {
+        text-decoration: none; }
       #container section#main-continue div#after-party div#after-party-description {
         float: left;
         margin: 5px 15px;

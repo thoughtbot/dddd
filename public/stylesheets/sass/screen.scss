@@ -298,6 +298,9 @@ html, body {
       div.wreath {
         float: left;
       }
+      a:visited, a:link, a:hover {
+        text-decoration: none;
+      }
       div#after-party-description {
         float: left;
         margin: 5px 15px;
