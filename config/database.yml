@@ -4,6 +4,8 @@ development: &default
   database: dddd_development
   host: localhost
   encoding: utf8
+  username: postgres
+  password: postgres
 
 test: &test
   <<: *default
