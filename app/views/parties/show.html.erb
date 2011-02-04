@@ -6,7 +6,7 @@
   <% if current_user %>
     <section id="registration">
       <header id="registration-banner">
-        <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
+        <img src="/images/RSVP-banner.png" alt="registration-banner" width="422" height="145" />
       </header>
       <%= semantic_form_for current_user, :remote => true,
             :html => { :id => "event-registration",
@@ -31,7 +31,13 @@
       <% end %>
     </section>
   <% else %>
-    <%= link_to "RSVP via Twitter", "/auth/twitter" %>
+    <% link_to "/auth/twitter" do %>
+      <div class="register-button top clearfix">
+        <div class="hand left"></div>
+        <h2><a href="#registration">rsvp via twitter</a></h2>
+        <div class="hand right"></div>
+      </div>
+    <% end %>
   <% end %>
 
   <hr class="alternate" />
