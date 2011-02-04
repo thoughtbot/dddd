@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  attr_accessible :description, :partying
+
   def self.find_or_create_by_auth(auth)
     find_by_provider_and_uid(auth["provider"], auth["uid"]) ||
     create do |user|
@@ -11,10 +13,10 @@ class User < ActiveRecord::Base
   end
 
   def self.partiers
-    where(:partying => true).order('name asc')
+    where(:partying => true).order('created_at desc')
   end
 
   def self.bostonians
-    where(:partying => false).order('name asc')
+    where(:partying => false).order('created_at desc')
   end
 end

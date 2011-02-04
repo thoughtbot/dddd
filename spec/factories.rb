@@ -35,3 +35,8 @@ Factory.define :resource do |factory|
     "In this 18-minute video, Seth Godin entertains on the topic of shipping."
   end
 end
+
+Factory.define :user do |factory|
+  factory.name    { 'Dan Croak' }
+  factory.twitter { 'Croaky'    }
+end

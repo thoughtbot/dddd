@@ -27,7 +27,7 @@
             <%= twitter_avatar partier.twitter, 48 %>
             <hgroup>
               <h3><%= partier.name %></h3>
-              <h4><%= partier.description %></h4>
+              <h4><%= auto_link partier.description %></h4>
             </hgroup>
           </li>
         <% end %>
@@ -40,7 +40,7 @@
             <%= twitter_avatar bostonian.twitter, 48 %>
             <hgroup>
               <h3><%= bostonian.name %></h3>
-              <h4><%= bostonian.description %></h4>
+              <h4><%= auto_link bostonian.description %></h4>
             </hgroup>
           </li>
         <% end %>
