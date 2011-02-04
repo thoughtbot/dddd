@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
       user.uid         = auth["uid"]
       user.name        = auth["user_info"]["name"]
       user.twitter     = auth["user_info"]["nickname"]
-      user.description = auth["user_info"]["description"]
+      user.description = auth["user_info"]["description"] || ""
     end
   end
 
