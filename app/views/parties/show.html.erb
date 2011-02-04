@@ -6,13 +6,11 @@
   <% if current_user %>
     <%= render :partial => 'form' %>
   <% else %>
-    <% link_to "/auth/twitter" do %>
       <div class="register-button top clearfix">
         <div class="hand left"></div>
-        <h2><a href="#registration">rsvp via twitter</a></h2>
+        <h2><%= link_to "rsvp here", "/auth/twitter" %></h2>
         <div class="hand right"></div>
       </div>
-    <% end %>
   <% end %>
 
   <hr class="alternate" />
