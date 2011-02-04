@@ -1,8 +1,7 @@
 $(document).ready(function() {
-  $("#event-registration")
-    .live("ajax:success", function(xhr, data, status) {
-      $("#registration").html(data);
-    });
+  $("#event-registration").live("ajax:success", function(xhr, data, status) {
+    $("#registration").html(data);
+  });
 
   $('a[href^=#]').bind('click', function(e) {
     e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump

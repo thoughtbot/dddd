@@ -948,6 +948,12 @@ ul.ui-menu {
 
   }
   .party-main {
-    padding-top: 30px;
+    .student {
+      padding: 30px;
+      h2 {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
   }
 }
