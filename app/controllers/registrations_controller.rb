@@ -1,7 +1,6 @@
 class RegistrationsController < ApplicationController
   def new
     unless is_mobile_device?
-      @registration = Registration.new
       @developers   = Registration.developers
       @designers    = Registration.designers
       @startups     = Startup.alphabetical

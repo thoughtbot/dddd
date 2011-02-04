@@ -1,7 +1,7 @@
 <header id="registration-banner">
   <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
 </header>
-<%= semantic_form_for @registration, :remote => true,
+<%= semantic_form_for Registration.new, :remote => true,
       :html => { :name => "Event Registration",
                  :id   => "event-registration",
                  'data-type' => 'html' } do |form| %>

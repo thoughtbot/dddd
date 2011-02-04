@@ -293,60 +293,6 @@ html, body {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 0px 60px 20px;
     min-height: 500px;
-    div#after-party {
-      margin: 40px 0;
-      div.wreath {
-        float: left;
-      }
-      a:visited, a:link, a:hover {
-        text-decoration: none;
-      }
-      div#after-party-description {
-        float: left;
-        margin: 5px 15px;
-        text-align: center;
-        vertical-align: top;
-        h1, h2, h3, h4 {
-          font-weight: normal;
-          margin: 0px;
-          @include font-FellSC;
-          letter-spacing: -0.05em;
-          line-height: 1.0em;
-        }
-        h1 {
-          font-size: 42px;
-        }
-        h2 {
-          border-top: 1px solid black;
-          color: $red;
-          font-size: 44px;
-          margin-top: 6px;
-          padding: 10px 10px 2px;
-          position: relative;
-          z-index: 10;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-          -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-          box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-        }
-        h3 {
-          border-top: 1px solid black;
-          font-size: 32px;
-          margin-top: 5px;
-          padding-top: 5px;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-          -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-          box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
-        }
-        h4 {
-          font-size: 22px;
-          margin: 4px 0;
-        }
-        h5 {
-          font-size: 14px;
-          font-weight: normal;
-        }
-      }
-    }
     section#registration {
       margin: 30px 0;
       #registration-closed {
@@ -824,6 +770,70 @@ section#main {
     }
   }
 }
+
+div#after-party {
+  margin: 40px 0;
+  div.wreath {
+    float: left;
+  }
+  a:visited, a:link, a:hover {
+    text-decoration: none;
+  }
+  div#after-party-description {
+    float: left;
+    margin: 5px 15px;
+    text-align: center;
+    vertical-align: top;
+    h1, h2, h3, h4 {
+      font-weight: normal;
+      margin: 0px;
+      @include font-FellSC;
+      letter-spacing: -0.05em;
+      line-height: 1.0em;
+    }
+    h1 {
+      font-size: 42px;
+    }
+    h2 {
+      border-top: 1px solid black;
+      color: $red;
+      font-size: 44px;
+      margin-top: 6px;
+      padding: 10px 10px 2px;
+      position: relative;
+      z-index: 10;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+    }
+    h3 {
+      border-top: 1px solid black;
+      font-size: 28px;
+      margin-top: 5px;
+      padding-top: 5px;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234375) 0px 1px inset;
+    }
+    h4 {
+      font-size: 22px;
+      margin: 4px 0;
+    }
+    h5 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}
+
+.parties-show {
+  #container {
+    header#logo {
+      padding: 0px 60px 30px 60px;
+    }
+  }
+}
+
 /* AUTOCOMPLETE */
 
 ul.ui-autocomplete {

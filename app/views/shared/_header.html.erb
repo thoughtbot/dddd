@@ -16,7 +16,11 @@
     </div>
   </div>
   <hr class="top" />
-  <div id="dddd-logo">
-    <a href="/"><img src="/images/DDDD-logo.png" alt="DDDD-logo" width="778" height="284" /></a>
-  </div>
+  <% if content_for?(:header) %>
+    <%= yield :header %>
+  <% else %>
+    <div id="dddd-logo">
+      <a href="/"><img src="/images/DDDD-logo.png" alt="DDDD-logo" width="778" height="284" /></a>
+    </div>
+  <% end %>
 </header>

@@ -1,0 +1,64 @@
+<% content_for :header do %>
+  <%= render 'party' %>
+<% end %>
+
+<section id="main">
+  <% if current_user %>
+    <%= twitter_avatar current_user.twitter, 48 %>
+
+    <%= semantic_form_for current_user, :remote => true do |form| %>
+      <ol class="form">
+        <%= form.input :description, :label => "Tell local students about yourself" %>
+        <li id="radio">
+          <label>Are you attending the after-party?<abbr title="required">*</abbr></label>
+          <p class="radio partying">
+            <%= form.radio_button :partying, "Partying" %>
+            <%= form.label :partying, "Partying", :for => "user_partying_partying" %>
+          </p>
+          <p class="radio not-partying">
+            <%= form.radio_button :partying, "Not Partying" %>
+            <%= form.label :partying, "Not Partying... This Time", :for => "user_partying_not_partying" %>
+          </p>
+        </li>
+        <li id="submit-button">
+          <%= form.submit "Change RSVP", :disable_with => "Please wait..." %>
+        </li>
+      </ol>
+    <% end %>
+  <% else %>
+    <%= link_to "RSVP via Twitter", "/auth/twitter" %>
+  <% end %>
+
+  <section id="attendees">
+    <header>
+      <h1>Bostonians</h1>
+    </header>
+    <h2 id="developer-title">Partying</h2><h2 id="designer-title">not partying... this time</h2>
+    <div id="developer-attendees" class="left">
+      <ul>
+        <% @partiers.each do |partier| %>
+          <li>
+            <%= twitter_avatar partier.twitter, 48 %>
+            <hgroup>
+              <h3><%= partier.name %></h3>
+              <h4><%= partier.description %></h4>
+            </hgroup>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="designer-attendees" class="right">
+      <ul>
+        <% @bostonians.each do |bostonian| %>
+          <li>
+            <%= twitter_avatar bostonian.twitter, 48 %>
+            <hgroup>
+              <h3><%= bostonian.name %></h3>
+              <h4><%= bostonian.description %></h4>
+            </hgroup>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </section>
+</section>

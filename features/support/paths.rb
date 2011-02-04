@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /the talks page/
       talks_path
+    when /the after-party page/
+      party_path
 
     # Add more mappings here.
     when /the sign up page/i

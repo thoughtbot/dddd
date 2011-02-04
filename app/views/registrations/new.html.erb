@@ -161,22 +161,8 @@
   </div>
 
   <hr class="bottom"/>
-  <div id="after-party" class="clearfix">
-    <div class="wreath left">
-      <img src="/images/angel-investors.png" alt="angel-investors" width="215" height="200" />
-    </div>
-    <div id="after-party-description">
-      <%= link_to "http://maps.google.com/maps?cid=11425628393869581370" do %>
-        <h1>after party</h1>
-        <h2>The Cavern Club</h2>
-        <h3>hard rock cafe</h3>
-        <h4>four o'clock in fanueil hall</h4>
-      <% end %>
-    </div>
-    <div class="wreath right">
-      <img src="/images/venture-capitalists.png" alt="venture-capitalists" width="215" height="200" />
-    </div>
-  </div>
+
+  <%= render :partial => 'party' %>
 
   <hr class="top"/>
   <section id="startup-tables">

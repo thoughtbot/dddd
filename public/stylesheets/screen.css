@@ -794,50 +794,6 @@ html, body {
     background: url(/stylesheets/images/paper-tile.png);
     padding: 0px 60px 20px;
     min-height: 500px; }
-    #container section#main-continue div#after-party {
-      margin: 40px 0; }
-      #container section#main-continue div#after-party div.wreath {
-        float: left; }
-      #container section#main-continue div#after-party a:visited, #container section#main-continue div#after-party a:link, #container section#main-continue div#after-party a:hover {
-        text-decoration: none; }
-      #container section#main-continue div#after-party div#after-party-description {
-        float: left;
-        margin: 5px 15px;
-        text-align: center;
-        vertical-align: top; }
-        #container section#main-continue div#after-party div#after-party-description h1, #container section#main-continue div#after-party div#after-party-description h2, #container section#main-continue div#after-party div#after-party-description h3, #container section#main-continue div#after-party div#after-party-description h4 {
-          font-weight: normal;
-          margin: 0px;
-          font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
-          letter-spacing: -0.05em;
-          line-height: 1.0em; }
-        #container section#main-continue div#after-party div#after-party-description h1 {
-          font-size: 42px; }
-        #container section#main-continue div#after-party div#after-party-description h2 {
-          border-top: 1px solid black;
-          color: #990000;
-          font-size: 44px;
-          margin-top: 6px;
-          padding: 10px 10px 2px;
-          position: relative;
-          z-index: 10;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
-          -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
-          box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
-        #container section#main-continue div#after-party div#after-party-description h3 {
-          border-top: 1px solid black;
-          font-size: 32px;
-          margin-top: 5px;
-          padding-top: 5px;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
-          -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
-          box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
-        #container section#main-continue div#after-party div#after-party-description h4 {
-          font-size: 22px;
-          margin: 4px 0; }
-        #container section#main-continue div#after-party div#after-party-description h5 {
-          font-size: 14px;
-          font-weight: normal; }
     #container section#main-continue section#registration {
       margin: 30px 0; }
       #container section#main-continue section#registration #registration-closed {
@@ -1184,6 +1140,54 @@ section#main {
         list-style: none; }
         section#main section.talk-wrapper div.left ul li:first-child, section#main section.talk-wrapper div.right ul li:first-child {
           margin: 0px; }
+
+div#after-party {
+  margin: 40px 0; }
+  div#after-party div.wreath {
+    float: left; }
+  div#after-party a:visited, div#after-party a:link, div#after-party a:hover {
+    text-decoration: none; }
+  div#after-party div#after-party-description {
+    float: left;
+    margin: 5px 15px;
+    text-align: center;
+    vertical-align: top; }
+    div#after-party div#after-party-description h1, div#after-party div#after-party-description h2, div#after-party div#after-party-description h3, div#after-party div#after-party-description h4 {
+      font-weight: normal;
+      margin: 0px;
+      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+      letter-spacing: -0.05em;
+      line-height: 1.0em; }
+    div#after-party div#after-party-description h1 {
+      font-size: 42px; }
+    div#after-party div#after-party-description h2 {
+      border-top: 1px solid black;
+      color: #990000;
+      font-size: 44px;
+      margin-top: 6px;
+      padding: 10px 10px 2px;
+      position: relative;
+      z-index: 10;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+    div#after-party div#after-party-description h3 {
+      border-top: 1px solid black;
+      font-size: 28px;
+      margin-top: 5px;
+      padding-top: 5px;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+    div#after-party div#after-party-description h4 {
+      font-size: 22px;
+      margin: 4px 0; }
+    div#after-party div#after-party-description h5 {
+      font-size: 14px;
+      font-weight: normal; }
+
+.parties-show #container header#logo {
+  padding: 0px 60px 30px 60px; }
 
 /* AUTOCOMPLETE */
 ul.ui-autocomplete {

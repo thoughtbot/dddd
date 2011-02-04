@@ -9,6 +9,7 @@ gem "formtastic"
 gem "pg"
 gem "flutie", "1.1.3"
 gem "dynamic_form"
+gem "omniauth"
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
