@@ -163,11 +163,7 @@ hr.space {
   display: none;
   visibility: hidden; }
 
-<<<<<<< HEAD
-/* Hide only visually, but have it available for screenreaders
-=======
 /* Hide only visually, but have it available for screenreaders 
->>>>>>> RSVP Button
    www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
 .visuallyhidden {
   position: absolute !important;
@@ -1282,8 +1278,6 @@ ul.ui-menu {
   padding: 30px 0; }
   .parties-show #container section#main-continue section#registration header#registration-banner {
     margin-bottom: 20px; }
-<<<<<<< HEAD
-=======
 .parties-show #container div.register-button {
   margin: 0 auto 30px;
   width: 500px; }
@@ -1295,13 +1289,11 @@ ul.ui-menu {
         color: #900; }
   .parties-show #container div.register-button div.hand.left, .parties-show #container div.register-button div.hand.right {
     margin: 36px 00px 0px 00px; }
->>>>>>> RSVP Button
 .parties-show .party-main .student {
   padding: 30px; }
   .parties-show .party-main .student h2 {
     font-size: 16px;
     text-align: center; }
-<<<<<<< HEAD
 .parties-show #flash {
   margin: 0; }
   .parties-show #flash #flash_notice {
@@ -1312,5 +1304,3 @@ ul.ui-menu {
     color: #000;
     margin: 0;
     padding: 40px 0 0 0; }
-=======
->>>>>>> RSVP Button
