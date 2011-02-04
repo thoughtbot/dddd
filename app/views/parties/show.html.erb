@@ -2,32 +2,39 @@
   <%= render 'party' %>
 <% end %>
 
-<section id="main">
+<section id="main-continue" class="party-main">
   <% if current_user %>
-    <%= twitter_avatar current_user.twitter, 48 %>
-
-    <%= semantic_form_for current_user, :remote => true do |form| %>
-      <ol class="form">
-        <%= form.input :description, :label => "Tell local students about yourself" %>
-        <li id="radio">
-          <label>Are you attending the after-party?<abbr title="required">*</abbr></label>
-          <p class="radio partying">
-            <%= form.radio_button :partying, "Partying" %>
-            <%= form.label :partying, "Partying", :for => "user_partying_partying" %>
-          </p>
-          <p class="radio not-partying">
-            <%= form.radio_button :partying, "Not Partying" %>
-            <%= form.label :partying, "Not Partying... This Time", :for => "user_partying_not_partying" %>
-          </p>
-        </li>
-        <li id="submit-button">
-          <%= form.submit "Change RSVP", :disable_with => "Please wait..." %>
-        </li>
-      </ol>
-    <% end %>
+    <section id="registration">
+      <header id="registration-banner">
+        <img src="/images/registration-banner.png" alt="registration-banner" width="422" height="145" />
+      </header>
+      <%= semantic_form_for current_user, :remote => true,
+            :html => { :id => "event-registration",
+                       'data-type' => 'html' } do |form| %>
+        <ol class="form">
+          <%= form.input :description, :label => "Tell local students about yourself", :required => true %>
+          <li id="radio">
+            <label>Are you attending the after-party?<abbr title="required">*</abbr></label>
+            <p class="radio developer">
+              <%= form.radio_button :partying, "Partying" %>
+              <%= form.label :partying, "Partying", :for => "user_partying_partying" %>
+            </p>
+            <p class="radio designer">
+              <%= form.radio_button :partying, "Not Partying" %>
+              <%= form.label :partying, "Not Partying", :for => "user_partying_not_partying" %>
+            </p>
+          </li>
+          <li id="submit-button">
+            <%= form.submit "Change RSVP", :disable_with => "Please wait..." %>
+          </li>
+        </ol>
+      <% end %>
+    </section>
   <% else %>
     <%= link_to "RSVP via Twitter", "/auth/twitter" %>
   <% end %>
+
+  <hr class="alternate" />
 
   <section id="attendees">
     <header>
@@ -62,3 +69,5 @@
     </div>
   </section>
 </section>
+
+<div id="main-bottom"></div>

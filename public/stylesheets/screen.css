@@ -1142,7 +1142,8 @@ section#main {
           margin: 0px; }
 
 div#after-party {
-  margin: 40px 0; }
+  margin: 40px 0 0 0;
+  padding-bottom: 40px; }
   div#after-party div.wreath {
     float: left; }
   div#after-party a:visited, div#after-party a:link, div#after-party a:hover {
@@ -1186,8 +1187,16 @@ div#after-party {
       font-size: 14px;
       font-weight: normal; }
 
-.parties-show #container header#logo {
-  padding: 0px 60px 30px 60px; }
+#twitter-info div.avatar {
+  float: left;
+  margin: 0 10px 0 0;
+  height: 48px;
+  width: 48px; }
+#twitter-info h3 {
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: lowercase; }
 
 /* AUTOCOMPLETE */
 ul.ui-autocomplete {
@@ -1261,3 +1270,8 @@ ul.ui-menu {
 
   div#container section#main-continue section#registration form#event-registration li#description {
     margin-bottom: 15px; } }
+
+.parties-show #container header#logo {
+  padding: 0px 60px 0px 60px; }
+.parties-show .party-main {
+  padding-top: 30px; }

@@ -772,7 +772,8 @@ section#main {
 }
 
 div#after-party {
-  margin: 40px 0;
+  margin: 40px 0 0 0;
+  padding-bottom: 40px;
   div.wreath {
     float: left;
   }
@@ -825,12 +826,18 @@ div#after-party {
     }
   }
 }
-
-.parties-show {
-  #container {
-    header#logo {
-      padding: 0px 60px 30px 60px;
-    }
+#twitter-info {
+  div.avatar {
+    float: left;
+    margin: 0 10px 0 0;
+    height: 48px;
+    width: 48px;
+  }
+  h3 {
+    @include font-FellSC;
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: lowercase;
   }
 }
 
@@ -921,6 +928,17 @@ ul.ui-menu {
     letter-spacing: -0.024em;
   }
   div#container section#main-continue section#registration form#event-registration li#description {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.parties-show {
+  #container {
+    header#logo {
+      padding: 0px 60px 0px 60px;
+    }
+  }
+  .party-main {
+    padding-top: 30px;
   }
 }
