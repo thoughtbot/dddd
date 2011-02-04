@@ -945,7 +945,6 @@ ul.ui-menu {
         margin-bottom: 20px;
       }
     }
-
   }
   .party-main {
     .student {
@@ -954,6 +953,18 @@ ul.ui-menu {
         font-size: 16px;
         text-align: center;
       }
+    }
+  }
+  #flash {
+    margin: 0;
+    #flash_notice {
+      background: none;
+      font-size: 16px;
+      text-align: center;
+      border: none;
+      color: #000;
+      margin: 0;
+      padding: 40px 0 0 0;
     }
   }
 }

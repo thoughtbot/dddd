@@ -2,7 +2,7 @@
   <header id="registration-banner">
     <img src="/images/RSVP-banner.png" alt="registration-banner" width="422" height="145" />
   </header>
-  <%= semantic_form_for current_user, :remote => true,
+  <%= semantic_form_for current_user,
         :html => { :id => "event-registration",
                    'data-type' => 'html' } do |form| %>
     <ol class="form">
@@ -10,11 +10,11 @@
       <li id="radio">
         <label>Are you attending the after-party?<abbr title="required">*</abbr></label>
         <p class="radio developer">
-          <%= form.radio_button :partying, "Partying", :checked => "checked" %>
+          <%= form.radio_button :partying, true, %>
           <%= form.label :partying, "Partying", :for => "user_partying_partying" %>
         </p>
         <p class="radio designer">
-          <%= form.radio_button :partying, "Not Partying" %>
+          <%= form.radio_button :partying, false %>
           <%= form.label :partying, "Not Partying", :for => "user_partying_not_partying" %>
         </p>
       </li>
