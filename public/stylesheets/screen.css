@@ -1,0 +1,1295 @@
+/*
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #222;
+  font-size: 13px;
+  font-family: arial, "helvetica neue", helvetica, "lucida grande", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-family: "helvetica neue", Helvetica, arial, sans-serif; }
+
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success,
+#flash_failure, #flash_success, #flash_notice {
+  border: 1px solid #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 0.8em; }
+
+div.error,
+#flash_failure {
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+  color: #D12F19; }
+
+div.error a,
+#flash_failure a {
+  color: #D12F19; }
+
+div.notice,
+#flash_notice {
+  background: #FFF6BF;
+  border-color: #FFD324;
+  color: #817134; }
+
+div.notice a,
+#flash_notice a {
+  color: #817134; }
+
+div.success,
+#flash_success {
+  background: #E6EFC2;
+  border-color: #C6D880;
+  color: #529214; }
+
+div.success a,
+#flash_success a {
+  color: #529214; }
+
+/* Misc classes and elements */
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  background: #eee;
+  margin-bottom: 1.5em;
+  padding: 1.5em; }
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  border: none;
+  clear: both;
+  color: #ddd;
+  float: none;
+  height: 1px;
+  margin: 0 0 1.4em;
+  width: 100%; }
+
+hr.space {
+  background: #fff;
+  color: #fff; }
+
+/* for image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, #container section#startup-tables #startup_tables_list .row:before, .clearfix:after, #container section#startup-tables #startup_tables_list .row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after, #container section#startup-tables #startup_tables_list .row:after {
+  clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix, #container section#startup-tables #startup_tables_list .row {
+  zoom: 1; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important; }
+
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  a:after {
+    content: " (" attr(href) ")"; }
+
+  abbr:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after {
+    content: ""; }
+
+  /* Don't show links for images */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img {
+    page-break-inside: avoid; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin-bottom: 0.25em; }
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.25;
+  margin-bottom: 0.25em; }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+/* Text elements */
+p {
+  margin-bottom: 0.5em; }
+
+p.last {
+  margin-bottom: 0; }
+
+p img {
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0; }
+
+/* Use this if the image is at the top of the <p>. */
+p img.top {
+  margin-top: 0; }
+
+img {
+  margin: 0 0 1.5em; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+address {
+  font-style: italic;
+  margin-top: 1.5em; }
+
+del {
+  color: #666; }
+
+a, a:link {
+  color: #1a4882;
+  text-decoration: underline; }
+
+a:visited {
+  color: #1a4882; }
+
+a:hover {
+  color: #052246; }
+
+a:active,
+a:focus {
+  color: #1a4882; }
+
+blockquote {
+  border-left: 4px solid #d1d1d1;
+  color: #666;
+  font-style: italic;
+  margin: 1.5em 0;
+  padding-left: 1em; }
+
+strong {
+  font-weight: bold; }
+
+em,
+dfn {
+  font-style: italic; }
+
+dfn {
+  font-weight: bold; }
+
+pre, code {
+  margin: 1.5em 0;
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+pre, code, tt {
+  font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace;
+  line-height: 1.5; }
+
+pre.code {
+  background: #000;
+  color: #fff;
+  padding: 20px; }
+
+tt {
+  display: block;
+  line-height: 1.5;
+  margin: 1.5em 0; }
+
+/* Forms */
+/*removes dotted outline on submit buttons when clicking in firefox */
+input[type="submit"]::-moz-focus-inner {
+  border: none; }
+
+form ol {
+  list-style: none;
+  margin: 0 0 1em 0; }
+
+form ol ol {
+  margin-left: 0; }
+
+form ol li {
+  list-style-position: outside;
+  margin: 0 0 1em 0; }
+
+/*list-style-position fixes IE label margin bug*/
+form ol ol li {
+  list-style-position: outside;
+  margin: 0 0 .25em 0; }
+
+form ol li.error input {
+  background: #FBE3E4; }
+
+p.inline-errors {
+  color: #D12F19; }
+
+form ol li.file {
+  background: #e1e1e1;
+  border: 1px solid #c8c8c8;
+  padding: 10px; }
+
+form abbr {
+  border-bottom: 0; }
+
+label {
+  display: block; }
+
+.required label {
+  font-weight: bold; }
+
+.checkbox_field label,
+.radio_field label {
+  font-weight: normal; }
+
+a.cancel {
+  color: #7d0d0d; }
+
+.inline-hints {
+  color: #666;
+  font-size: 0.8em;
+  margin-bottom: 0.25em; }
+
+/* Fieldsets */
+fieldset {
+  background: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 1.5em 0;
+  padding: 1.5em 1.5em 1em 1.5em; }
+
+fieldset fieldset,
+fieldset fieldset fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  font-weight: bold; }
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+fieldset.buttons {
+  background: inherit;
+  border: 0;
+  padding: 0; }
+
+fieldset.buttons li {
+  display: inline; }
+
+.radio fieldset {
+  margin: 0;
+  padding: 0; }
+
+/* Text fields */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  font-size: inherit;
+  padding: 3px 2px;
+  width: 300px; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+input[disabled='disabled'] {
+  background-color: #fcfcfc;
+  cursor: default; }
+
+input[type="checkbox"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+input[type="radio"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+.check_boxes label {
+  display: inline;
+  padding: 0;
+  vertical-align: middle; }
+
+.radio label {
+  padding: 0; }
+
+/* Textareas */
+textarea {
+  font-size: inherit;
+  height: 200px;
+  margin: 0 0.5em 0.5em 0;
+  padding: 5px;
+  width: 440px;
+  overflow: auto; }
+
+/* Select fields */
+fieldset .select select {
+  width: 200px;
+  font-size: 0.9em; }
+
+optgroup {
+  margin: 0 0 .5em 0; }
+
+/* Date & Time */
+form ol li.date ol li,
+form ol li.time ol li {
+  display: inline; }
+
+form ol li.datetime ol li {
+  display: inline-block; }
+
+form ol li.datetime select,
+form ol li.date select,
+form ol li.time select {
+  display: inline;
+  width: auto; }
+
+form ol li.date label,
+form ol li.time label {
+  display: none; }
+
+/* Tables */
+table {
+  margin-bottom: 2em;
+  width: 100%; }
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd; }
+
+caption, th, td {
+  padding: 4px 10px 4px 0; }
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: 1em;
+  padding: 10px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+/* Use this if you use span-x classes on th/td. */
+table .last {
+  padding-right: 0; }
+
+/* Lists */
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: 1.5em; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+dl {
+  line-height: 1.4;
+  margin-bottom: 1.5em; }
+
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em; }
+
+dl dd {
+  margin-bottom: 0em; }
+
+dd {
+  margin-left: 0.5em; }
+
+li {
+  line-height: 1.4; }
+
+ol ol, ol ul, ul ul, ul ol {
+  margin-left: 1em; }
+
+/* Grid */
+.grid {
+  float: left;
+  display: inline;
+  *margin-left: -0.04em; }
+
+.whole {
+  width: 100%; }
+
+.one-fourth {
+  width: 25%; }
+
+.one-third {
+  width: 33.33%; }
+
+.one-half {
+  width: 50%; }
+
+.two-thirds {
+  width: 66.66%; }
+
+.three-fourths {
+  width: 75%; }
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+div#flash {
+  background: url(/stylesheets/images/paper-tile.png) repeat-y; }
+  div#flash div#flash_success {
+    margin: 0px 60px 20px; }
+  div#flash div#flash_notice {
+    margin: 0px 60px 20px; }
+  div#flash div#flash_failure {
+    margin: 0px 60px 20px; }
+
+/************************************************************************/
+/************************************************************************/
+html, body {
+  background: url(/stylesheets/images/wood_bg.jpg);
+  background-position: 50% 0;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+  html h1, body h1 {
+    color: #332f26;
+    font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+    font-size: 120px; }
+  html h2, html h3, html h4, html h5, html p, body h2, body h3, body h4, body h5, body p {
+    color: #332f26;
+    font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+  html a:link, html a:active, html a:visited, body a:link, body a:active, body a:visited {
+    color: #990000;
+    text-decoration: none; }
+  html a:hover, body a:hover {
+    text-decoration: underline; }
+
+#container {
+  margin: 0 auto;
+  width: 900px; }
+  #container img {
+    margin: 0px; }
+  #container header#logo {
+    background: url(/stylesheets/images/paper-tile.png) repeat-y;
+    display: block;
+    padding: 0 60px; }
+    #container header#logo div#top {
+      background: url(/stylesheets/images/paper-top.png) no-repeat;
+      height: 30px;
+      position: relative;
+      right: 60px;
+      width: 900px; }
+    #container header#logo div#benefactors {
+      padding: 0 0 20px; }
+      #container header#logo div#benefactors div#logo-left {
+        float: left; }
+      #container header#logo div#benefactors div#banner {
+        float: left;
+        margin: 0 94px; }
+      #container header#logo div#benefactors div#logo-right {
+        float: right; }
+    #container header#logo div#dddd-logo {
+      padding: 30px 0; }
+  #container section#free-event {
+    background: url(/stylesheets/images/subhead-bg.png) no-repeat;
+    height: 80px;
+    text-align: center;
+    width: 100%; }
+    #container section#free-event img {
+      margin-top: 16px; }
+    #container section#free-event h1 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-size: 42px;
+      font-weight: normal;
+      padding-top: 20px; }
+  #container section#main {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 20px 60px 0px; }
+    #container section#main div#descriptions {
+      margin-bottom: 30px; }
+      #container section#main div#descriptions section#what, #container section#main div#descriptions section#why {
+        float: left;
+        text-align: center;
+        padding: 15px 25px;
+        width: 315px; }
+        #container section#main div#descriptions section#what h2, #container section#main div#descriptions section#why h2 {
+          font-size: 19px;
+          font-weight: normal;
+          letter-spacing: 4px;
+          text-transform: uppercase; }
+        #container section#main div#descriptions section#what p, #container section#main div#descriptions section#why p {
+          line-height: 1.4em; }
+      #container section#main div#descriptions div#divider {
+        float: left; }
+    #container section#main section#event-location div#compass {
+      display: inline-block;
+      margin: 30px; }
+    #container section#main section#event-location div#location {
+      float: right;
+      display: inline-block;
+      position: relative;
+      top: 55px;
+      right: 122px; }
+      #container section#main section#event-location div#location p {
+        text-transform: uppercase;
+        line-height: 20px;
+        margin: 0px;
+        padding-bottom: 13px; }
+      #container section#main section#event-location div#location p.venue {
+        font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+        font-size: 32px;
+        color: #990000;
+        border-bottom: 1px solid #5F5645;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
+        padding-bottom: 13px; }
+      #container section#main section#event-location div#location p.date {
+        font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+        font-size: 37px;
+        letter-spacing: -0.05em;
+        line-height: 1em;
+        padding-top: 10px; }
+  #container div#main-bottom {
+    background: url(/stylesheets/images/paper-rip-top.png);
+    height: 75px;
+    position: relative;
+    z-index: 10; }
+  #container section#schedule {
+    background: url(/stylesheets/images/wood-wear-overlay.png);
+    padding: 30px 60px 0;
+    position: relative;
+    z-index: 0; }
+    #container section#schedule h1 {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 120px;
+      margin-bottom: 0px;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.2) 0 1px;
+      text-transform: uppercase; }
+    #container section#schedule p#schedule-info {
+      line-height: 20px;
+      margin: 15px 0 30px;
+      color: white; }
+      #container section#schedule p#schedule-info a:link, #container section#schedule p#schedule-info a:active, #container section#schedule p#schedule-info a:visited {
+        color: #d9cdb1; }
+      #container section#schedule p#schedule-info a:hover {
+        text-decoration: underline; }
+    #container section#schedule ol#schedule-list {
+      display: block;
+      margin: 0px 0px 0px 0px;
+      list-style: none;
+      padding-bottom: 30px; }
+      #container section#schedule ol#schedule-list li {
+        margin: 12px 0;
+        padding: 12px 30px; }
+        #container section#schedule ol#schedule-list li p {
+          color: #d9cdb1;
+          font-size: 24px;
+          margin-bottom: 0px; }
+          #container section#schedule ol#schedule-list li p.event-time {
+            display: inline-block;
+            font-family: 'Lobster', arial, sans-serif;
+            line-height: 33px;
+            margin: 0 45px 0 0;
+            text-align: right;
+            width: 80px; }
+          #container section#schedule ol#schedule-list li p.event-title {
+            display: inline-block; }
+            #container section#schedule ol#schedule-list li p.event-title a:link, #container section#schedule ol#schedule-list li p.event-title a:visited, #container section#schedule ol#schedule-list li p.event-title a:active {
+              color: white;
+              text-decoration: none; }
+            #container section#schedule ol#schedule-list li p.event-title a:hover {
+              color: #ff4e51; }
+          #container section#schedule ol#schedule-list li p.event-speaker {
+            line-height: 42px;
+            float: right;
+            font-size: 16px;
+            font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
+          #container section#schedule ol#schedule-list li p.double {
+            line-height: 16px;
+            text-align: right; }
+        #container section#schedule ol#schedule-list li:nth-child(odd) {
+          background: rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px;
+          box-shadow: rgba(0, 0, 0, 0.293) 0px 0px 5px 5px; }
+  #container div#main-continue-top {
+    background: url(/stylesheets/images/paper-rip-bottom.png);
+    height: 75px;
+    position: relative;
+    z-index: 10; }
+  #container section#main-continue {
+    background: url(/stylesheets/images/paper-tile.png);
+    padding: 0px 60px 20px;
+    min-height: 500px; }
+    #container section#main-continue section#registration {
+      margin: 30px 0; }
+      #container section#main-continue section#registration #registration-closed {
+        text-align: center; }
+      #container section#main-continue section#registration header#registration-banner {
+        margin-bottom: 10px;
+        position: relative;
+        text-align: center; }
+        #container section#main-continue section#registration header#registration-banner p#subtitle {
+          font-size: 17px;
+          position: relative;
+          bottom: 20px; }
+      #container section#main-continue section#registration form#event-registration ol {
+        display: inline-block;
+        vertical-align: top; }
+        #container section#main-continue section#registration form#event-registration ol li {
+          display: inline-block;
+          vertical-align: top; }
+          #container section#main-continue section#registration form#event-registration ol li#registration-note {
+            display: block;
+            text-align: center; }
+          #container section#main-continue section#registration form#event-registration ol li:nth-child(odd) {
+            margin-right: 20px; }
+      #container section#main-continue section#registration form#event-registration li label {
+        font-size: 15px;
+        font-weight: normal;
+        font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+        text-transform: lowercase; }
+      #container section#main-continue section#registration form#event-registration li input, #container section#main-continue section#registration form#event-registration li textarea {
+        background: transparent;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.33)), color-stop(0, rgba(225, 211, 181, 0)));
+        background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.33), rgba(225, 211, 181, 0));
+        border: 1px solid #AE9769;
+        font-size: 17px;
+        font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif; }
+      #container section#main-continue section#registration form#event-registration li input {
+        height: 34px;
+        line-height: 2.0em;
+        width: 370px; }
+      #container section#main-continue section#registration form#event-registration li textarea {
+        height: 71px;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 12px 6px;
+        resize: none;
+        width: 360px; }
+      #container section#main-continue section#registration form#event-registration li#radio {
+        display: inline-block; }
+        #container section#main-continue section#registration form#event-registration li#radio p.radio {
+          display: inline-block;
+          margin-right: 15px; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio input[type="radio"] {
+            margin-right: 6px;
+            vertical-align: top;
+            width: auto; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.developer input[type="radio"] {
+            margin-top: 5px; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.developer label {
+            display: inline-block;
+            font-size: 30px;
+            font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+            text-transform: uppercase; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.designer input[type="radio"] {
+            margin-top: 10px; }
+          #container section#main-continue section#registration form#event-registration li#radio p.radio.designer label {
+            display: inline-block;
+            font-size: 32px;
+            font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+            text-transform: uppercase;
+            vertical-align: 4px; }
+      #container section#main-continue section#registration form#event-registration li#submit-button {
+        display: inline-block;
+        margin-top: 10px;
+        text-align: right;
+        width: 100%; }
+        #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"] {
+          background: rgba(174, 151, 105, 0.33);
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(174, 151, 105, 0.66)), color-stop(1, rgba(225, 211, 181, 0.33)));
+          background: -moz-linear-gradient(bottom, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33));
+          font-size: 22px;
+          height: 40px;
+          line-height: 1.6em;
+          text-transform: lowercase;
+          width: 100%;
+          font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif; }
+          #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"]:hover {
+            -webkit-box-shadow: 0 0 2px 2px #E1D9C3;
+            -moz-box-shadow: 0 0 2px 2px #E1D9C3;
+            box-shadow: 0 0 4px 2px #E1D9C3;
+            -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out;
+            transition: all 0.15s ease-out; }
+          #container section#main-continue section#registration form#event-registration li#submit-button input[type="submit"]:active {
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgba(174, 151, 105, 0.66)), color-stop(0, rgba(225, 211, 181, 0.33)));
+            background: -moz-linear-gradient(top, rgba(174, 151, 105, 0.66), rgba(225, 211, 181, 0.33)); }
+    #container section#main-continue div.student {
+      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+      padding: 15px 30px; }
+      #container section#main-continue div.student div.avatar {
+        background: url("/images/default-avatar-lg.png") no-repeat;
+        display: inline-block;
+        height: 73px;
+        width: 73px; }
+      #container section#main-continue div.student div.student-details {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: top;
+        text-align: left; }
+        #container section#main-continue div.student div.student-details div.name {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 140%; }
+        #container section#main-continue div.student div.student-details div.twitter {
+          font-size: 16px;
+          line-height: 100%;
+          text-transform: lowercase; }
+        #container section#main-continue div.student div.student-details div.role-and-school {
+          font-size: 16px;
+          line-height: 120%;
+          text-transform: lowercase; }
+      #container section#main-continue div.student h2, #container section#main-continue div.student h3 {
+        font-weight: normal; }
+      #container section#main-continue div.student h2 {
+        margin: 20px 0 10px; }
+      #container section#main-continue div.student h3 {
+        font-size: 1.15em;
+        line-height: 1.2em; }
+  #container div.register-button div.hand {
+    height: 51px;
+    width: 105px; }
+    #container div.register-button div.hand.left {
+      background: url(/stylesheets/images/download-hand-left.png) 0 0;
+      float: left; }
+    #container div.register-button div.hand.right {
+      float: right;
+      background: url(/stylesheets/images/download-hand-right.png) 0 0; }
+  #container div.register-button.top div.hand.left {
+    margin: 36px 50px 0px 80px; }
+  #container div.register-button.top div.hand.right {
+    margin: 36px 80px 0px 50px; }
+  #container div.register-button:hover div.hand {
+    height: 51px;
+    width: 105px;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out; }
+    #container div.register-button:hover div.hand.left {
+      background: url(/stylesheets/images/download-hand-left.png) 0 99%; }
+    #container div.register-button:hover div.hand.right {
+      background: url(/stylesheets/images/download-hand-right.png) 0 99%; }
+  #container div.register-button h2 {
+    float: left;
+    font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+    font-size: 68px;
+    font-weight: normal;
+    line-height: 1.0em;
+    margin: 25px 0 0;
+    text-align: center; }
+    #container div.register-button h2 a:link, #container div.register-button h2 a:visited, #container div.register-button h2 a:active {
+      color: #3a3429;
+      position: relative;
+      text-decoration: none;
+      text-shadow: #E1D9C3 0 1px;
+      -webkit-transition: all 0.15s ease-out;
+      -moz-transition: all 0.15s ease-out;
+      -o-transition: all 0.15s ease-out;
+      transition: all 0.15s ease-out; }
+      #container div.register-button h2 a:link:hover, #container div.register-button h2 a:visited:hover, #container div.register-button h2 a:active:hover {
+        color: #463B2B;
+        text-shadow: #E1D9C3 0 1px, #695e4b 0px 3px;
+        top: -3px; }
+  #container div.register-button.bottom h2 {
+    margin-top: 0px; }
+  #container div.register-button.bottom div.hand.left {
+    margin: 10px 50px 40px 80px; }
+  #container div.register-button.bottom div.hand.right {
+    margin: 10px 80px 40px 50px; }
+  #container section#startup-tables {
+    margin-bottom: 30px; }
+    #container section#startup-tables header#startup-banner {
+      margin: 25px 0 20px;
+      position: relative;
+      text-align: center; }
+    #container section#startup-tables #startup_tables_list .row {
+      margin: 0 0 20px 0; }
+    #container section#startup-tables #startup_tables_list section.company {
+      float: left;
+      width: 370px; }
+      #container section#startup-tables #startup_tables_list section.company.first {
+        margin-right: 40px; }
+      #container section#startup-tables #startup_tables_list section.company h2 {
+        font-size: 2.2em;
+        font-weight: normal;
+        font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif; }
+        #container section#startup-tables #startup_tables_list section.company h2 a, #container section#startup-tables #startup_tables_list section.company h2 a:link, #container section#startup-tables #startup_tables_list section.company h2 a:visited {
+          color: #332f26; }
+      #container section#startup-tables #startup_tables_list section.company div.logo {
+        display: inline-block;
+        margin-right: 15px; }
+      #container section#startup-tables #startup_tables_list section.company p {
+        display: inline-block;
+        vertical-align: top; }
+    #container section#startup-tables #startup_tables_list #contact-for-table {
+      font-size: 1.4em;
+      margin: 1.4em 0 0.6em 0;
+      text-align: center; }
+  #container section#attendees {
+    margin-bottom: 30px; }
+    #container section#attendees header > h1 {
+      font-family: 'Lobster', arial, sans-serif;
+      font-size: 62px;
+      letter-spacing: -0.05em;
+      margin: 30px 0;
+      text-align: center;
+      text-shadow: 1px 1px 1px #e8d9c4; }
+    #container section#attendees h2 {
+      display: inline-block;
+      font-weight: normal;
+      width: 390px; }
+      #container section#attendees h2#developer-title {
+        font-family: 'Nashville', Times, "Times New Roman", Georgia, serif;
+        font-size: 30px; }
+      #container section#attendees h2#designer-title {
+        font-family: 'CarnivaleeFreakshowRegular', Times, "Times New Roman", Georgia, serif;
+        font-size: 40px;
+        line-height: 0.64em; }
+    #container section#attendees div.right {
+      margin-left: 20px; }
+    #container section#attendees div#developer-attendees, #container section#attendees div#designer-attendees {
+      display: inline-block;
+      vertical-align: top;
+      width: 368px; }
+      #container section#attendees div#developer-attendees ul, #container section#attendees div#designer-attendees ul {
+        list-style: none; }
+        #container section#attendees div#developer-attendees ul li:first-child, #container section#attendees div#designer-attendees ul li:first-child {
+          margin: 0 0 15px; }
+        #container section#attendees div#developer-attendees ul li, #container section#attendees div#designer-attendees ul li {
+          background: #d8caad;
+          background: rgba(216, 202, 173, 0.75);
+          margin: 15px 0;
+          min-height: 50px;
+          padding: 5px; }
+          #container section#attendees div#developer-attendees ul li div.avatar, #container section#attendees div#designer-attendees ul li div.avatar {
+            float: left;
+            margin: 0 10px 0 0;
+            height: 48px;
+            width: 48px; }
+            #container section#attendees div#developer-attendees ul li div.avatar.default, #container section#attendees div#designer-attendees ul li div.avatar.default {
+              background: url("/stylesheets/images/default-avatar.png") no-repeat; }
+          #container section#attendees div#developer-attendees ul li h3, #container section#attendees div#designer-attendees ul li h3 {
+            font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+            font-size: 24px;
+            font-weight: normal;
+            text-transform: lowercase; }
+          #container section#attendees div#developer-attendees ul li h4, #container section#attendees div#designer-attendees ul li h4 {
+            font-size: 14px;
+            font-weight: normal; }
+
+hr {
+  background: #3a3429;
+  height: 12px;
+  margin: 0px;
+  width: 100%; }
+  hr.top {
+    background: url(/stylesheets/images/horizontal-rule-top.png) no-repeat; }
+  hr.bottom {
+    background: url(/stylesheets/images/horizontal-rule-bottom.png) no-repeat; }
+  hr.mini {
+    background: #5F5645;
+    bottom: 4px;
+    height: 1px;
+    margin: 0 auto;
+    position: relative;
+    width: 92%;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.24) 0 1px;
+    z-index: 0; }
+  hr.alternate {
+    background: url(/stylesheets/images/hr-alternate.png) no-repeat;
+    height: 34px; }
+
+/************************************************************************/
+/************************************************************************/
+.no-fontface div#container div.register-button h2 {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 62px; }
+.no-fontface div#container section#main section#event-location div#compass {
+  float: left;
+  position: relative; }
+.no-fontface div#container section#main section#event-location div#location {
+  right: 85px;
+  text-align: center; }
+  .no-fontface div#container section#main section#event-location div#location p.venue {
+    font-size: 30px; }
+  .no-fontface div#container section#main section#event-location div#location p.date {
+    font-size: 31px;
+    letter-spacing: -0.075em; }
+.no-fontface div#container section#schedule ol#schedule li p.event-speaker {
+  bottom: 32px;
+  line-height: 1em;
+  position: relative; }
+.no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.designer input[type="radio"], .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.developer input[type="radio"] {
+  margin-top: 10px; }
+.no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.designer label, .no-fontface div#container section#main-continue section#registration form#event-registration li#radio p.radio.developer label {
+  font-size: 26px;
+  vertical-align: 0px; }
+
+/************************************************************************/
+/************************************************************************/
+section#main {
+  font-size: 14px;
+  line-height: 20px; }
+  section#main p#what-it-is {
+    margin: 10px 0 20px; }
+  section#main section.talk-wrapper {
+    padding: 25px 0px 20px; }
+    section#main section.talk-wrapper h2, section#main section.talk-wrapper h3 {
+      font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+      font-weight: normal; }
+    section#main section.talk-wrapper h2 {
+      font-size: 34px; }
+    section#main section.talk-wrapper h3 {
+      font-size: 24px; }
+    section#main section.talk-wrapper div.left {
+      margin-right: 20px; }
+    section#main section.talk-wrapper div.left, section#main section.talk-wrapper div.right {
+      display: inline-block;
+      width: 375px;
+      vertical-align: top; }
+      section#main section.talk-wrapper div.left p, section#main section.talk-wrapper div.right p {
+        margin-bottom: 10px;
+        padding: 0px; }
+      section#main section.talk-wrapper div.left a:link, section#main section.talk-wrapper div.left a:active, section#main section.talk-wrapper div.left a:visited, section#main section.talk-wrapper div.right a:link, section#main section.talk-wrapper div.right a:active, section#main section.talk-wrapper div.right a:visited {
+        color: #990000;
+        text-decoration: none; }
+      section#main section.talk-wrapper div.left a:hover, section#main section.talk-wrapper div.right a:hover {
+        text-decoration: underline; }
+      section#main section.talk-wrapper div.left.resources a:first-of-type::after, section#main section.talk-wrapper div.right.resources a:first-of-type::after {
+        content: " -"; }
+      section#main section.talk-wrapper div.left ul li, section#main section.talk-wrapper div.right ul li {
+        margin: 10px 0;
+        line-height: 20px;
+        list-style: none; }
+        section#main section.talk-wrapper div.left ul li:first-child, section#main section.talk-wrapper div.right ul li:first-child {
+          margin: 0px; }
+
+div#after-party {
+  margin: 40px 0 0 0;
+  padding-bottom: 40px; }
+  div#after-party div.wreath {
+    float: left; }
+  div#after-party a:visited, div#after-party a:link, div#after-party a:hover {
+    text-decoration: none; }
+  div#after-party div#after-party-description {
+    float: left;
+    margin: 5px 15px;
+    text-align: center;
+    vertical-align: top; }
+    div#after-party div#after-party-description h1, div#after-party div#after-party-description h2, div#after-party div#after-party-description h3, div#after-party div#after-party-description h4 {
+      font-weight: normal;
+      margin: 0px;
+      font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+      letter-spacing: -0.05em;
+      line-height: 1.0em; }
+    div#after-party div#after-party-description h1 {
+      font-size: 42px; }
+    div#after-party div#after-party-description h2 {
+      border-top: 1px solid black;
+      color: #990000;
+      font-size: 44px;
+      margin-top: 6px;
+      padding: 10px 10px 2px;
+      position: relative;
+      z-index: 10;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+    div#after-party div#after-party-description h3 {
+      border-top: 1px solid black;
+      font-size: 28px;
+      margin-top: 5px;
+      padding-top: 5px;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      -moz-box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.234) 0px 1px inset; }
+    div#after-party div#after-party-description h4 {
+      font-size: 22px;
+      margin: 4px 0; }
+    div#after-party div#after-party-description h5 {
+      font-size: 14px;
+      font-weight: normal; }
+
+#twitter-info div.avatar {
+  float: left;
+  margin: 0 10px 0 0;
+  height: 48px;
+  width: 48px; }
+#twitter-info h3 {
+  font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: lowercase; }
+
+/* AUTOCOMPLETE */
+ul.ui-autocomplete {
+  background: #F2F2F2;
+  border-radius: 3px 3px;
+  width: 370px;
+  list-style: none; }
+  ul.ui-autocomplete li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 2em; }
+    ul.ui-autocomplete li a, ul.ui-autocomplete li a:visited, ul.ui-autocomplete li a:hover {
+      text-decoration: none;
+      color: #222; }
+
+ul.ui-menu {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: block;
+  float: left; }
+  ul.ui-menu .ui-menu {
+    margin-top: -3px; }
+  ul.ui-menu li.ui-menu-item {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    float: left;
+    clear: left;
+    width: 100%; }
+    ul.ui-menu li.ui-menu-item a {
+      text-decoration: none;
+      display: block;
+      padding: .2em .4em;
+      zoom: 1; }
+
+.ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6;
+  color: #555555; }
+  .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #555555;
+    text-decoration: none; }
+
+.ui-state-hover, .ui-state-focus {
+  background: #dadada;
+  color: #212121; }
+  .ui-state-hover a, .ui-state-hover a:hover, .ui-state-focus a, .ui-state-focus a:hover {
+    color: #212121;
+    text-decoration: none; }
+
+.ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  color: #212121; }
+  .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #212121;
+    text-decoration: none; }
+
+.ui-widget :active {
+  outline: none; }
+
+/************************************************************************/
+/************************************************************************/
+/* Target Firefox */
+@-moz-document url-prefix() {
+  div#container section#main section#event-location div#location p.date {
+    letter-spacing: -0.024em; }
+
+  div#container section#main-continue section#registration form#event-registration li#description {
+    margin-bottom: 15px; } }
+
+.parties-show #container header#logo {
+  padding: 0px 60px 0px 60px; }
+.parties-show #container section#main-continue section#registration {
+  margin: 0;
+  padding: 30px 0; }
+  .parties-show #container section#main-continue section#registration header#registration-banner {
+    margin-bottom: 20px; }
+.parties-show .party-main .student {
+  padding: 30px; }
+  .parties-show .party-main .student h2 {
+    font-size: 16px;
+    text-align: center; }
+.parties-show #flash {
+  margin: 0; }
+  .parties-show #flash #flash_notice {
+    background: none;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    color: #000;
+    margin: 0;
+    padding: 40px 0 0 0; }
