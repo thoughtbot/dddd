@@ -1,0 +1,28 @@
+<div data-role="page">
+  <div data-role="header">
+    <h1>After-Party</h1>
+  </div>
+
+  <div data-role="content" class="ui-content" role="main">
+    <% if current_user %>
+      <p>Cool, see you there today.</p>
+    <% else %>
+      <div class="register-button top clearfix">
+        <div class="hand left"></div>
+        <h2><%= link_to "RSVP here", "/auth/twitter", :rel => "external" %></h2>
+        <div class="hand right"></div>
+      </div>
+    <% end %>
+    <p><a href="http://maps.google.com/maps?cid=11425628393869581370">Map</a> to the Hard Rock Cafe. We suggest taking the Red Line from Kendall to Park Street, then the Green Line from Park Street to Haymarket. The Hard Rock is a short walk from there.</p>
+  </div>
+
+  <ul data-role="listview" id="partiers">
+    <% @partiers.each do |partier| %>
+      <li>
+        <%= twitter_avatar partier.twitter, 73 %>
+        <%= partier.name %>
+        <div class="description"><%= partier.description %></div>
+      </li>
+    <% end %>
+  </ul>
+</div>

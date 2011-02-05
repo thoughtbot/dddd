@@ -1,0 +1,14 @@
+<%= form_for current_user do |form| %>
+  <div class="description-field">
+    <label>Tell local students about yourself</label><br />
+    <%= form.text_area :description %>
+  </div>
+  <div class="partying-field">
+    <label>Are you attending the after-party?<abbr title="required">*</abbr></label><br />
+    <%= form.radio_button :partying, true %>
+    <%= form.label :partying, "Partying", :for => "user_partying_partying" %>
+    <%= form.radio_button :partying, false %>
+    <%= form.label :partying, "Not Partying", :for => "user_partying_not_partying" %>
+  </div>
+  <%= form.submit "Change RSVP", :disable_with => "Please wait..." %>
+<% end %>

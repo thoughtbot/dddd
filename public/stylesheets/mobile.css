@@ -9,9 +9,6 @@
 /*@mixin font-Lobster {
   font-family: 'Lobster', arial, sans-serif;
 }
-@mixin font-Fell {
-  font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
-}
 @mixin font-FellSC {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
 }*/
@@ -61,3 +58,16 @@ ul .ui-btn-text {
   font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
   font-size: 1.4em;
   font-weight: normal; }
+
+#partiers li {
+  height: 73px; }
+  #partiers li .description {
+    font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+    font-size: 12px; }
+  #partiers li .ui-btn-inner {
+    padding-left: 90px; }
+  #partiers li .ui-icon-arrow-r {
+    margin-top: -19px; }
+
+.description-field, .partying-field {
+  clear: both; }

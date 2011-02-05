@@ -13,11 +13,11 @@
 @mixin font-LeagueGothic {
   font-family: 'LeagueGothicRegular', "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
 }
-/*@mixin font-Lobster {
-  font-family: 'Lobster', arial, sans-serif;
-}
 @mixin font-Fell {
   font-family: 'IM Fell English', Times, "Times New Roman", Georgia, serif;
+}
+/*@mixin font-Lobster {
+  font-family: 'Lobster', arial, sans-serif;
 }
 @mixin font-FellSC {
   font-family: 'IM Fell English SC', Times, "Times New Roman", Georgia, serif;
@@ -87,4 +87,26 @@ ul .ui-btn-text {
   @include font-LeagueGothic;
   font-size: 1.4em;
   font-weight: normal;
+}
+
+#partiers {
+  li {
+    height: 73px;
+    .description {
+      @include font-Fell;
+      font-size: 12px;
+    }
+    .ui-btn-inner {
+      padding-left: 90px;
+      .ui-btn-text {
+      }
+    }
+    .ui-icon-arrow-r {
+      margin-top: -19px;
+    }
+  }
+}
+
+.description-field, .partying-field {
+  clear: both;
 }
