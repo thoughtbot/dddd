@@ -3,8 +3,8 @@ Dddd::Application.routes.draw do
 
   resources :registrations, :only => [:index, :new]
   resources :talks,         :only => [:index, :show]
-  resources :designers,     :only => [:index]
-  resources :developers,    :only => [:index]
+  resources :designers,     :only => [:index, :show]
+  resources :developers,    :only => [:index, :show]
   resources :startups,      :only => [:index, :show]
   resources :opportunities, :only => [:index]
   resources :schools,       :only => [:index]

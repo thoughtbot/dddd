@@ -1,0 +1,12 @@
+<div data-role="page">
+  <div data-role="header">
+    <h1><%= @developer.name %></h1>
+  </div>
+
+  <div data-role="content" class="ui-content" role="main">
+    <%= twitter_avatar @developer.twitter, 73 %>
+
+    <h3><%= @developer.role %></h3>
+    <h4><%= @developer.school_name %></h4>
+  </div>
+</div>

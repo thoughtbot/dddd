@@ -5,7 +5,7 @@
 
   <ul data-role="listview">
     <% @designers.each do |designer| %>
-      <li><%= designer.name %></li>
+      <li><%= link_to designer.name, designer_path(designer) %></li>
     <% end %>
   </ul>
 </div>

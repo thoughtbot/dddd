@@ -110,3 +110,10 @@ ul .ui-btn-text {
 .description-field, .partying-field {
   clear: both;
 }
+
+div.avatar {
+  background: url('/images/default-avatar-lg.png') no-repeat;
+  display: inline-block;
+  height: 73px;
+  width: 73px;
+}
