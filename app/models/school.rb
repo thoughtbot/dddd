@@ -12,7 +12,15 @@ class School < ActiveRecord::Base
     order('name asc')
   end
 
+  def self.most_students
+    order('registrations_count desc')
+  end
+
   def self.stats
     order('registrations_count desc').to_csv(:only => [:name, :registrations_count])
+  end
+
+  def students
+    registrations.order("name asc")
   end
 end

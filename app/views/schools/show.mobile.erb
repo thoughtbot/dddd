@@ -1,0 +1,15 @@
+<div data-role="page">
+  <div data-role="header">
+    <h1><%= @school.name %></h1>
+  </div>
+
+  <ul data-role="listview">
+    <% @school.students.each do |student| %>
+      <% if student.designer? %>
+        <li><%= link_to student.name, designer_path(student) %></li>
+      <% else %>
+        <li><%= link_to student.name, developer_path(student) %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>

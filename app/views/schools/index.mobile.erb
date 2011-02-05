@@ -1,0 +1,11 @@
+<div data-role="page" id="designers">
+  <div data-role="header">
+    <h1>Schools</h1>
+  </div>
+
+  <ul data-role="listview">
+    <% @schools.each do |school| %>
+      <li><%= link_to school.name, school_path(school) %> (<%= school.registrations_count %>)</li>
+    <% end %>
+  </ul>
+</div>

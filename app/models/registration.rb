@@ -23,6 +23,14 @@ class Registration < ActiveRecord::Base
     all.to_csv(:only => [:name, :role, :twitter], :methods => [:school_name])
   end
 
+  def designer?
+    role == "Designer"
+  end
+
+  def developer?
+    role == "Developer"
+  end
+
   private
 
   def find_or_create_school

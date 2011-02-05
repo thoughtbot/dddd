@@ -7,7 +7,7 @@ Dddd::Application.routes.draw do
   resources :developers,    :only => [:index, :show]
   resources :startups,      :only => [:index, :show]
   resources :opportunities, :only => [:index]
-  resources :schools,       :only => [:index]
+  resources :schools,       :only => [:index, :show]
   resource  :party,         :only => [:show]
   resources :users,         :only => [:update]
 

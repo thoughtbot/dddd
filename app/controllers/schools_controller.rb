@@ -1,5 +1,9 @@
-class SchoolsController < ApplicationController
+class SchoolsController < MobileController
   def index
-    send_data School.stats
+    @schools = School.most_students
+  end
+
+  def show
+    @school = School.find(params[:id])
   end
 end
